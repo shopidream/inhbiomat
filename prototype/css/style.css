@@ -1,4 +1,4 @@
-/* ===================================
+﻿/* ===================================
    ING Global - Clinical Design System
    =================================== */
 
@@ -171,15 +171,6 @@ code {
 .site-header .logo:hover {
   text-decoration: none;
   color: var(--color-primary);
-}
-
-.site-header .tagline {
-  margin-left: var(--spacing-md);
-  font-size: 0.875rem;
-  color: var(--color-text-muted);
-  font-weight: 400;
-  white-space: nowrap;
-  flex-shrink: 0;
 }
 
 .site-header nav {
@@ -904,11 +895,7 @@ tbody tr:hover {
     justify-content: space-between;
   }
 
-  .site-header .tagline {
-    display: none;
-  }
-
-  .site-header .logo {
+    .site-header .logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -1403,3 +1390,4 @@ tbody tr:hover {
     height: 10px;
   }
 }
+
