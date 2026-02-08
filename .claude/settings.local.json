@@ -4,7 +4,8 @@
       "Bash(pip install:*)",
       "Bash(python:*)",
       "Bash(python3:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(git add:*)"
     ]
   }
 }

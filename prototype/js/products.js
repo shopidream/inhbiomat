@@ -16,6 +16,7 @@
       categoriesData = await categoriesResponse.json();
 
       filteredProducts = productsData.products;
+      updateCategoryCounts();
       renderProducts();
       setupFilters();
     } catch (error) {
@@ -104,10 +105,70 @@
     document.getElementById('sku-count').textContent = totalSkus;
   }
 
+  // Update category counts in sidebar
+  function updateCategoryCounts() {
+    if (!productsData) return;
+
+    // Count products by category
+    const categoryCounts = {};
+    productsData.products.forEach(product => {
+      const categoryId = product.category.toLowerCase().replace(/[®\s]+/g, '-').replace(/\(|\)/g, '');
+      categoryCounts[categoryId] = (categoryCounts[categoryId] || 0) + 1;
+    });
+
+    // Update count displays
+    const countElements = {
+      'all': document.querySelector('input[name="category"][value="all"]')?.parentElement?.querySelector('.count'),
+      'matrix-system': document.querySelector('input[name="category"][value="matrix-system"]')?.parentElement?.querySelector('.count'),
+      'hydroxyapatite': document.querySelector('input[name="category"][value="hydroxyapatite"]')?.parentElement?.querySelector('.count'),
+      'tricalcium-phosphate': document.querySelector('input[name="category"][value="tricalcium-phosphate"]')?.parentElement?.querySelector('.count'),
+      'tetracalcium-phosphate': document.querySelector('input[name="category"][value="tetracalcium-phosphate"]')?.parentElement?.querySelector('.count'),
+      'biphasic-calcium-phosphate': document.querySelector('input[name="category"][value="biphasic-calcium-phosphate"]')?.parentElement?.querySelector('.count')
+    };
+
+    // Set "All Products" count
+    if (countElements['all']) {
+      countElements['all'].textContent = productsData.products.length;
+    }
+
+    // Set individual category counts
+    Object.keys(countElements).forEach(key => {
+      if (key !== 'all' && countElements[key] && categoryCounts[key]) {
+        countElements[key].textContent = categoryCounts[key];
+      }
+    });
+  }
+
   // Setup filter event listeners
   function setupFilters() {
-    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    checkboxes.forEach(checkbox => {
+    const allCheckbox = document.querySelector('input[name="category"][value="all"]');
+    const categoryCheckboxes = document.querySelectorAll('input[name="category"]:not([value="all"])');
+    const otherCheckboxes = document.querySelectorAll('input[type="checkbox"]:not([name="category"])');
+
+    // Handle "All Products" checkbox
+    if (allCheckbox) {
+      allCheckbox.addEventListener('change', function() {
+        if (this.checked) {
+          // Uncheck all other category checkboxes when "All Products" is checked
+          categoryCheckboxes.forEach(cb => cb.checked = false);
+        }
+        applyFilters();
+      });
+    }
+
+    // Handle individual category checkboxes
+    categoryCheckboxes.forEach(checkbox => {
+      checkbox.addEventListener('change', function() {
+        if (this.checked && allCheckbox) {
+          // Uncheck "All Products" when any specific category is checked
+          allCheckbox.checked = false;
+        }
+        applyFilters();
+      });
+    });
+
+    // Handle other filter checkboxes
+    otherCheckboxes.forEach(checkbox => {
       checkbox.addEventListener('change', applyFilters);
     });
   }
@@ -126,9 +187,9 @@
 
     const featuredOnly = document.querySelector('input[name="featured"]')?.checked;
 
-    // Handle "All Products" checkbox
+    // Handle "All Products" checkbox - if no categories selected, check "All Products"
     const allCheckbox = document.querySelector('input[name="category"][value="all"]');
-    if (categoryFilters.length === 0 && allCheckbox) {
+    if (categoryFilters.length === 0 && allCheckbox && !allCheckbox.checked) {
       allCheckbox.checked = true;
     }
 

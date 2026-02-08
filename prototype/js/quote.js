@@ -6,7 +6,7 @@
   // Load products data
   async function loadProductsData() {
     try {
-      const response = await fetch('../data/products-index.json');
+      const response = await fetch('./data/products-index.json');
       productsData = await response.json();
 
       // Check if product ID is in URL
