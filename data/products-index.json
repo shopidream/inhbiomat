@@ -22,10 +22,10 @@
         "Titanium Grit Blasting"
       ],
       "jsonFile": "mcd.json",
-      "images": {
-        "main": "mcd_main.png",
-        "square": "mcd_square.png",
-        "wide": "mcd_wide.png"
+      "pages": {
+        "main": "page_02.png",
+        "detail1": "page_03.png",
+        "detail2": "page_04.png"
       }
     },
     {
@@ -43,10 +43,10 @@
         "Implant Coating"
       ],
       "jsonFile": "mcha.json",
-      "images": {
-        "main": "mcha_main.png",
-        "square": "mcha_square.png",
-        "wide": "mcha_wide.png"
+      "pages": {
+        "main": "page_05.png",
+        "detail1": "page_06.png",
+        "detail2": "page_07.png"
       }
     },
     {
@@ -65,10 +65,10 @@
         "Bone Cements"
       ],
       "jsonFile": "swha.json",
-      "images": {
-        "main": "swha_main.png",
-        "square": "swha_square.png",
-        "wide": "swha_wide.png"
+      "pages": {
+        "main": "page_08.png",
+        "detail1": "page_09.png",
+        "detail2": "page_10.png"
       }
     },
     {
@@ -86,10 +86,10 @@
         "Porous Solids Manufacturing"
       ],
       "jsonFile": "uwha.json",
-      "images": {
-        "main": "uwha_main.png",
-        "square": "uwha_square.png",
-        "wide": "uwha_wide.png"
+      "pages": {
+        "main": "page_11.png",
+        "detail1": "page_12.png",
+        "detail2": "page_13.png"
       }
     },
     {
@@ -107,10 +107,10 @@
         "Bone Repair"
       ],
       "jsonFile": "hawhisk-s.json",
-      "images": {
-        "main": "hawhisk-s_main.png",
-        "square": "hawhisk-s_square.png",
-        "wide": "hawhisk-s_wide.png"
+      "pages": {
+        "main": "page_14.png",
+        "detail1": "page_15.png",
+        "detail2": "page_16.png"
       }
     },
     {
@@ -128,10 +128,10 @@
         "Cell Culture"
       ],
       "jsonFile": "cad.json",
-      "images": {
-        "main": "cad_main.png",
-        "square": "cad_square.png",
-        "wide": "cad_wide.png"
+      "pages": {
+        "main": "page_17.png",
+        "detail1": "page_18.png",
+        "detail2": "page_19.png"
       }
     },
     {
@@ -149,10 +149,10 @@
         "Cell Culture"
       ],
       "jsonFile": "had.json",
-      "images": {
-        "main": "had_main.png",
-        "square": "had_square.png",
-        "wide": "had_wide.png"
+      "pages": {
+        "main": "page_20.png",
+        "detail1": "page_21.png",
+        "detail2": "page_22.png"
       }
     },
     {
@@ -170,10 +170,10 @@
         "Dental Research"
       ],
       "jsonFile": "hadel.json",
-      "images": {
-        "main": "hadel_main.png",
-        "square": "hadel_square.png",
-        "wide": "hadel_wide.png"
+      "pages": {
+        "main": "page_23.png",
+        "detail1": "page_24.png",
+        "detail2": "page_25.png"
       }
     },
     {
@@ -191,10 +191,10 @@
         "Bone Cements"
       ],
       "jsonFile": "atcp.json",
-      "images": {
-        "main": "atcp_main.png",
-        "square": "atcp_square.png",
-        "wide": "atcp_wide.png"
+      "pages": {
+        "main": "page_26.png",
+        "detail1": "page_27.png",
+        "detail2": "page_28.png"
       }
     },
     {
@@ -212,10 +212,10 @@
         "Tissue Engineering Scaffolds"
       ],
       "jsonFile": "ssbtcp.json",
-      "images": {
-        "main": "ssbtcp_main.png",
-        "square": "ssbtcp_square.png",
-        "wide": "ssbtcp_wide.png"
+      "pages": {
+        "main": "page_29.png",
+        "detail1": "page_30.png",
+        "detail2": "page_31.png"
       }
     },
     {
@@ -233,10 +233,10 @@
         "Tissue Engineering Scaffolds"
       ],
       "jsonFile": "swbtcp.json",
-      "images": {
-        "main": "swbtcp_main.png",
-        "square": "swbtcp_square.png",
-        "wide": "swbtcp_wide.png"
+      "pages": {
+        "main": "page_32.png",
+        "detail1": "page_33.png",
+        "detail2": "page_34.png"
       }
     },
     {
@@ -254,10 +254,10 @@
         "Custom Shapes and Structures"
       ],
       "jsonFile": "utcp.json",
-      "images": {
-        "main": "utcp_main.png",
-        "square": "utcp_square.png",
-        "wide": "utcp_wide.png"
+      "pages": {
+        "main": "page_35.png",
+        "detail1": "page_36.png",
+        "detail2": "page_37.png"
       }
     },
     {
@@ -276,10 +276,10 @@
         "Tooth Remineralization"
       ],
       "jsonFile": "ttcp.json",
-      "images": {
-        "main": "ttcp_main.png",
-        "square": "ttcp_square.png",
-        "wide": "ttcp_wide.png"
+      "pages": {
+        "main": "page_38.png",
+        "detail1": "page_39.png",
+        "detail2": "page_40.png"
       }
     },
     {
@@ -297,10 +297,10 @@
         "Tissue Engineering Scaffolds"
       ],
       "jsonFile": "s1bcp.json",
-      "images": {
-        "main": "s1bcp_main.png",
-        "square": "s1bcp_square.png",
-        "wide": "s1bcp_wide.png"
+      "pages": {
+        "main": "page_41.png",
+        "detail1": "page_42.png",
+        "detail2": "page_43.png"
       }
     },
     {
@@ -318,10 +318,10 @@
         "Tissue Engineering Scaffolds"
       ],
       "jsonFile": "u1bcp.json",
-      "images": {
-        "main": "u1bcp_main.png",
-        "square": "u1bcp_square.png",
-        "wide": "u1bcp_wide.png"
+      "pages": {
+        "main": "page_44.png",
+        "detail1": "page_45.png",
+        "detail2": "page_46.png"
       }
     }
   ]

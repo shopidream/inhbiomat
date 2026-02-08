@@ -152,8 +152,13 @@
     "Additional sizes are available upon request"
   ],
   "images": [
-    "ttcp_main.png",
-    "ttcp_square.png",
-    "ttcp_wide.png"
-  ]
+    "page_38.png",
+    "page_39.png",
+    "page_40.png"
+  ],
+  "pages": {
+    "main": "page_38.png",
+    "detail1": "page_39.png",
+    "detail2": "page_40.png"
+  }
 }

@@ -289,8 +289,13 @@
     "Selected HA/b-TCP ratios are also available with HA from 10-85% upon request"
   ],
   "images": [
-    "s1bcp_main.png",
-    "s1bcp_square.png",
-    "s1bcp_wide.png"
-  ]
+    "page_41.png",
+    "page_42.png",
+    "page_43.png"
+  ],
+  "pages": {
+    "main": "page_41.png",
+    "detail1": "page_42.png",
+    "detail2": "page_43.png"
+  }
 }

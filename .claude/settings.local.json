@@ -12,7 +12,9 @@
       "Bash(findstr:*)",
       "Bash(ls:*)",
       "Bash(done)",
-      "Bash(if not exist \"prototype\\\\product_images\" mkdir \"prototype\\\\product_images\")"
+      "Bash(if not exist \"prototype\\\\product_images\" mkdir \"prototype\\\\product_images\")",
+      "Bash(find:*)",
+      "Bash(test:*)"
     ]
   }
 }

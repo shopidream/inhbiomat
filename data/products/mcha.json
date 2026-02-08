@@ -152,8 +152,13 @@
     "Additional sizes are available upon request"
   ],
   "images": [
-    "mcha_main.png",
-    "mcha_square.png",
-    "mcha_wide.png"
-  ]
+    "page_05.png",
+    "page_06.png",
+    "page_07.png"
+  ],
+  "pages": {
+    "main": "page_05.png",
+    "detail1": "page_06.png",
+    "detail2": "page_07.png"
+  }
 }

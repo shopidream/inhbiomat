@@ -181,8 +181,13 @@
     "Additional sizes are available upon request"
   ],
   "images": [
-    "had_main.png",
-    "had_square.png",
-    "had_wide.png"
-  ]
+    "page_20.png",
+    "page_21.png",
+    "page_22.png"
+  ],
+  "pages": {
+    "main": "page_20.png",
+    "detail1": "page_21.png",
+    "detail2": "page_22.png"
+  }
 }

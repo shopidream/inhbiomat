@@ -132,31 +132,23 @@
     overview.innerHTML = `
       ${productData.images && productData.images.length > 0 ? `
         <div class="card">
-          <h2>Product Images</h2>
-          <div style="display: flex; flex-direction: column; gap: 1rem;">
-            <!-- Main Image -->
-            <div style="display: flex; justify-content: center; align-items: center; background-color: #f7fafc; border-radius: 8px; padding: 2rem; min-height: 400px;">
-              <img id="main-product-image"
-                   src="./product_images/${productData.images[0]}"
-                   alt="${getLocalizedText(productData.productName)}"
-                   style="max-width: 100%; max-height: 500px; object-fit: contain; border-radius: 4px;">
-            </div>
-
-            <!-- Thumbnail Gallery -->
-            ${productData.images.length > 1 ? `
-              <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center;">
-                ${productData.images.map((img, idx) => `
-                  <button onclick="changeProductImage('${img}', ${idx})"
-                          id="thumb-${idx}"
-                          class="image-thumbnail ${idx === 0 ? 'active' : ''}"
-                          style="border: 2px solid ${idx === 0 ? '#3182ce' : '#e2e8f0'}; border-radius: 4px; padding: 4px; background-color: #fff; cursor: pointer; transition: all 0.2s;">
-                    <img src="./product_images/${img}"
-                         alt="View ${idx + 1}"
-                         style="width: 80px; height: 80px; object-fit: cover; display: block; border-radius: 2px;">
-                  </button>
-                `).join('')}
+          <h2>Product Pages</h2>
+          <p style="margin-bottom: 1.5rem; color: var(--color-text-secondary); font-size: 0.9375rem;">
+            Click on any page to view in full screen
+          </p>
+          <div style="display: grid; gap: 1.5rem;">
+            ${productData.images.map((img, idx) => `
+              <div style="background-color: #f7fafc; border-radius: 8px; padding: 1rem; cursor: pointer;" onclick="openLightbox(${idx})" class="product-page-clickable">
+                <div style="margin-bottom: 0.5rem;">
+                  <span style="font-weight: 600; color: var(--color-text-primary);">
+                    ${idx === 0 ? 'Main Page' : 'Detail Page ' + idx}
+                  </span>
+                </div>
+                <img src="./product_images/pages/${img}"
+                     alt="Page ${idx + 1}"
+                     style="width: 100%; height: auto; object-fit: contain; border-radius: 4px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);">
               </div>
-            ` : ''}
+            `).join('')}
           </div>
         </div>
       ` : ''}
@@ -650,6 +642,76 @@
       renderProduct();
     }
   });
+
+  // Lightbox functionality
+  let currentLightboxIndex = 0;
+  let lightboxImages = [];
+
+  window.openLightbox = function(index) {
+    if (!productData || !productData.images) return;
+
+    currentLightboxIndex = index;
+    lightboxImages = productData.images;
+
+    // Create lightbox if it doesn't exist
+    let lightbox = document.getElementById('lightbox-overlay');
+    if (!lightbox) {
+      lightbox = document.createElement('div');
+      lightbox.id = 'lightbox-overlay';
+      lightbox.className = 'lightbox-overlay';
+      lightbox.innerHTML = `
+        <div class="lightbox-content">
+          <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+          <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)">‹</button>
+          <img id="lightbox-image" class="lightbox-image" src="" alt="Product page">
+          <button class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)">›</button>
+        </div>
+      `;
+      document.body.appendChild(lightbox);
+
+      // Close on overlay click
+      lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) {
+          closeLightbox();
+        }
+      });
+
+      // Keyboard navigation
+      document.addEventListener('keydown', function(e) {
+        if (!lightbox.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') navigateLightbox(-1);
+        if (e.key === 'ArrowRight') navigateLightbox(1);
+      });
+    }
+
+    // Show lightbox and update image
+    updateLightboxImage();
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  };
+
+  window.closeLightbox = function() {
+    const lightbox = document.getElementById('lightbox-overlay');
+    if (lightbox) {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  };
+
+  window.navigateLightbox = function(direction) {
+    currentLightboxIndex += direction;
+    if (currentLightboxIndex < 0) currentLightboxIndex = lightboxImages.length - 1;
+    if (currentLightboxIndex >= lightboxImages.length) currentLightboxIndex = 0;
+    updateLightboxImage();
+  };
+
+  function updateLightboxImage() {
+    const img = document.getElementById('lightbox-image');
+    if (img && lightboxImages[currentLightboxIndex]) {
+      img.src = `./product_images/pages/${lightboxImages[currentLightboxIndex]}`;
+    }
+  }
 
   // Initialize
   loadProductData();

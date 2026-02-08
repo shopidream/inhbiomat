@@ -193,8 +193,13 @@
     "Additional sizes are available upon request"
   ],
   "images": [
-    "hadel_main.png",
-    "hadel_square.png",
-    "hadel_wide.png"
-  ]
+    "page_23.png",
+    "page_24.png",
+    "page_25.png"
+  ],
+  "pages": {
+    "main": "page_23.png",
+    "detail1": "page_24.png",
+    "detail2": "page_25.png"
+  }
 }

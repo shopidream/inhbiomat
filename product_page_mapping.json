@@ -1,0 +1,77 @@
+{
+  "mcd": {
+    "main": "page_02.png",
+    "detail1": "page_03.png",
+    "detail2": "page_04.png"
+  },
+  "mcha": {
+    "main": "page_05.png",
+    "detail1": "page_06.png",
+    "detail2": "page_07.png"
+  },
+  "swha": {
+    "main": "page_08.png",
+    "detail1": "page_09.png",
+    "detail2": "page_10.png"
+  },
+  "uwha": {
+    "main": "page_11.png",
+    "detail1": "page_12.png",
+    "detail2": "page_13.png"
+  },
+  "hawhisk-s": {
+    "main": "page_14.png",
+    "detail1": "page_15.png",
+    "detail2": "page_16.png"
+  },
+  "cad": {
+    "main": "page_17.png",
+    "detail1": "page_18.png",
+    "detail2": "page_19.png"
+  },
+  "had": {
+    "main": "page_20.png",
+    "detail1": "page_21.png",
+    "detail2": "page_22.png"
+  },
+  "hadel": {
+    "main": "page_23.png",
+    "detail1": "page_24.png",
+    "detail2": "page_25.png"
+  },
+  "atcp": {
+    "main": "page_26.png",
+    "detail1": "page_27.png",
+    "detail2": "page_28.png"
+  },
+  "ssbtcp": {
+    "main": "page_29.png",
+    "detail1": "page_30.png",
+    "detail2": "page_31.png"
+  },
+  "swbtcp": {
+    "main": "page_32.png",
+    "detail1": "page_33.png",
+    "detail2": "page_34.png"
+  },
+  "utcp": {
+    "main": "page_35.png",
+    "detail1": "page_36.png",
+    "detail2": "page_37.png"
+  },
+  "ttcp": {
+    "main": "page_38.png",
+    "detail1": "page_39.png",
+    "detail2": "page_40.png"
+  },
+  "s1bcp": {
+    "main": "page_41.png",
+    "detail1": "page_42.png",
+    "detail2": "page_43.png"
+  },
+  "u1bcp": {
+    "main": "page_44.png",
+    "detail1": "page_45.png",
+    "detail2": "page_46.png"
+  }
+}

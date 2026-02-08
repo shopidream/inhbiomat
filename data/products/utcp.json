@@ -168,8 +168,13 @@
     "Additional sizes are available upon request"
   ],
   "images": [
-    "utcp_main.png",
-    "utcp_square.png",
-    "utcp_wide.png"
-  ]
+    "page_35.png",
+    "page_36.png",
+    "page_37.png"
+  ],
+  "pages": {
+    "main": "page_35.png",
+    "detail1": "page_36.png",
+    "detail2": "page_37.png"
+  }
 }

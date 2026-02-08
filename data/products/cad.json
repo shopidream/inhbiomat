@@ -168,8 +168,13 @@
     "Additional sizes are available upon request"
   ],
   "images": [
-    "cad_main.png",
-    "cad_square.png",
-    "cad_wide.png"
-  ]
+    "page_17.png",
+    "page_18.png",
+    "page_19.png"
+  ],
+  "pages": {
+    "main": "page_17.png",
+    "detail1": "page_18.png",
+    "detail2": "page_19.png"
+  }
 }

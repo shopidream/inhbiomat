@@ -54,9 +54,9 @@
 
     grid.innerHTML = filteredProducts.map(product => `
       <div class="product-card" onclick="window.location.href='./product-detail.html?id=${product.id}'">
-        ${product.images?.square ? `
+        ${product.pages?.main ? `
           <div class="product-card-image">
-            <img src="./product_images/${product.images.square}" alt="${getLocalizedText(product.name)}" loading="lazy">
+            <img src="./product_images/pages/${product.pages.main}" alt="${getLocalizedText(product.name)}" loading="lazy">
           </div>
         ` : ''}
         <div class="product-card-header">
