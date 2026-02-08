@@ -28,7 +28,7 @@
 
     try {
       // First, load the index to get the JSON filename
-      const indexResponse = await fetch('../data/products-index.json');
+      const indexResponse = await fetch('./data/products-index.json');
       const index = await indexResponse.json();
 
       const productInfo = index.products.find(p => p.id === productId);
@@ -38,7 +38,7 @@
       }
 
       // Load the specific product JSON
-      const productResponse = await fetch(`../data/products/${productInfo.jsonFile}`);
+      const productResponse = await fetch(`./data/products/${productInfo.jsonFile}`);
       productData = await productResponse.json();
 
       renderProduct();
@@ -137,7 +137,7 @@
             <!-- Main Image -->
             <div style="display: flex; justify-content: center; align-items: center; background-color: #f7fafc; border-radius: 8px; padding: 2rem; min-height: 400px;">
               <img id="main-product-image"
-                   src="../product_images/${productData.images[0]}"
+                   src="./product_images/${productData.images[0]}"
                    alt="${getLocalizedText(productData.productName)}"
                    style="max-width: 100%; max-height: 500px; object-fit: contain; border-radius: 4px;">
             </div>
@@ -150,7 +150,7 @@
                           id="thumb-${idx}"
                           class="image-thumbnail ${idx === 0 ? 'active' : ''}"
                           style="border: 2px solid ${idx === 0 ? '#3182ce' : '#e2e8f0'}; border-radius: 4px; padding: 4px; background-color: #fff; cursor: pointer; transition: all 0.2s;">
-                    <img src="../product_images/${img}"
+                    <img src="./product_images/${img}"
                          alt="View ${idx + 1}"
                          style="width: 80px; height: 80px; object-fit: cover; display: block; border-radius: 2px;">
                   </button>
@@ -336,7 +336,7 @@
           </table>
           ${chem.composition.notes ? `
             <div style="margin-top: 1rem; font-size: 0.875rem; color: #718096;">
-              ${chem.composition.notes.map(note => `<p>• ${note}</p>`).join('')}
+              ${chem.composition.notes.map(note => `<p>??${note}</p>`).join('')}
             </div>
           ` : ''}
         ` : ''}
@@ -422,7 +422,7 @@
                     ${comp.ha}% Hydroxyapatite / ${comp.bTcp}% Beta-TCP
                   </span>
                 </div>
-                <span class="accordion-icon">▼</span>
+                <span class="accordion-icon">??/span>
               </div>
               <div class="accordion-content">
                 <table>
@@ -452,7 +452,7 @@
           <div class="card" style="background-color: #f7fafc;">
             <h3>Notes</h3>
             ${productData.notes.map(note =>
-              `<p style="font-size: 0.875rem; margin-bottom: 0.5rem;">• ${note}</p>`
+              `<p style="font-size: 0.875rem; margin-bottom: 0.5rem;">??${note}</p>`
             ).join('')}
           </div>
         ` : ''}
@@ -499,7 +499,7 @@
           <div class="card" style="background-color: #f7fafc;">
             <h3>Notes</h3>
             ${productData.notes.map(note =>
-              `<p style="font-size: 0.875rem; margin-bottom: 0.5rem;">• ${note}</p>`
+              `<p style="font-size: 0.875rem; margin-bottom: 0.5rem;">??${note}</p>`
             ).join('')}
           </div>
         ` : ''}
@@ -558,7 +558,7 @@
     // Load products list
     let productsHtml = '';
     try {
-      const response = await fetch('../data/products-index.json');
+      const response = await fetch('./data/products-index.json');
       const data = await response.json();
 
       // Group by category
@@ -629,7 +629,7 @@
     // Update main image
     const mainImage = document.getElementById('main-product-image');
     if (mainImage) {
-      mainImage.src = `../product_images/${imageName}`;
+      mainImage.src = `./product_images/${imageName}`;
     }
 
     // Update thumbnail borders

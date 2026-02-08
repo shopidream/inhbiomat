@@ -8,8 +8,8 @@
   async function loadData() {
     try {
       const [productsResponse, categoriesResponse] = await Promise.all([
-        fetch('../data/products-index.json'),
-        fetch('../data/categories.json')
+        fetch('./data/products-index.json'),
+        fetch('./data/categories.json')
       ]);
 
       productsData = await productsResponse.json();
@@ -23,7 +23,7 @@
       document.getElementById('product-grid').innerHTML = `
         <div style="grid-column: 1/-1; text-align: center; padding: 3rem; color: #e53e3e;">
           <p>Error loading products. Please ensure the data files are accessible.</p>
-          <p style="font-size: 0.875rem; margin-top: 1rem;">Looking for: ../data/products-index.json</p>
+          <p style="font-size: 0.875rem; margin-top: 1rem;">Looking for: ./data/products-index.json</p>
         </div>
       `;
     }
@@ -55,7 +55,7 @@
       <div class="product-card" onclick="window.location.href='./product-detail.html?id=${product.id}'">
         ${product.image ? `
           <div class="product-card-image">
-            <img src="../product_images/${product.image}" alt="${getLocalizedText(product.name)}" loading="lazy">
+            <img src="./product_images/${product.image}" alt="${getLocalizedText(product.name)}" loading="lazy">
           </div>
         ` : ''}
         <div class="product-card-header">
@@ -182,5 +182,5 @@ function toggleFilters() {
   const sidebar = document.getElementById('filters-sidebar');
   const icon = document.querySelector('.filter-icon');
   sidebar.classList.toggle('mobile-visible');
-  icon.textContent = sidebar.classList.contains('mobile-visible') ? '▲' : '▼';
+  icon.textContent = sidebar.classList.contains('mobile-visible') ? '?? : '??;
 }
