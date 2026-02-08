@@ -28,7 +28,7 @@
 
     try {
       // First, load the index to get the JSON filename
-      const indexResponse = await fetch('/data/products-index.json');
+      const indexResponse = await fetch('../data/products-index.json');
       const index = await indexResponse.json();
 
       const productInfo = index.products.find(p => p.id === productId);
@@ -38,7 +38,7 @@
       }
 
       // Load the specific product JSON
-      const productResponse = await fetch(`/data/products/${productInfo.jsonFile}`);
+      const productResponse = await fetch(`../data/products/${productInfo.jsonFile}`);
       productData = await productResponse.json();
 
       renderProduct();
@@ -56,7 +56,7 @@
         <h2>Error</h2>
         <p>${message}</p>
         <p style="margin-top: 1rem;">
-          <a href="/prototype/products.html" class="btn btn-primary">Back to Products</a>
+          <a href="./products.html" class="btn btn-primary">Back to Products</a>
         </p>
       </div>
     `;
@@ -97,7 +97,7 @@
           </div>
         </div>
         <div class="product-header-actions">
-          <a href="/prototype/quote.html?product=${productData.productId}" class="btn btn-primary" data-i18n="request_quote">Request Quote</a>
+          <a href="./quote.html?product=${productData.productId}" class="btn btn-primary" data-i18n="request_quote">Request Quote</a>
           <button class="btn btn-outline" onclick="window.print()" data-i18n="download_pdf">Download PDF</button>
         </div>
       </div>
@@ -137,7 +137,7 @@
             <!-- Main Image -->
             <div style="display: flex; justify-content: center; align-items: center; background-color: #f7fafc; border-radius: 8px; padding: 2rem; min-height: 400px;">
               <img id="main-product-image"
-                   src="/product_images/${productData.images[0]}"
+                   src="../product_images/${productData.images[0]}"
                    alt="${getLocalizedText(productData.productName)}"
                    style="max-width: 100%; max-height: 500px; object-fit: contain; border-radius: 4px;">
             </div>
@@ -150,7 +150,7 @@
                           id="thumb-${idx}"
                           class="image-thumbnail ${idx === 0 ? 'active' : ''}"
                           style="border: 2px solid ${idx === 0 ? '#3182ce' : '#e2e8f0'}; border-radius: 4px; padding: 4px; background-color: #fff; cursor: pointer; transition: all 0.2s;">
-                    <img src="/product_images/${img}"
+                    <img src="../product_images/${img}"
                          alt="View ${idx + 1}"
                          style="width: 80px; height: 80px; object-fit: cover; display: block; border-radius: 2px;">
                   </button>
@@ -539,7 +539,7 @@
                   <span class="badge badge-secondary">${rel.relationship}</span>
                 </td>
                 <td>
-                  <a href="/prototype/product-detail.html?id=${rel.id}" class="btn btn-secondary" style="padding: 0.25rem 0.75rem; font-size: 0.875rem;">
+                  <a href="./product-detail.html?id=${rel.id}" class="btn btn-secondary" style="padding: 0.25rem 0.75rem; font-size: 0.875rem;">
                     View Product
                   </a>
                 </td>
@@ -558,7 +558,7 @@
     // Load products list
     let productsHtml = '';
     try {
-      const response = await fetch('/data/products-index.json');
+      const response = await fetch('../data/products-index.json');
       const data = await response.json();
 
       // Group by category
@@ -576,7 +576,7 @@
             ${category}
           </div>
           ${categories[category].map(p => `
-            <a href="/prototype/product-detail.html?id=${p.id}"
+            <a href="./product-detail.html?id=${p.id}"
                style="display: block; padding: 0.375rem 0.5rem; font-size: 0.875rem; color: ${p.id === productData.productId ? 'var(--color-primary)' : 'var(--color-text-secondary)'}; text-decoration: none; border-left: 2px solid ${p.id === productData.productId ? 'var(--color-primary)' : 'transparent'}; padding-left: 0.5rem;"
                onmouseover="this.style.color='var(--color-primary)'"
                onmouseout="this.style.color='${p.id === productData.productId ? 'var(--color-primary)' : 'var(--color-text-secondary)'}'">
@@ -629,7 +629,7 @@
     // Update main image
     const mainImage = document.getElementById('main-product-image');
     if (mainImage) {
-      mainImage.src = `/product_images/${imageName}`;
+      mainImage.src = `../product_images/${imageName}`;
     }
 
     // Update thumbnail borders

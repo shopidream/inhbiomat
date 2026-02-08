@@ -7,7 +7,7 @@
   // Load translation file
   async function loadTranslations(lang) {
     try {
-      const response = await fetch(`/prototype/lang/${lang}.json`);
+      const response = await fetch(`./lang/${lang}.json`);
       if (!response.ok) {
         throw new Error(`Failed to load ${lang}.json`);
       }
