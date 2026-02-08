@@ -1,0 +1,195 @@
+{
+  "productId": "mcd",
+  "productName": {
+    "en": "MCD Apatitic Abrasive",
+    "ko": "MCD 아파타이트 연마제"
+  },
+  "shortName": "MCD",
+  "category": "MATRIX® System",
+  "subCategory": "Abrasive",
+  "processingMethod": "Multi-phase",
+  "formFactor": "Granular Powder",
+  "applications": [
+    {
+      "en": "Implant Surface Treatment",
+      "ko": "임플란트 표면 처리"
+    },
+    {
+      "en": "Titanium Grit Blasting",
+      "ko": "티타늄 그릿 블라스팅"
+    },
+    {
+      "en": "Titanium Alloy Grit Blasting",
+      "ko": "티타늄 합금 그릿 블라스팅"
+    },
+    {
+      "en": "Surface Texturing",
+      "ko": "표면 질감 처리"
+    },
+    {
+      "en": "MATRIX® Coating System",
+      "ko": "MATRIX® 코팅 시스템"
+    }
+  ],
+  "mktCode": "MKT-HM-2002",
+  "revision": "00",
+  "effectiveDate": "2022-04-25",
+  "pdfPages": [
+    2,
+    3,
+    4
+  ],
+  "overview": {
+    "summary": {
+      "en": "Our MCD Apatitic Abrasive is a granular, multi-phase calcium phosphate (principally composed of hydroxyapatite and tricalcium phosphate) that is specially made to be as hard as possible. When MCD is used to abrasive blast titanium and titanium alloy implants it creates a virtually residue free, textured surface after passivation per ASTM F86.",
+      "ko": "MCD 아파타이트 연마제는 가능한 한 단단하게 제조된 과립형 다상 칼슘 인산염(주로 하이드록시아파타이트와 삼칼슘 인산염으로 구성)입니다. MCD를 사용하여 티타늄 및 티타늄 합금 임플란트에 연마 블라스팅을 하면 ASTM F86에 따른 부동태화 후 사실상 잔류물이 없는 질감 표면을 생성합니다."
+    },
+    "manufacturing": {
+      "en": "MCD is a free-flowing granular abrasive and is available in a range of standard particle sizes up to 425 μm.",
+      "ko": "MCD는 자유 유동성 과립 연마재이며 최대 425 μm의 다양한 표준 입자 크기로 제공됩니다."
+    },
+    "keyFeatures": [
+      {
+        "en": "Multi-phase calcium phosphate",
+        "ko": "다상 칼슘 인산염"
+      },
+      {
+        "en": "Specially hardened for abrasive blasting",
+        "ko": "연마 블라스팅을 위해 특별히 경화"
+      },
+      {
+        "en": "Virtually residue-free surface",
+        "ko": "사실상 잔류물이 없는 표면"
+      },
+      {
+        "en": "Free-flowing granular",
+        "ko": "자유 유동 과립"
+      },
+      {
+        "en": "Part of MATRIX® line for titanium implant treatment",
+        "ko": "티타늄 임플란트 처리용 MATRIX® 라인의 일부"
+      },
+      {
+        "en": "ISO 13485:2016 certified",
+        "ko": "ISO 13485:2016 인증"
+      },
+      {
+        "en": "Manufactured in United States",
+        "ko": "미국 제조"
+      }
+    ],
+    "image": "mcd.png"
+  },
+  "properties": {
+    "physical": {
+      "appearance": "White, free flowing, granular abrasive powder with blue-green tint, and an irregular particle shape",
+      "roughness": {
+        "value": "≥ 3.05 μm Ra",
+        "substrate": "Ti-64",
+        "note": "Measured using MCD160 and Himed internal protocol WI-0010"
+      }
+    },
+    "chemical": {
+      "chemicalFormula": "Ca₁₀(PO₄)₆(OH)₂ and Ca₃(PO₄)₂",
+      "synonyms": [
+        "hydroxylapatite",
+        "calcium phosphate",
+        "tricalcium phosphate"
+      ],
+      "description": "Apatitic abrasive, biphasic calcium phosphate of hydroxyapatite (HA), and beta-tricalcium phosphate (b-TCP)",
+      "composition": {
+        "method": "ICP",
+        "components": [
+          {
+            "name": "Hydroxyapatite",
+            "formula": "Ca₁₀(PO₄)₆(OH)₂",
+            "percentage": "≥ 70%"
+          },
+          {
+            "name": "Alpha-tricalcium phosphate",
+            "formula": "Ca₃(PO₄)₂",
+            "percentage": null
+          },
+          {
+            "name": "Beta-tricalcium phosphate",
+            "formula": "Ca₃(PO₄)₂",
+            "percentage": "≤ 25%"
+          },
+          {
+            "name": "Tetracalcium phosphate",
+            "formula": "Ca₄P₂O₉",
+            "percentage": null
+          },
+          {
+            "name": "Other Ca-P phases",
+            "percentage": "≤ 5%"
+          }
+        ]
+      },
+      "traceElements": {
+        "standard": "ASTM F1185",
+        "elements": {
+          "arsenic": "< 3 ppm",
+          "cadmium": "< 5 ppm",
+          "mercury": "< 5 ppm",
+          "lead": "< 30 ppm",
+          "totalHeavyMetalsAsLead": "< 50 ppm"
+        }
+      }
+    }
+  },
+  "skus": [
+    {
+      "catalogNumber": "MCD180",
+      "sizeRange": "425-250 μm",
+      "acceptableRange": "≥ 85%"
+    },
+    {
+      "catalogNumber": "MCD160",
+      "sizeRange": "425-180 μm",
+      "acceptableRange": "≥ 90%"
+    },
+    {
+      "catalogNumber": "MCD140",
+      "sizeRange": "300-180 μm",
+      "acceptableRange": "≥ 80%"
+    },
+    {
+      "catalogNumber": "MCD120",
+      "sizeRange": "< 300 μm",
+      "acceptableRange": "≥ 95%"
+    },
+    {
+      "catalogNumber": "MCD100",
+      "sizeRange": "< 180 μm",
+      "acceptableRange": "≥ 95%"
+    },
+    {
+      "catalogNumber": "MCD20",
+      "sizeRange": "< 53 μm",
+      "acceptableRange": "≥ 95%"
+    }
+  ],
+  "relatedProducts": [],
+  "relatedProcesses": [
+    {
+      "en": "Biocompatible grit-blasting technique for refining surface Ti implant topography",
+      "ko": "표면 Ti 임플란트 형상 개선을 위한 생체적합성 그릿 블라스팅 기술"
+    },
+    {
+      "en": "Nuanced surface texturing of complex Ti implants optimized for osseointegration",
+      "ko": "골유착에 최적화된 복잡한 Ti 임플란트의 미묘한 표면 질감 처리"
+    }
+  ],
+  "notes": [
+    "Himed manufactures this product in its state-of-the-art New York facility under good manufacturing process (GMP)",
+    "Additional sizes are available upon request",
+    "Measured using MCD160 and Himed internal protocol WI-0010",
+    "Measured using Himed internal protocol WI-0009"
+  ],
+  "images": [
+    "mcd_1.png",
+    "mcd_2.png",
+    "mcd_4.png"
+  ]
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detail - ING Global | Himed Biomaterials</title>
+  <meta name="description" content="Detailed specifications and technical information for our calcium phosphate biomaterials. ISO 13485 certified materials for medical device manufacturing.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/prototype/assets/favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Product Detail - ING Global Biomaterials">
+  <meta property="og:description" content="Detailed specifications and technical information for calcium phosphate biomaterials.">
+  <meta property="og:image" content="/prototype/assets/logo.png">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Product Detail - ING Global Biomaterials">
+  <meta name="twitter:description" content="Detailed specifications and technical information for biomaterials.">
+  <meta name="twitter:image" content="/prototype/assets/logo.png">
+
+  <link rel="stylesheet" href="/prototype/css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <button class="hamburger-menu" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <a href="/prototype/index.html" class="logo">
+      <img src="/prototype/assets/logo.png" alt="ING Global" style="height: 52px; vertical-align: middle;">
+    </a>
+    <span class="tagline" data-i18n="tagline">Official Korean Distributor of Himed, LLC Biomaterials</span>
+    <nav class="desktop-nav">
+      <a href="/prototype/index.html" data-i18n="home">Home</a>
+      <a href="/prototype/products.html" class="active" data-i18n="products">Products</a>
+      <a href="/prototype/quote.html" data-i18n="request_quote">Request Quote</a>
+      <a href="/prototype/quote.html" data-i18n="support">Support</a>
+    </nav>
+    <div class="lang-selector desktop-lang">
+      <label for="language-select" data-i18n="language">Language</label>
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="ko">한국어</option>
+      </select>
+    </div>
+    <button class="mobile-lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language">
+      <span id="current-lang">EN</span>
+    </button>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu" onclick="toggleMobileMenu()"></div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="/prototype/index.html" data-i18n="home">Home</a>
+    <a href="/prototype/products.html" class="active" data-i18n="products">Products</a>
+    <a href="/prototype/quote.html" data-i18n="request_quote">Request Quote</a>
+    <a href="/prototype/quote.html" data-i18n="support">Support</a>
+    <div class="mobile-nav-lang">
+      <label data-i18n="language">Language</label>
+      <select id="mobile-language-select">
+        <option value="en">English</option>
+        <option value="ko">한국어</option>
+      </select>
+    </div>
+  </nav>
+
+  <div class="main-layout">
+    <!-- Mobile Product List Toggle -->
+    <button class="mobile-product-list-toggle" onclick="toggleProductList()" style="display: none;">
+      <span data-i18n="products">Products</span> <span class="product-list-icon">▼</span>
+    </button>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar-nav">
+      <div class="sidebar-section">
+        <h3>Quick Navigation</h3>
+        <div style="font-size: 0.875rem; color: #718096;">
+          Loading navigation...
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" id="breadcrumb">
+        <a href="/prototype/index.html" data-i18n="home">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="/prototype/products.html" data-i18n="products">Products</a>
+        <span class="breadcrumb-separator">/</span>
+        <span id="breadcrumb-product"><span data-i18n="loading">Loading...</span></span>
+      </nav>
+
+      <!-- Product Header -->
+      <div id="product-header" style="margin-bottom: 2rem;">
+        <div style="text-align: center; padding: 3rem; color: #718096;">
+          <span data-i18n="loading">Loading product details...</span>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <ul class="tab-list">
+          <li><button class="tab-button active" data-tab="overview" data-i18n="overview">Overview</button></li>
+          <li><button class="tab-button" data-tab="specifications" data-i18n="specifications">Specifications</button></li>
+          <li><button class="tab-button" data-tab="skus" data-i18n="product_sizes">Product Sizes</button></li>
+          <li><button class="tab-button" data-tab="related" data-i18n="related_products">Related Products</button></li>
+        </ul>
+      </div>
+
+      <!-- Tab Contents -->
+      <div id="overview" class="tab-content active">
+        <!-- Overview content will be loaded here -->
+      </div>
+
+      <div id="specifications" class="tab-content">
+        <!-- Specifications content will be loaded here -->
+      </div>
+
+      <div id="skus" class="tab-content">
+        <!-- SKUs content will be loaded here -->
+      </div>
+
+      <div id="related" class="tab-content">
+        <!-- Related products content will be loaded here -->
+      </div>
+    </main>
+  </div>
+
+  <script src="/prototype/js/i18n.js"></script>
+  <script>
+    // Mobile menu toggle
+    function toggleMobileMenu() {
+      const mobileNav = document.getElementById('mobile-nav');
+      const overlay = document.getElementById('mobile-menu');
+      const hamburger = document.querySelector('.hamburger-menu');
+
+      mobileNav.classList.toggle('active');
+      overlay.classList.toggle('active');
+      hamburger.classList.toggle('active');
+      document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+    }
+
+    // Mobile language toggle
+    function toggleLanguage() {
+      const currentLang = window.i18n ? window.i18n.getCurrentLanguage() : 'en';
+      const newLang = currentLang === 'en' ? 'ko' : 'en';
+      if (window.i18n) {
+        window.i18n.setLanguage(newLang);
+      }
+      document.getElementById('current-lang').textContent = newLang.toUpperCase();
+    }
+
+    // Mobile product list toggle
+    function toggleProductList() {
+      const sidebar = document.getElementById('sidebar-nav');
+      const icon = document.querySelector('.product-list-icon');
+      sidebar.classList.toggle('mobile-visible');
+      icon.textContent = sidebar.classList.contains('mobile-visible') ? '▲' : '▼';
+    }
+
+    // Sync language selectors
+    document.getElementById('language-select')?.addEventListener('change', function(e) {
+      const mobileLangSelect = document.getElementById('mobile-language-select');
+      if (mobileLangSelect) mobileLangSelect.value = e.target.value;
+      document.getElementById('current-lang').textContent = e.target.value.toUpperCase();
+    });
+
+    document.getElementById('mobile-language-select')?.addEventListener('change', function(e) {
+      const desktopLangSelect = document.getElementById('language-select');
+      if (desktopLangSelect) desktopLangSelect.value = e.target.value;
+      document.getElementById('current-lang').textContent = e.target.value.toUpperCase();
+    });
+  </script>
+  <script src="/prototype/js/product-detail.js"></script>
+</body>
+</html>

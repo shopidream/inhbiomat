@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Quote - ING Global | Calcium Phosphate Biomaterials</title>
+  <meta name="description" content="Request a quote for premium calcium phosphate biomaterials. Fast response within 1-2 business days. Custom formulations and bulk quantities available.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/prototype/assets/favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Request Quote - ING Global Biomaterials">
+  <meta property="og:description" content="Get a quote for premium calcium phosphate biomaterials. Fast response within 1-2 business days.">
+  <meta property="og:image" content="/prototype/assets/logo.png">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Request Quote - ING Global Biomaterials">
+  <meta name="twitter:description" content="Get a quote for premium calcium phosphate biomaterials.">
+  <meta name="twitter:image" content="/prototype/assets/logo.png">
+
+  <link rel="stylesheet" href="/prototype/css/style.css">
+  <style>
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--color-text-primary);
+      font-size: 0.9375rem;
+    }
+
+    .form-label .required {
+      color: #e53e3e;
+      margin-left: 0.25rem;
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
+      font-family: var(--font-family);
+      font-size: 0.9375rem;
+      transition: border-color 0.2s;
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(44, 82, 130, 0.1);
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-help {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      margin-top: 0.375rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .product-selection {
+      background-color: var(--color-bg-secondary);
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .product-selection .product-info {
+      flex: 1;
+    }
+
+    .product-selection .remove-btn {
+      background: none;
+      border: none;
+      color: #e53e3e;
+      cursor: pointer;
+      font-size: 1.25rem;
+      padding: 0.5rem;
+    }
+
+    .add-product-btn {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      background-color: var(--color-bg-tertiary);
+      border: 2px dashed var(--color-border-strong);
+      border-radius: 4px;
+      color: var(--color-text-secondary);
+      cursor: pointer;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .add-product-btn:hover {
+      border-color: var(--color-primary);
+      color: var(--color-primary);
+      background-color: rgba(44, 82, 130, 0.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <button class="hamburger-menu" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <a href="/prototype/index.html" class="logo">
+      <img src="/prototype/assets/logo.png" alt="ING Global" style="height: 52px; vertical-align: middle;">
+    </a>
+    <span class="tagline" data-i18n="tagline">Official Korean Distributor of Himed, LLC Biomaterials</span>
+    <nav class="desktop-nav">
+      <a href="/prototype/index.html" data-i18n="home">Home</a>
+      <a href="/prototype/products.html" data-i18n="products">Products</a>
+      <a href="/prototype/quote.html" class="active" data-i18n="request_quote">Request Quote</a>
+      <a href="/prototype/quote.html" data-i18n="support">Support</a>
+    </nav>
+    <div class="lang-selector desktop-lang">
+      <label for="language-select" data-i18n="language">Language</label>
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="ko">한국어</option>
+      </select>
+    </div>
+    <button class="mobile-lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language">
+      <span id="current-lang">EN</span>
+    </button>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu" onclick="toggleMobileMenu()"></div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="/prototype/index.html" data-i18n="home">Home</a>
+    <a href="/prototype/products.html" data-i18n="products">Products</a>
+    <a href="/prototype/quote.html" class="active" data-i18n="request_quote">Request Quote</a>
+    <a href="/prototype/quote.html" data-i18n="support">Support</a>
+    <div class="mobile-nav-lang">
+      <label data-i18n="language">Language</label>
+      <select id="mobile-language-select">
+        <option value="en">English</option>
+        <option value="ko">한국어</option>
+      </select>
+    </div>
+  </nav>
+
+  <div style="margin-top: var(--header-height);">
+    <main style="max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem;">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb">
+        <a href="/prototype/index.html" data-i18n="home">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span data-i18n="request_quote">Request Quote</span>
+      </nav>
+
+      <!-- Header -->
+      <div style="margin-bottom: 2rem;">
+        <h1 data-i18n="request_quote">Request a Quote</h1>
+        <p style="color: #4a5568;" data-i18n="quote_subtitle">
+          Fill out the form below and our team will respond with pricing and availability within 1-2 business days.
+        </p>
+      </div>
+
+      <!-- Quote Form -->
+      <form id="quote-form">
+        <!-- Company Information -->
+        <div class="card">
+          <h2 data-i18n="company_information">Company Information</h2>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">
+                <span data-i18n="company_name">Company Name</span> <span class="required" data-i18n="required">*</span>
+              </label>
+              <input type="text" class="form-input" name="companyName" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <span data-i18n="industry">Industry</span> <span class="required" data-i18n="required">*</span>
+              </label>
+              <select class="form-select" name="industry" required>
+                <option value="" data-i18n="select_industry">Select industry...</option>
+                <option value="orthopedic" data-i18n="orthopedic_implants">Orthopedic Implants</option>
+                <option value="dental" data-i18n="dental_implants">Dental Implants</option>
+                <option value="spinal" data-i18n="spinal_implants">Spinal Implants</option>
+                <option value="research" data-i18n="research_development">Research & Development</option>
+                <option value="manufacturing" data-i18n="medical_device">Medical Device Manufacturing</option>
+                <option value="other" data-i18n="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">
+              <span data-i18n="company_address">Company Address</span>
+            </label>
+            <input type="text" class="form-input" name="address">
+          </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="card">
+          <h2 data-i18n="contact_information">Contact Information</h2>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">
+                <span data-i18n="full_name">Full Name</span> <span class="required" data-i18n="required">*</span>
+              </label>
+              <input type="text" class="form-input" name="contactName" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <span data-i18n="title_position">Title/Position</span> <span class="required" data-i18n="required">*</span>
+              </label>
+              <input type="text" class="form-input" name="title" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">
+                <span data-i18n="email_address">Email Address</span> <span class="required" data-i18n="required">*</span>
+              </label>
+              <input type="email" class="form-input" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <span data-i18n="phone_number">Phone Number</span> <span class="required" data-i18n="required">*</span>
+              </label>
+              <input type="tel" class="form-input" name="phone" required>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Selection -->
+        <div class="card">
+          <h2 data-i18n="product_selection">Product Selection</h2>
+          <p style="margin-bottom: 1.5rem; color: #4a5568;" data-i18n="product_selection_desc">
+            Select the products you're interested in. You can add multiple products to your quote request.
+          </p>
+
+          <div id="product-selections">
+            <!-- Pre-selected product (if coming from product page) -->
+          </div>
+
+          <button type="button" class="add-product-btn" onclick="addProductSelection()" data-i18n="add_product">
+            + Add Product to Quote
+          </button>
+        </div>
+
+        <!-- Application Details -->
+        <div class="card">
+          <h2 data-i18n="application_details">Application Details</h2>
+
+          <div class="form-group">
+            <label class="form-label">
+              <span data-i18n="intended_application">Intended Application</span> <span class="required" data-i18n="required">*</span>
+            </label>
+            <select class="form-select" name="application" required>
+              <option value="" data-i18n="select_application">Select application...</option>
+              <option value="implant-coating" data-i18n="implant_coating">Implant Surface Coating</option>
+              <option value="bone-graft" data-i18n="bone_graft">Bone Graft Material</option>
+              <option value="bone-cement" data-i18n="bone_cement">Bone Cement</option>
+              <option value="scaffold" data-i18n="scaffold">Tissue Engineering Scaffold</option>
+              <option value="research" data-i18n="research">Laboratory Research</option>
+              <option value="composite" data-i18n="composite">Composite Material</option>
+              <option value="other" data-i18n="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">
+              <span data-i18n="project_description">Project Description</span>
+            </label>
+            <textarea class="form-textarea" name="projectDescription" data-i18n-placeholder="project_placeholder"></textarea>
+            <div class="form-help" data-i18n="project_help">
+              Include details about quantity requirements, timeline, regulatory considerations, etc.
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">
+                <span data-i18n="estimated_quantity">Estimated Quantity</span>
+              </label>
+              <input type="text" class="form-input" name="quantity" data-i18n-placeholder="quantity_placeholder">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <span data-i18n="target_delivery">Target Delivery Date</span>
+              </label>
+              <input type="date" class="form-input" name="deliveryDate">
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Information -->
+        <div class="card">
+          <h2 data-i18n="additional_information">Additional Information</h2>
+
+          <div class="form-group">
+            <label class="form-label">
+              <span data-i18n="additional_comments">Additional Comments or Questions</span>
+            </label>
+            <textarea class="form-textarea" name="comments" data-i18n-placeholder="comments_placeholder"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+              <input type="checkbox" name="requestSample" style="cursor: pointer;">
+              <span data-i18n="request_samples">I would like to request product samples</span>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+              <input type="checkbox" name="requestCertificates" style="cursor: pointer;">
+              <span data-i18n="request_certificates">I would like to request certificates of analysis</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div style="text-align: center; margin-top: 2rem;">
+          <button type="submit" class="btn btn-primary" style="padding: 1rem 3rem; font-size: 1rem;" data-i18n="submit_quote">
+            Submit Quote Request
+          </button>
+          <div class="form-help" style="margin-top: 1rem;" data-i18n="form_agreement">
+            By submitting this form, you agree to be contacted by ING Global regarding your quote request.
+          </div>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <script src="/prototype/js/i18n.js"></script>
+  <script>
+    // Mobile menu toggle
+    function toggleMobileMenu() {
+      const mobileNav = document.getElementById('mobile-nav');
+      const overlay = document.getElementById('mobile-menu');
+      const hamburger = document.querySelector('.hamburger-menu');
+
+      mobileNav.classList.toggle('active');
+      overlay.classList.toggle('active');
+      hamburger.classList.toggle('active');
+      document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+    }
+
+    // Mobile language toggle
+    function toggleLanguage() {
+      const currentLang = window.i18n ? window.i18n.getCurrentLanguage() : 'en';
+      const newLang = currentLang === 'en' ? 'ko' : 'en';
+      if (window.i18n) {
+        window.i18n.setLanguage(newLang);
+      }
+      document.getElementById('current-lang').textContent = newLang.toUpperCase();
+    }
+
+    // Sync language selectors
+    document.getElementById('language-select')?.addEventListener('change', function(e) {
+      const mobileLangSelect = document.getElementById('mobile-language-select');
+      if (mobileLangSelect) mobileLangSelect.value = e.target.value;
+      document.getElementById('current-lang').textContent = e.target.value.toUpperCase();
+    });
+
+    document.getElementById('mobile-language-select')?.addEventListener('change', function(e) {
+      const desktopLangSelect = document.getElementById('language-select');
+      if (desktopLangSelect) desktopLangSelect.value = e.target.value;
+      document.getElementById('current-lang').textContent = e.target.value.toUpperCase();
+    });
+  </script>
+  <script src="/prototype/js/quote.js"></script>
+</body>
+</html>

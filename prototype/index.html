@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ING Global | Premium Calcium Phosphate Biomaterials for Medical Devices</title>
+  <meta name="description" content="Official Korean distributor of Himed biomaterials. ISO 13485 certified calcium phosphate materials for orthopedic, dental, and spinal implants. Hydroxyapatite, TCP, and BCP powders manufactured in the USA.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/prototype/assets/favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ING Global | Premium Calcium Phosphate Biomaterials">
+  <meta property="og:description" content="Official Korean distributor of Himed biomaterials. ISO 13485 certified materials for medical implants and tissue engineering.">
+  <meta property="og:image" content="/prototype/assets/logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ingglobal.com">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ING Global | Premium Calcium Phosphate Biomaterials">
+  <meta name="twitter:description" content="Official Korean distributor of Himed biomaterials. ISO 13485 certified materials for medical implants.">
+  <meta name="twitter:image" content="/prototype/assets/logo.png">
+
+  <link rel="stylesheet" href="/prototype/css/style.css">
+  <style>
+    .hero {
+      background: linear-gradient(135deg, #2c5282 0%, #4a7fb5 100%);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      margin: -1.5rem -1.5rem 2rem -1.5rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .hero p {
+      font-size: 1.125rem;
+      margin-bottom: 2rem;
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .hero .btn {
+      margin: 0 0.5rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .feature-card {
+      background-color: white;
+      border: 1px solid var(--color-border);
+      padding: 1.5rem;
+      border-radius: 4px;
+    }
+
+    .feature-card h3 {
+      color: var(--color-primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .stat-card {
+      background-color: white;
+      border: 1px solid var(--color-border);
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 4px;
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .category-card {
+      background-color: white;
+      border: 1px solid var(--color-border);
+      padding: 1.5rem;
+      border-radius: 4px;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+
+    .category-card:hover {
+      border-color: var(--color-primary);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .category-card h3 {
+      color: var(--color-text-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .category-card .product-count {
+      color: var(--color-text-muted);
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .lang-selector {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-left: 1rem;
+    }
+
+    .lang-selector select {
+      padding: 0.375rem 0.75rem;
+      border: 1px solid var(--color-border);
+      border-radius: 4px;
+      font-size: 0.875rem;
+      cursor: pointer;
+      background-color: var(--color-bg-main);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <button class="hamburger-menu" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <a href="/prototype/index.html" class="logo">
+      <img src="/prototype/assets/logo.png" alt="ING Global" style="height: 52px; vertical-align: middle;">
+    </a>
+    <span class="tagline" data-i18n="tagline">Official Korean Distributor of Himed, LLC Biomaterials</span>
+    <nav class="desktop-nav">
+      <a href="/prototype/index.html" class="active" data-i18n="home">Home</a>
+      <a href="/prototype/products.html" data-i18n="products">Products</a>
+      <a href="/prototype/quote.html" data-i18n="request_quote">Request Quote</a>
+      <a href="/prototype/quote.html" data-i18n="support">Support</a>
+    </nav>
+    <div class="lang-selector desktop-lang">
+      <label for="language-select" data-i18n="language">Language</label>
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="ko">한국어</option>
+      </select>
+    </div>
+    <button class="mobile-lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language">
+      <span id="current-lang">EN</span>
+    </button>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu" onclick="toggleMobileMenu()"></div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="/prototype/index.html" class="active" data-i18n="home">Home</a>
+    <a href="/prototype/products.html" data-i18n="products">Products</a>
+    <a href="/prototype/quote.html" data-i18n="request_quote">Request Quote</a>
+    <a href="/prototype/quote.html" data-i18n="support">Support</a>
+    <div class="mobile-nav-lang">
+      <label data-i18n="language">Language</label>
+      <select id="mobile-language-select">
+        <option value="en">English</option>
+        <option value="ko">한국어</option>
+      </select>
+    </div>
+  </nav>
+
+  <div style="margin-top: var(--header-height);">
+    <main style="max-width: 1400px; margin: 0 auto; padding: 1.5rem;">
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1 data-i18n="hero_title">Advanced Calcium Phosphate Biomaterials</h1>
+        <p data-i18n-html="hero_subtitle">
+          Precision-engineered materials for orthopedic, dental, and spinal implants.<br>
+          ISO 13485:2016 certified. Manufactured in the United States.
+        </p>
+        <div>
+          <a href="/prototype/products.html" class="btn btn-primary" style="background-color: white; color: #2c5282; border-color: white;" data-i18n="browse_products">
+            Browse Products
+          </a>
+          <a href="/prototype/quote.html" class="btn btn-outline" style="color: white; border-color: white;" data-i18n="request_quote">
+            Request Quote
+          </a>
+        </div>
+      </section>
+
+      <!-- Stats -->
+      <section>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">15</div>
+            <div class="stat-label" data-i18n="product_families">Product Families</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">96</div>
+            <div class="stat-label" data-i18n="total_skus">Total SKUs</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">5</div>
+            <div class="stat-label" data-i18n="material_categories">Material Categories</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">ISO 13485</div>
+            <div class="stat-label" data-i18n="iso_certified">Certified</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories -->
+      <section style="margin-top: 3rem;">
+        <h2 style="margin-bottom: 1.5rem;" data-i18n="product_categories">Product Categories</h2>
+        <div class="features-grid">
+          <div class="category-card" onclick="window.location.href='/prototype/products.html'">
+            <h3>MATRIX® System</h3>
+            <div class="product-count">6 <span data-i18n="skus">SKUs</span></div>
+            <p style="color: #4a5568; font-size: 0.9375rem;">
+              Surface treatment and coating system for titanium implants. Includes MCD grit blasting and HA plasma spray coating.
+            </p>
+          </div>
+
+          <div class="category-card" onclick="window.location.href='/prototype/products.html'">
+            <h3>Hydroxyapatite (HA)</h3>
+            <div class="product-count">27 <span data-i18n="skus">SKUs</span></div>
+            <p style="color: #4a5568; font-size: 0.9375rem;">
+              Bone mineral-like calcium phosphate for grafts, cements, and coatings. Available in powder, disc, and whisker forms.
+            </p>
+          </div>
+
+          <div class="category-card" onclick="window.location.href='/prototype/products.html'">
+            <h3>Tricalcium Phosphate (TCP)</h3>
+            <div class="product-count">21 <span data-i18n="skus">SKUs</span></div>
+            <p style="color: #4a5568; font-size: 0.9375rem;">
+              Resorbable calcium phosphate for bone regeneration. Alpha and beta forms with varying solubility.
+            </p>
+          </div>
+
+          <div class="category-card" onclick="window.location.href='/prototype/products.html'">
+            <h3>Tetracalcium Phosphate</h3>
+            <div class="product-count">2 <span data-i18n="skus">SKUs</span></div>
+            <p style="color: #4a5568; font-size: 0.9375rem;">
+              High-solubility calcium phosphate for bone cements and tooth remineralization applications.
+            </p>
+          </div>
+
+          <div class="category-card" onclick="window.location.href='/prototype/products.html'">
+            <h3>Biphasic Calcium Phosphate</h3>
+            <div class="product-count">40 <span data-i18n="skus">SKUs</span></div>
+            <p style="color: #4a5568; font-size: 0.9375rem;">
+              Tunable HA/b-TCP mixtures for controlled resorption. Available in multiple ratios and particle sizes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products -->
+      <section style="margin-top: 3rem;">
+        <h2 style="margin-bottom: 1.5rem;" data-i18n="featured_products">Featured Products</h2>
+        <div id="featured-products-grid" class="product-grid">
+          <div style="grid-column: 1/-1; text-align: center; padding: 3rem; color: #718096;">
+            <span data-i18n="loading">Loading featured products...</span>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="/prototype/products.html" class="btn btn-outline" data-i18n="view_all_products">View All Products</a>
+        </div>
+      </section>
+
+      <!-- Key Features -->
+      <section style="margin-top: 3rem;">
+        <h2 style="margin-bottom: 1.5rem;" data-i18n="why_choose_himed">Why Choose Himed Biomaterials</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3 data-i18n="iso_certified_title">ISO 13485:2016 Certified</h3>
+            <p data-i18n="iso_certified_desc">
+              Manufactured in Himed's state-of-the-art New York facility under strict good manufacturing process (GMP).
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3 data-i18n="astm_compliant_title">ASTM Compliant</h3>
+            <p data-i18n="astm_compliant_desc">
+              All materials meet ASTM F1185 standards for trace element limits. Complete compositional analysis provided.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3 data-i18n="precision_title">Precision Engineering</h3>
+            <p data-i18n="precision_desc">
+              Controlled particle sizes, crystallinity, and composition ratios. SEM imaging and XRD analysis for each batch.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3 data-i18n="applications_title">Wide Range of Applications</h3>
+            <p data-i18n="applications_desc">
+              Orthopedic implants, dental implants, spinal implants, bone grafts, tissue engineering, and laboratory research.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3 data-i18n="support_title">Technical Support</h3>
+            <p data-i18n="support_desc">
+              Expert guidance on material selection, processing methods, and application-specific requirements.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3 data-i18n="custom_title">Custom Solutions</h3>
+            <p data-i18n="custom_desc">
+              Additional particle sizes and custom HA/b-TCP ratios available upon request. Tailored to your specifications.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section style="margin-top: 3rem;">
+        <div class="card" style="background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%); text-align: center; padding: 3rem;">
+          <h2 style="margin-bottom: 1rem;" data-i18n="ready_title">Ready to Get Started?</h2>
+          <p style="margin-bottom: 2rem; color: #4a5568; max-width: 600px; margin-left: auto; margin-right: auto;" data-i18n="ready_desc">
+            Browse our complete product catalog or request a quote for your specific application. Our team is ready to assist you.
+          </p>
+          <div>
+            <a href="/prototype/products.html" class="btn btn-primary" data-i18n="view_all_products">
+              View All Products
+            </a>
+            <a href="/prototype/quote.html" class="btn btn-outline" style="margin-left: 1rem;" data-i18n="request_quote">
+              Request Quote
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/prototype/js/i18n.js"></script>
+  <script>
+    // Mobile menu toggle
+    function toggleMobileMenu() {
+      const mobileNav = document.getElementById('mobile-nav');
+      const overlay = document.getElementById('mobile-menu');
+      const hamburger = document.querySelector('.hamburger-menu');
+
+      mobileNav.classList.toggle('active');
+      overlay.classList.toggle('active');
+      hamburger.classList.toggle('active');
+      document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+    }
+
+    // Mobile language toggle
+    function toggleLanguage() {
+      const currentLang = window.i18n ? window.i18n.getCurrentLanguage() : 'en';
+      const newLang = currentLang === 'en' ? 'ko' : 'en';
+      if (window.i18n) {
+        window.i18n.setLanguage(newLang);
+      }
+      document.getElementById('current-lang').textContent = newLang.toUpperCase();
+    }
+
+    // Sync language selectors
+    document.getElementById('language-select')?.addEventListener('change', function(e) {
+      const mobileLangSelect = document.getElementById('mobile-language-select');
+      if (mobileLangSelect) mobileLangSelect.value = e.target.value;
+      document.getElementById('current-lang').textContent = e.target.value.toUpperCase();
+    });
+
+    document.getElementById('mobile-language-select')?.addEventListener('change', function(e) {
+      const desktopLangSelect = document.getElementById('language-select');
+      if (desktopLangSelect) desktopLangSelect.value = e.target.value;
+      document.getElementById('current-lang').textContent = e.target.value.toUpperCase();
+    });
+
+    // Load and display featured products
+    (async function() {
+      try {
+        const response = await fetch('/data/products-index.json');
+        const data = await response.json();
+        const featuredProducts = data.products.filter(p => p.featured);
+
+        const grid = document.getElementById('featured-products-grid');
+
+        function getLocalizedText(value) {
+          if (!value) return '';
+          if (typeof value === 'string') return value;
+          const lang = window.i18n ? window.i18n.getCurrentLanguage() : 'en';
+          return value[lang] || value.en || value;
+        }
+
+        grid.innerHTML = featuredProducts.map(product => `
+          <div class="product-card" onclick="window.location.href='/prototype/products.html'">
+            ${product.image ? `
+              <div class="product-card-image">
+                <img src="/product_images/${product.image}" alt="${getLocalizedText(product.name)}" loading="lazy">
+              </div>
+            ` : ''}
+            <div class="product-card-header">
+              <span class="product-badge">Featured</span>
+              <h3>${getLocalizedText(product.name)}</h3>
+              <div class="product-short-name">${product.shortName}</div>
+            </div>
+            <div class="product-meta">
+              <div class="meta-item">
+                <div class="meta-label" data-i18n="category">Category</div>
+                <div class="meta-value">${product.category}</div>
+              </div>
+              <div class="meta-item">
+                <div class="meta-label" data-i18n="skus">SKUs</div>
+                <div class="meta-value">${product.skuCount}</div>
+              </div>
+            </div>
+            <div class="product-applications">
+              ${product.applications.slice(0, 2).map(app =>
+                `<span class="application-tag">${getLocalizedText(app)}</span>`
+              ).join('')}
+            </div>
+          </div>
+        `).join('');
+
+        if (window.i18n) window.i18n.applyTranslations();
+      } catch (error) {
+        console.error('Error loading featured products:', error);
+        document.getElementById('featured-products-grid').innerHTML = `
+          <div style="grid-column: 1/-1; text-align: center; padding: 2rem; color: #e53e3e;">
+            Failed to load featured products
+          </div>
+        `;
+      }
+    })();
+  </script>
+</body>
+</html>

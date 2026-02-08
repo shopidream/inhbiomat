@@ -1,0 +1,907 @@
+{
+  "pdf_source": "C:\\Users\\Juyong\\Inbiomat\\VIEW-Rev00-EXTERNAL-Specs-Tradeshow-Interactive-COMPRESSED.pdf",
+  "total_images_extracted": 92,
+  "products": {
+    "mcd": {
+      "productName": "MCD Apatitic Abrasive",
+      "pages": [
+        2,
+        3,
+        4
+      ],
+      "imageCount": 5,
+      "images": [
+        {
+          "filename": "mcd_1.png",
+          "page": 2,
+          "width": 1653,
+          "height": 1244,
+          "size": 2056332,
+          "original_format": "png"
+        },
+        {
+          "filename": "mcd_2.png",
+          "page": 3,
+          "width": 638,
+          "height": 712,
+          "size": 454256,
+          "original_format": "png"
+        },
+        {
+          "filename": "mcd_3.png",
+          "page": 3,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        },
+        {
+          "filename": "mcd_4.png",
+          "page": 4,
+          "width": 974,
+          "height": 309,
+          "size": 300966,
+          "original_format": "png"
+        },
+        {
+          "filename": "mcd_5.png",
+          "page": 4,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        }
+      ]
+    },
+    "mcha": {
+      "productName": "Hydroxyapatite (MC-Type)",
+      "pages": [
+        5,
+        6,
+        7
+      ],
+      "imageCount": 7,
+      "images": [
+        {
+          "filename": "mcha_1.png",
+          "page": 5,
+          "width": 1656,
+          "height": 1282,
+          "size": 2122992,
+          "original_format": "png"
+        },
+        {
+          "filename": "mcha_2.png",
+          "page": 5,
+          "width": 1656,
+          "height": 1222,
+          "size": 2023632,
+          "original_format": "png"
+        },
+        {
+          "filename": "mcha_3.png",
+          "page": 6,
+          "width": 638,
+          "height": 662,
+          "size": 422356,
+          "original_format": "png"
+        },
+        {
+          "filename": "mcha_4.png",
+          "page": 6,
+          "width": 567,
+          "height": 329,
+          "size": 186543,
+          "original_format": "png"
+        },
+        {
+          "filename": "mcha_5.png",
+          "page": 6,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        },
+        {
+          "filename": "mcha_6.png",
+          "page": 7,
+          "width": 974,
+          "height": 295,
+          "size": 287330,
+          "original_format": "png"
+        },
+        {
+          "filename": "mcha_7.png",
+          "page": 7,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        }
+      ]
+    },
+    "swha": {
+      "productName": "Hydroxyapatite (SW-Type)",
+      "pages": [
+        8,
+        9,
+        10
+      ],
+      "imageCount": 6,
+      "images": [
+        {
+          "filename": "swha_1.png",
+          "page": 8,
+          "width": 1656,
+          "height": 1243,
+          "size": 2058408,
+          "original_format": "png"
+        },
+        {
+          "filename": "swha_2.png",
+          "page": 9,
+          "width": 465,
+          "height": 483,
+          "size": 224595,
+          "original_format": "png"
+        },
+        {
+          "filename": "swha_3.png",
+          "page": 9,
+          "width": 571,
+          "height": 329,
+          "size": 187859,
+          "original_format": "png"
+        },
+        {
+          "filename": "swha_4.png",
+          "page": 9,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        },
+        {
+          "filename": "swha_5.png",
+          "page": 10,
+          "width": 974,
+          "height": 294,
+          "size": 286356,
+          "original_format": "png"
+        },
+        {
+          "filename": "swha_6.png",
+          "page": 10,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        }
+      ]
+    },
+    "uwha": {
+      "productName": "Hydroxyapatite Unsintered",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "imageCount": 6,
+      "images": [
+        {
+          "filename": "uwha_1.png",
+          "page": 11,
+          "width": 1655,
+          "height": 1244,
+          "size": 2058820,
+          "original_format": "png"
+        },
+        {
+          "filename": "uwha_2.png",
+          "page": 12,
+          "width": 446,
+          "height": 462,
+          "size": 206052,
+          "original_format": "png"
+        },
+        {
+          "filename": "uwha_3.png",
+          "page": 12,
+          "width": 535,
+          "height": 294,
+          "size": 157290,
+          "original_format": "png"
+        },
+        {
+          "filename": "uwha_4.png",
+          "page": 12,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        },
+        {
+          "filename": "uwha_5.png",
+          "page": 13,
+          "width": 974,
+          "height": 419,
+          "size": 408106,
+          "original_format": "png"
+        },
+        {
+          "filename": "uwha_6.png",
+          "page": 13,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        }
+      ]
+    },
+    "hawhisk-s": {
+      "productName": "Hydroxyapatite Whiskers",
+      "pages": [
+        14,
+        15,
+        16
+      ],
+      "imageCount": 7,
+      "images": [
+        {
+          "filename": "hawhisk-s_1.png",
+          "page": 14,
+          "width": 1656,
+          "height": 1141,
+          "size": 1889496,
+          "original_format": "png"
+        },
+        {
+          "filename": "hawhisk-s_2.png",
+          "page": 14,
+          "width": 1656,
+          "height": 1183,
+          "size": 1959048,
+          "original_format": "png"
+        },
+        {
+          "filename": "hawhisk-s_3.png",
+          "page": 15,
+          "width": 465,
+          "height": 410,
+          "size": 190650,
+          "original_format": "png"
+        },
+        {
+          "filename": "hawhisk-s_4.png",
+          "page": 15,
+          "width": 509,
+          "height": 287,
+          "size": 146083,
+          "original_format": "png"
+        },
+        {
+          "filename": "hawhisk-s_5.png",
+          "page": 15,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        },
+        {
+          "filename": "hawhisk-s_6.png",
+          "page": 16,
+          "width": 974,
+          "height": 443,
+          "size": 431482,
+          "original_format": "png"
+        },
+        {
+          "filename": "hawhisk-s_7.png",
+          "page": 16,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        }
+      ]
+    },
+    "cad": {
+      "productName": "Calcium Deficient HA Discs",
+      "pages": [
+        17,
+        18,
+        19
+      ],
+      "imageCount": 6,
+      "images": [
+        {
+          "filename": "cad_1.png",
+          "page": 17,
+          "width": 1655,
+          "height": 1280,
+          "size": 2118400,
+          "original_format": "png"
+        },
+        {
+          "filename": "cad_2.png",
+          "page": 18,
+          "width": 637,
+          "height": 662,
+          "size": 421694,
+          "original_format": "png"
+        },
+        {
+          "filename": "cad_3.png",
+          "page": 18,
+          "width": 950,
+          "height": 521,
+          "size": 494950,
+          "original_format": "png"
+        },
+        {
+          "filename": "cad_4.png",
+          "page": 18,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        },
+        {
+          "filename": "cad_5.png",
+          "page": 19,
+          "width": 974,
+          "height": 315,
+          "size": 306810,
+          "original_format": "png"
+        },
+        {
+          "filename": "cad_6.png",
+          "page": 19,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        }
+      ]
+    },
+    "had": {
+      "productName": "Dense HA Discs",
+      "pages": [
+        20,
+        21,
+        22
+      ],
+      "imageCount": 7,
+      "images": [
+        {
+          "filename": "had_1.png",
+          "page": 20,
+          "width": 1585,
+          "height": 1243,
+          "size": 1970155,
+          "original_format": "png"
+        },
+        {
+          "filename": "had_2.png",
+          "page": 20,
+          "width": 1496,
+          "height": 1243,
+          "size": 1859528,
+          "original_format": "png"
+        },
+        {
+          "filename": "had_3.png",
+          "page": 21,
+          "width": 452,
+          "height": 470,
+          "size": 212440,
+          "original_format": "png"
+        },
+        {
+          "filename": "had_4.png",
+          "page": 21,
+          "width": 946,
+          "height": 551,
+          "size": 521246,
+          "original_format": "png"
+        },
+        {
+          "filename": "had_5.png",
+          "page": 21,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        },
+        {
+          "filename": "had_6.png",
+          "page": 22,
+          "width": 974,
+          "height": 314,
+          "size": 305836,
+          "original_format": "png"
+        },
+        {
+          "filename": "had_7.png",
+          "page": 22,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        }
+      ]
+    },
+    "hadel": {
+      "productName": "Enamel-like HA Discs",
+      "pages": [
+        23,
+        24,
+        25
+      ],
+      "imageCount": 6,
+      "images": [
+        {
+          "filename": "hadel_1.png",
+          "page": 23,
+          "width": 1657,
+          "height": 1245,
+          "size": 2062965,
+          "original_format": "png"
+        },
+        {
+          "filename": "hadel_2.png",
+          "page": 24,
+          "width": 938,
+          "height": 539,
+          "size": 505582,
+          "original_format": "png"
+        },
+        {
+          "filename": "hadel_3.png",
+          "page": 24,
+          "width": 466,
+          "height": 484,
+          "size": 225544,
+          "original_format": "png"
+        },
+        {
+          "filename": "hadel_4.png",
+          "page": 24,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        },
+        {
+          "filename": "hadel_5.png",
+          "page": 25,
+          "width": 974,
+          "height": 314,
+          "size": 305836,
+          "original_format": "png"
+        },
+        {
+          "filename": "hadel_6.png",
+          "page": 25,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        }
+      ]
+    },
+    "atcp": {
+      "productName": "Alpha-tricalcium phosphate",
+      "pages": [
+        26,
+        27,
+        28
+      ],
+      "imageCount": 6,
+      "images": [
+        {
+          "filename": "atcp_1.png",
+          "page": 26,
+          "width": 1653,
+          "height": 1243,
+          "size": 2054679,
+          "original_format": "png"
+        },
+        {
+          "filename": "atcp_2.png",
+          "page": 27,
+          "width": 637,
+          "height": 663,
+          "size": 422331,
+          "original_format": "png"
+        },
+        {
+          "filename": "atcp_3.png",
+          "page": 27,
+          "width": 573,
+          "height": 339,
+          "size": 194247,
+          "original_format": "png"
+        },
+        {
+          "filename": "atcp_4.png",
+          "page": 27,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        },
+        {
+          "filename": "atcp_5.png",
+          "page": 28,
+          "width": 974,
+          "height": 420,
+          "size": 409080,
+          "original_format": "png"
+        },
+        {
+          "filename": "atcp_6.png",
+          "page": 28,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        }
+      ]
+    },
+    "ssbtcp": {
+      "productName": "Beta-TCP (Solid-State)",
+      "pages": [
+        29,
+        30,
+        31
+      ],
+      "imageCount": 7,
+      "images": [
+        {
+          "filename": "ssbtcp_1.png",
+          "page": 29,
+          "width": 1655,
+          "height": 1268,
+          "size": 2098540,
+          "original_format": "png"
+        },
+        {
+          "filename": "ssbtcp_2.png",
+          "page": 29,
+          "width": 1618,
+          "height": 1212,
+          "size": 1961016,
+          "original_format": "png"
+        },
+        {
+          "filename": "ssbtcp_3.png",
+          "page": 30,
+          "width": 638,
+          "height": 662,
+          "size": 422356,
+          "original_format": "png"
+        },
+        {
+          "filename": "ssbtcp_4.png",
+          "page": 30,
+          "width": 573,
+          "height": 330,
+          "size": 189090,
+          "original_format": "png"
+        },
+        {
+          "filename": "ssbtcp_5.png",
+          "page": 30,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        },
+        {
+          "filename": "ssbtcp_6.png",
+          "page": 31,
+          "width": 974,
+          "height": 294,
+          "size": 286356,
+          "original_format": "png"
+        },
+        {
+          "filename": "ssbtcp_7.png",
+          "page": 31,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        }
+      ]
+    },
+    "swbtcp": {
+      "productName": "Beta-TCP (Wet Chemical)",
+      "pages": [
+        32,
+        33,
+        34
+      ],
+      "imageCount": 6,
+      "images": [
+        {
+          "filename": "swbtcp_1.png",
+          "page": 32,
+          "width": 1304,
+          "height": 994,
+          "size": 1296176,
+          "original_format": "png"
+        },
+        {
+          "filename": "swbtcp_2.png",
+          "page": 33,
+          "width": 466,
+          "height": 483,
+          "size": 225078,
+          "original_format": "png"
+        },
+        {
+          "filename": "swbtcp_3.png",
+          "page": 33,
+          "width": 531,
+          "height": 297,
+          "size": 157707,
+          "original_format": "png"
+        },
+        {
+          "filename": "swbtcp_4.png",
+          "page": 33,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        },
+        {
+          "filename": "swbtcp_5.png",
+          "page": 34,
+          "width": 974,
+          "height": 294,
+          "size": 286356,
+          "original_format": "png"
+        },
+        {
+          "filename": "swbtcp_6.png",
+          "page": 34,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        }
+      ]
+    },
+    "utcp": {
+      "productName": "Tricalcium Phosphate Unsintered",
+      "pages": [
+        35,
+        36,
+        37
+      ],
+      "imageCount": 6,
+      "images": [
+        {
+          "filename": "utcp_1.png",
+          "page": 35,
+          "width": 1657,
+          "height": 1246,
+          "size": 2064622,
+          "original_format": "png"
+        },
+        {
+          "filename": "utcp_2.png",
+          "page": 36,
+          "width": 466,
+          "height": 484,
+          "size": 225544,
+          "original_format": "png"
+        },
+        {
+          "filename": "utcp_3.png",
+          "page": 36,
+          "width": 543,
+          "height": 300,
+          "size": 162900,
+          "original_format": "png"
+        },
+        {
+          "filename": "utcp_4.png",
+          "page": 36,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        },
+        {
+          "filename": "utcp_5.png",
+          "page": 37,
+          "width": 974,
+          "height": 356,
+          "size": 346744,
+          "original_format": "png"
+        },
+        {
+          "filename": "utcp_6.png",
+          "page": 37,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        }
+      ]
+    },
+    "ttcp": {
+      "productName": "Tetracalcium Phosphate",
+      "pages": [
+        38,
+        39,
+        40
+      ],
+      "imageCount": 6,
+      "images": [
+        {
+          "filename": "ttcp_1.png",
+          "page": 38,
+          "width": 1653,
+          "height": 1242,
+          "size": 2053026,
+          "original_format": "png"
+        },
+        {
+          "filename": "ttcp_2.png",
+          "page": 39,
+          "width": 637,
+          "height": 662,
+          "size": 421694,
+          "original_format": "png"
+        },
+        {
+          "filename": "ttcp_3.png",
+          "page": 39,
+          "width": 572,
+          "height": 314,
+          "size": 179608,
+          "original_format": "png"
+        },
+        {
+          "filename": "ttcp_4.png",
+          "page": 39,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        },
+        {
+          "filename": "ttcp_5.png",
+          "page": 40,
+          "width": 974,
+          "height": 440,
+          "size": 428560,
+          "original_format": "png"
+        },
+        {
+          "filename": "ttcp_6.png",
+          "page": 40,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        }
+      ]
+    },
+    "s1bcp": {
+      "productName": "Biphasic Calcium Phosphate Sintered",
+      "pages": [
+        41,
+        42,
+        43
+      ],
+      "imageCount": 6,
+      "images": [
+        {
+          "filename": "s1bcp_1.png",
+          "page": 41,
+          "width": 1653,
+          "height": 1240,
+          "size": 2049720,
+          "original_format": "png"
+        },
+        {
+          "filename": "s1bcp_2.png",
+          "page": 42,
+          "width": 465,
+          "height": 484,
+          "size": 225060,
+          "original_format": "png"
+        },
+        {
+          "filename": "s1bcp_3.png",
+          "page": 42,
+          "width": 572,
+          "height": 328,
+          "size": 187616,
+          "original_format": "png"
+        },
+        {
+          "filename": "s1bcp_4.png",
+          "page": 42,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        },
+        {
+          "filename": "s1bcp_5.png",
+          "page": 43,
+          "width": 702,
+          "height": 294,
+          "size": 206388,
+          "original_format": "png"
+        },
+        {
+          "filename": "s1bcp_6.png",
+          "page": 43,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        }
+      ]
+    },
+    "u1bcp": {
+      "productName": "Biphasic Calcium Phosphate Unsintered",
+      "pages": [
+        44,
+        45,
+        46
+      ],
+      "imageCount": 5,
+      "images": [
+        {
+          "filename": "u1bcp_1.png",
+          "page": 44,
+          "width": 1655,
+          "height": 1244,
+          "size": 2058820,
+          "original_format": "png"
+        },
+        {
+          "filename": "u1bcp_2.png",
+          "page": 45,
+          "width": 466,
+          "height": 484,
+          "size": 225544,
+          "original_format": "png"
+        },
+        {
+          "filename": "u1bcp_3.png",
+          "page": 45,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        },
+        {
+          "filename": "u1bcp_4.png",
+          "page": 46,
+          "width": 704,
+          "height": 294,
+          "size": 206976,
+          "original_format": "png"
+        },
+        {
+          "filename": "u1bcp_5.png",
+          "page": 46,
+          "width": 590,
+          "height": 238,
+          "size": 140420,
+          "original_format": "png"
+        }
+      ]
+    }
+  }
+}

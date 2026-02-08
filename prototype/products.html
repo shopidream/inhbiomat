@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - ING Global | Calcium Phosphate Biomaterials Catalog</title>
+  <meta name="description" content="Browse our complete catalog of calcium phosphate biomaterials. Hydroxyapatite, tricalcium phosphate, biphasic calcium phosphate powders and discs for medical device applications.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/prototype/assets/favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Product Catalog - ING Global Biomaterials">
+  <meta property="og:description" content="Complete catalog of ISO 13485 certified calcium phosphate materials for medical implants and tissue engineering.">
+  <meta property="og:image" content="/prototype/assets/logo.png">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Product Catalog - ING Global Biomaterials">
+  <meta name="twitter:description" content="Complete catalog of ISO 13485 certified calcium phosphate materials.">
+  <meta name="twitter:image" content="/prototype/assets/logo.png">
+
+  <link rel="stylesheet" href="/prototype/css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <button class="hamburger-menu" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <a href="/prototype/index.html" class="logo">
+      <img src="/prototype/assets/logo.png" alt="ING Global" style="height: 52px; vertical-align: middle;">
+    </a>
+    <span class="tagline" data-i18n="tagline">Official Korean Distributor of Himed, LLC Biomaterials</span>
+    <nav class="desktop-nav">
+      <a href="/prototype/index.html" data-i18n="home">Home</a>
+      <a href="/prototype/products.html" class="active" data-i18n="products">Products</a>
+      <a href="/prototype/quote.html" data-i18n="request_quote">Request Quote</a>
+      <a href="/prototype/quote.html" data-i18n="support">Support</a>
+    </nav>
+    <div class="lang-selector desktop-lang">
+      <label for="language-select" data-i18n="language">Language</label>
+      <select id="language-select">
+        <option value="en">English</option>
+        <option value="ko">한국어</option>
+      </select>
+    </div>
+    <button class="mobile-lang-toggle" onclick="toggleLanguage()" aria-label="Toggle language">
+      <span id="current-lang">EN</span>
+    </button>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu" onclick="toggleMobileMenu()"></div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="/prototype/index.html" data-i18n="home">Home</a>
+    <a href="/prototype/products.html" class="active" data-i18n="products">Products</a>
+    <a href="/prototype/quote.html" data-i18n="request_quote">Request Quote</a>
+    <a href="/prototype/quote.html" data-i18n="support">Support</a>
+    <div class="mobile-nav-lang">
+      <label data-i18n="language">Language</label>
+      <select id="mobile-language-select">
+        <option value="en">English</option>
+        <option value="ko">한국어</option>
+      </select>
+    </div>
+  </nav>
+
+  <div class="main-layout">
+    <!-- Mobile Filter Toggle -->
+    <button class="mobile-filter-toggle" onclick="toggleFilters()" style="display: none;">
+      <span data-i18n="filter_products">Filter Products</span> <span class="filter-icon">▼</span>
+    </button>
+
+    <!-- Sidebar Filters -->
+    <aside class="sidebar" id="filters-sidebar">
+      <div class="sidebar-section">
+        <h3 data-i18n="filter_products">Filter Products</h3>
+
+        <!-- Material Type Filter -->
+        <div class="filter-group">
+          <label class="filter-label" data-i18n="material_type">Material Type</label>
+          <div class="filter-options">
+            <label class="filter-option">
+              <input type="checkbox" name="category" value="all" checked>
+              <span data-i18n="all_products">All Products</span>
+              <span class="count" id="count-all">96</span>
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" name="category" value="matrix-system">
+              <span>MATRIX® System</span>
+              <span class="count">6</span>
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" name="category" value="hydroxyapatite">
+              <span>Hydroxyapatite (HA)</span>
+              <span class="count">27</span>
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" name="category" value="tricalcium-phosphate">
+              <span>Tricalcium Phosphate</span>
+              <span class="count">21</span>
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" name="category" value="tetracalcium-phosphate">
+              <span>Tetracalcium Phosphate</span>
+              <span class="count">2</span>
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" name="category" value="biphasic-calcium-phosphate">
+              <span>Biphasic Calcium Phosphate</span>
+              <span class="count">40</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Form Factor Filter -->
+        <div class="filter-group">
+          <label class="filter-label" data-i18n="form_factor">Form Factor</label>
+          <div class="filter-options">
+            <label class="filter-option">
+              <input type="checkbox" name="formFactor" value="powder">
+              <span data-i18n="powders">Powders</span>
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" name="formFactor" value="granular">
+              <span data-i18n="granules">Granules</span>
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" name="formFactor" value="disc">
+              <span data-i18n="discs">Discs</span>
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" name="formFactor" value="whiskers">
+              <span data-i18n="whiskers">Whiskers</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Processing Method Filter -->
+        <div class="filter-group">
+          <label class="filter-label" data-i18n="processing_method">Processing Method</label>
+          <div class="filter-options">
+            <label class="filter-option">
+              <input type="checkbox" name="processing" value="sintered">
+              <span data-i18n="sintered">Sintered</span>
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" name="processing" value="unsintered">
+              <span data-i18n="unsintered">Unsintered</span>
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" name="processing" value="solid-state">
+              <span data-i18n="solid_state">Solid-State</span>
+            </label>
+            <label class="filter-option">
+              <input type="checkbox" name="processing" value="precipitated">
+              <span data-i18n="precipitated">Precipitated</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Featured Filter -->
+        <div class="filter-group">
+          <label class="filter-option">
+            <input type="checkbox" name="featured" value="true">
+            <span data-i18n="featured_only">Featured Products Only</span>
+          </label>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb">
+        <a href="/prototype/index.html" data-i18n="home">Home</a>
+        <span class="breadcrumb-separator">/</span>
+        <span data-i18n="products">Products</span>
+      </nav>
+
+      <!-- Products Header -->
+      <div class="products-header">
+        <div>
+          <h1 data-i18n="product_catalog">Product Catalog</h1>
+          <p class="products-count">
+            <span id="products-count">15</span> <span data-i18n="product_families">product families</span> •
+            <span id="sku-count">96</span> <span data-i18n="skus">SKUs</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div id="product-grid" class="product-grid">
+        <!-- Products will be dynamically loaded here -->
+        <div style="grid-column: 1/-1; text-align: center; padding: 3rem; color: #718096;">
+          <span data-i18n="loading">Loading products...</span>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="/prototype/js/i18n.js"></script>
+  <script>
+    // Mobile menu toggle
+    function toggleMobileMenu() {
+      const mobileNav = document.getElementById('mobile-nav');
+      const overlay = document.getElementById('mobile-menu');
+      const hamburger = document.querySelector('.hamburger-menu');
+
+      mobileNav.classList.toggle('active');
+      overlay.classList.toggle('active');
+      hamburger.classList.toggle('active');
+      document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+    }
+
+    // Mobile language toggle
+    function toggleLanguage() {
+      const currentLang = window.i18n ? window.i18n.getCurrentLanguage() : 'en';
+      const newLang = currentLang === 'en' ? 'ko' : 'en';
+      if (window.i18n) {
+        window.i18n.setLanguage(newLang);
+      }
+      document.getElementById('current-lang').textContent = newLang.toUpperCase();
+    }
+
+    // Sync language selectors
+    document.getElementById('language-select')?.addEventListener('change', function(e) {
+      const mobileLangSelect = document.getElementById('mobile-language-select');
+      if (mobileLangSelect) mobileLangSelect.value = e.target.value;
+      document.getElementById('current-lang').textContent = e.target.value.toUpperCase();
+    });
+
+    document.getElementById('mobile-language-select')?.addEventListener('change', function(e) {
+      const desktopLangSelect = document.getElementById('language-select');
+      if (desktopLangSelect) desktopLangSelect.value = e.target.value;
+      document.getElementById('current-lang').textContent = e.target.value.toUpperCase();
+    });
+  </script>
+  <script src="/prototype/js/products.js"></script>
+</body>
+</html>

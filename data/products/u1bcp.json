@@ -1,0 +1,303 @@
+{
+  "productId": "u1bcp",
+  "productName": {
+    "en": "Biphasic calcium phosphate (BCP)",
+    "ko": "이상 칼슘 인산염 (BCP)"
+  },
+  "shortName": "U1BCP",
+  "category": "Biphasic Calcium Phosphate",
+  "subCategory": "BCP",
+  "processingMethod": "Unsintered",
+  "formFactor": "Powder",
+  "applications": [
+    {
+      "en": "Synthetic Bone Grafts",
+      "ko": "합성 골 이식재"
+    },
+    {
+      "en": "Tissue Engineering Scaffolds",
+      "ko": "조직 공학 스캐폴드"
+    },
+    {
+      "en": "Bone Resorption",
+      "ko": "뼈 흡수"
+    },
+    {
+      "en": "CaP-Polymer Composite Implants",
+      "ko": "CaP-폴리머 복합 임플란트"
+    },
+    {
+      "en": "Bone Screws",
+      "ko": "골 나사"
+    }
+  ],
+  "mktCode": "MKT-HM-0031",
+  "revision": "00",
+  "effectiveDate": "2022-04-25",
+  "pdfPages": [
+    44,
+    45,
+    46
+  ],
+  "overview": {
+    "summary": {
+      "en": "Biphasic calcium phosphate (BCP) is a mixture of hydroxyapatite (HA) and beta-tricalcium phosphate (b-TCP). It can be made in a variety of ratios, from 10% HA/90% b-TCP to 85% HA/15% b-TCP. Increasing the HA content increases the material's stability in the body. Similarly, increasing the b-TCP content, increases the bioactivity and resorption rate. BCP can be used in synthetic bone grafts and scaffolds for tissue engineering for bone resorption. It is also used in CaP-polymer composite implant materials and bone screws.",
+      "ko": "이상 칼슘 인산염(BCP)은 하이드록시아파타이트(HA)와 베타-삼칼슘 인산염(b-TCP)의 혼합물입니다. 10% HA/90% b-TCP에서 85% HA/15% b-TCP까지 다양한 비율로 제조할 수 있습니다. HA 함량을 높이면 체내에서 물질의 안정성이 증가합니다. 마찬가지로 b-TCP 함량을 높이면 생체 활성과 흡수율이 증가합니다. BCP는 뼈 흡수를 위한 조직 공학의 합성 골 이식재 및 스캐폴드에 사용할 수 있습니다. 또한 CaP-폴리머 복합 임플란트 재료 및 골 나사에도 사용됩니다."
+    },
+    "manufacturing": {
+      "en": "U1BCP is formed through a precipitation process. It is unsintered, but can be sintered to create a highly crystalline powder.",
+      "ko": "U1BCP는 침전 공정을 통해 형성됩니다. 미소결 상태이지만 고도로 결정화된 분말을 생성하기 위해 소결할 수 있습니다."
+    },
+    "keyFeatures": [
+      {
+        "en": "Precipitated and unsintered",
+        "ko": "침전 및 미소결"
+      },
+      {
+        "en": "Can be sintered for high crystallinity",
+        "ko": "높은 결정성을 위한 소결 가능"
+      },
+      {
+        "en": "Tunable HA/b-TCP ratios",
+        "ko": "조정 가능한 HA/b-TCP 비율"
+      },
+      {
+        "en": "HA ↑ = stability ↑",
+        "ko": "HA ↑ = 안정성 ↑"
+      },
+      {
+        "en": "b-TCP ↑ = bioactivity and resorption rate ↑",
+        "ko": "b-TCP ↑ = 생체 활성 및 흡수율 ↑"
+      },
+      {
+        "en": "Available ratios: 10-85% HA",
+        "ko": "사용 가능한 비율: 10-85% HA"
+      },
+      {
+        "en": "Low crystallinity at unsintered condition",
+        "ko": "미소결 상태에서 낮은 결정성"
+      },
+      {
+        "en": "High crystallinity after sintering at 1000-1150°C",
+        "ko": "1000-1150°C에서 소결 후 높은 결정성"
+      },
+      {
+        "en": "ISO 13485:2016 certified",
+        "ko": "ISO 13485:2016 인증"
+      },
+      {
+        "en": "Manufactured in United States",
+        "ko": "미국 제조"
+      }
+    ],
+    "image": "u1bcp.png"
+  },
+  "properties": {
+    "physical": {
+      "appearance": "Fine white powder, free from contamination at 10x microscopy"
+    },
+    "chemical": {
+      "chemicalFormula": "Ca₁₀(PO₄)₆(OH)₂ + Ca₃(PO₄)₂",
+      "synonyms": [
+        "HA/b-TCP",
+        "calcium phosphate"
+      ],
+      "description": "An unsintered bioceramics mixture of hydroxyapatite and beta-tricalcium phosphate",
+      "composition": {
+        "methods": [
+          "ICP"
+        ],
+        "condition": "after sintering (by XRD)",
+        "components": [
+          {
+            "name": "Hydroxyapatite",
+            "percentage": "± 3% stated composition"
+          },
+          {
+            "name": "Beta-tricalcium phosphate",
+            "percentage": "± 3% stated composition"
+          }
+        ],
+        "notes": [
+          "Low crystallinity calcium phosphate apatite at unsintered condition",
+          "High crystallinity after sintering at 1000-1150°C"
+        ]
+      },
+      "traceElements": {
+        "standard": "ASTM F1185",
+        "elements": {
+          "arsenic": "< 3 ppm",
+          "cadmium": "< 5 ppm",
+          "mercury": "< 5 ppm",
+          "lead": "< 30 ppm",
+          "totalHeavyMetalsAsLead": "< 50 ppm"
+        }
+      }
+    }
+  },
+  "compositions": [
+    {
+      "ratio": "85/15",
+      "ha": 85,
+      "bTcp": 15,
+      "skus": [
+        {
+          "catalogNumber": "U1BCP85/1535",
+          "sizeRange": "125-425 μm"
+        },
+        {
+          "catalogNumber": "U1BCP85/1503",
+          "sizeRange": "< 250 μm"
+        },
+        {
+          "catalogNumber": "U1BCP85/1520",
+          "sizeRange": "< 53 μm"
+        },
+        {
+          "catalogNumber": "U1BCP85/1513",
+          "sizeRange": "< 10 μm"
+        }
+      ]
+    },
+    {
+      "ratio": "65/35",
+      "ha": 65,
+      "bTcp": 35,
+      "skus": [
+        {
+          "catalogNumber": "U1BCP65/3535",
+          "sizeRange": "125-425 μm"
+        },
+        {
+          "catalogNumber": "U1BCP65/3503",
+          "sizeRange": "< 250 μm"
+        },
+        {
+          "catalogNumber": "U1BCP65/3520",
+          "sizeRange": "< 53 μm"
+        },
+        {
+          "catalogNumber": "U1BCP65/3513",
+          "sizeRange": "< 10 μm"
+        }
+      ]
+    },
+    {
+      "ratio": "55/45",
+      "ha": 55,
+      "bTcp": 45,
+      "skus": [
+        {
+          "catalogNumber": "U1BCP55/4535",
+          "sizeRange": "125-425 μm"
+        },
+        {
+          "catalogNumber": "U1BCP55/4503",
+          "sizeRange": "< 250 μm"
+        },
+        {
+          "catalogNumber": "U1BCP55/4520",
+          "sizeRange": "< 53 μm"
+        },
+        {
+          "catalogNumber": "U1BCP55/4513",
+          "sizeRange": "< 10 μm"
+        }
+      ]
+    },
+    {
+      "ratio": "25/75",
+      "ha": 25,
+      "bTcp": 75,
+      "skus": [
+        {
+          "catalogNumber": "U1BCP25/7535",
+          "sizeRange": "125-425 μm"
+        },
+        {
+          "catalogNumber": "U1BCP25/7503",
+          "sizeRange": "< 250 μm"
+        },
+        {
+          "catalogNumber": "U1BCP25/7520",
+          "sizeRange": "< 53 μm"
+        },
+        {
+          "catalogNumber": "U1BCP25/7513",
+          "sizeRange": "< 10 μm"
+        }
+      ]
+    },
+    {
+      "ratio": "15/85",
+      "ha": 15,
+      "bTcp": 85,
+      "skus": [
+        {
+          "catalogNumber": "U1BCP15/8535",
+          "sizeRange": "125-425 μm"
+        },
+        {
+          "catalogNumber": "U1BCP15/8503",
+          "sizeRange": "< 250 μm"
+        },
+        {
+          "catalogNumber": "U1BCP15/8520",
+          "sizeRange": "< 53 μm"
+        },
+        {
+          "catalogNumber": "U1BCP15/8513",
+          "sizeRange": "< 10 μm"
+        }
+      ]
+    }
+  ],
+  "relatedProducts": [
+    {
+      "id": "s1bcp",
+      "name": "Biphasic calcium phosphate, sintered",
+      "relationship": "alternative"
+    },
+    {
+      "id": "ssbtcp",
+      "name": "Beta-tricalcium phosphate, solid-state sintered",
+      "relationship": "component"
+    },
+    {
+      "id": "swbtcp",
+      "name": "Beta-tricalcium phosphate, precipitated + sintered",
+      "relationship": "component"
+    },
+    {
+      "id": "utcp",
+      "name": "Tricalcium phosphate, precipitated + unsintered",
+      "relationship": "component"
+    },
+    {
+      "id": "mcha",
+      "name": "Hydroxyapatite, solid-state sintered",
+      "relationship": "component"
+    },
+    {
+      "id": "swha",
+      "name": "Hydroxyapatite, precipitated + sintered",
+      "relationship": "component"
+    },
+    {
+      "id": "uwha",
+      "name": "Hydroxyapatite, precipitated + unsintered",
+      "relationship": "component"
+    }
+  ],
+  "relatedProcesses": [],
+  "notes": [
+    "Himed manufactures this product in its state-of-the-art New York facility under good manufacturing process (GMP)",
+    "Additional sizes are available upon request",
+    "Selected HA/b-TCP ratios are also available with HA from 10-85% upon request"
+  ],
+  "images": [
+    "u1bcp_1.png",
+    "u1bcp_2.png",
+    "u1bcp_4.png"
+  ]
+}

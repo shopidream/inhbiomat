@@ -1,0 +1,190 @@
+{
+  "productId": "had",
+  "productName": {
+    "en": "Dense Hydroxyapatite (HA) Discs",
+    "ko": "고밀도 하이드록시아파타이트 (HA) 디스크"
+  },
+  "shortName": "HAD",
+  "category": "Hydroxyapatite",
+  "subCategory": "Discs",
+  "processingMethod": "Sintered",
+  "formFactor": "Disc",
+  "applications": [
+    {
+      "en": "Laboratory Substrates",
+      "ko": "실험실 기질"
+    },
+    {
+      "en": "Cell Culture",
+      "ko": "세포 배양"
+    },
+    {
+      "en": "Bacteria Culture",
+      "ko": "세균 배양"
+    },
+    {
+      "en": "In Vitro Assays",
+      "ko": "시험관 내 분석"
+    },
+    {
+      "en": "Sputtering Targets",
+      "ko": "스퍼터링 타겟"
+    }
+  ],
+  "mktCode": "MKT-HM-0013",
+  "revision": "00",
+  "effectiveDate": "2022-04-25",
+  "pdfPages": [
+    20,
+    21,
+    22
+  ],
+  "overview": {
+    "summary": {
+      "en": "Himed makes hydroxyapatite (HA) discs in a variety of sizes for use as laboratory substrates. They are available in dense HA, calcium deficient HA and enamel-like HA.",
+      "ko": "Himed는 실험실 기질로 사용하기 위해 다양한 크기의 하이드록시아파타이트(HA) 디스크를 제조합니다. 고밀도 HA, 칼슘 결핍 HA 및 에나멜 유사 HA로 제공됩니다."
+    },
+    "manufacturing": {
+      "en": "Dense HA discs are sintered and have been used to grow cells and bacteria for in vitro assays. These discs may also be used as sputtering targets.",
+      "ko": "고밀도 HA 디스크는 소결되어 있으며 시험관 내 분석을 위해 세포와 세균을 배양하는 데 사용되었습니다. 이러한 디스크는 스퍼터링 타겟으로도 사용될 수 있습니다."
+    },
+    "keyFeatures": [
+      {
+        "en": "Sintered white solid discs",
+        "ko": "소결 백색 고체 디스크"
+      },
+      {
+        "en": "Suitable for cell and bacteria culture",
+        "ko": "세포 및 세균 배양에 적합"
+      },
+      {
+        "en": "Can be used as sputtering targets",
+        "ko": "스퍼터링 타겟으로 사용 가능"
+      },
+      {
+        "en": "Opaque appearance",
+        "ko": "불투명한 외관"
+      },
+      {
+        "en": "Softer than enamel-like discs",
+        "ko": "에나멜 유사 디스크보다 부드러움"
+      },
+      {
+        "en": "ISO 13485:2016 certified",
+        "ko": "ISO 13485:2016 인증"
+      },
+      {
+        "en": "Manufactured in United States",
+        "ko": "미국 제조"
+      }
+    ],
+    "image": "had.png",
+    "comparison": {
+      "bulkDensity": "2.8 g/cc",
+      "thermalTreatment": "sintered",
+      "appearance": "opaque, softer than enamel-like discs"
+    }
+  },
+  "properties": {
+    "physical": {
+      "appearance": "White solid discs",
+      "bulkDensity": "2.8 ± 0.2 g/cc",
+      "specificDensity": {
+        "value": "3.1 ± 0.1 g/cc",
+        "method": "gas pycnometry"
+      }
+    },
+    "chemical": {
+      "chemicalFormula": "Ca₁₀(PO₄)₆(OH)₂",
+      "synonyms": [
+        "hydroxylapatite",
+        "calcium phosphate",
+        "bone mineral"
+      ],
+      "composition": {
+        "method": "XRD",
+        "components": [
+          {
+            "name": "Hydroxyapatite",
+            "percentage": "≥ 95%"
+          },
+          {
+            "name": "Other Ca-P phases",
+            "percentage": "≤ 5%"
+          }
+        ]
+      }
+    }
+  },
+  "skus": [
+    {
+      "catalogNumber": "HAD70",
+      "diameter": "12.7 mm",
+      "thickness": "1.8 mm",
+      "tolerance": {
+        "diameter": "± 0.3 mm",
+        "thickness": "± 0.2 mm"
+      }
+    },
+    {
+      "catalogNumber": "HAD65",
+      "diameter": "9.5 mm",
+      "thickness": "1.8 mm",
+      "tolerance": {
+        "diameter": "± 0.3 mm",
+        "thickness": "± 0.2 mm"
+      }
+    },
+    {
+      "catalogNumber": "HAD50",
+      "diameter": "7.0 mm",
+      "thickness": "1.8 mm",
+      "tolerance": {
+        "diameter": "± 0.3 mm",
+        "thickness": "± 0.2 mm"
+      }
+    },
+    {
+      "catalogNumber": "HAD40",
+      "diameter": "5.0 mm",
+      "thickness": "1.8 mm",
+      "tolerance": {
+        "diameter": "± 0.3 mm",
+        "thickness": "± 0.2 mm"
+      }
+    },
+    {
+      "catalogNumber": "HAD15",
+      "diameter": "0.5 inch",
+      "thickness": "0.05 inch",
+      "tolerance": {
+        "diameter": "± 0.02 inch",
+        "thickness": "± 0.01 inch"
+      }
+    }
+  ],
+  "relatedProducts": [
+    {
+      "id": "cad",
+      "name": "Calcium deficient hydroxyapatite discs",
+      "relationship": "alternative"
+    },
+    {
+      "id": "hadel",
+      "name": "Enamel-like hydroxyapatite discs",
+      "relationship": "alternative"
+    }
+  ],
+  "relatedProcesses": [],
+  "notes": [
+    "Himed manufactures this product in its state-of-the-art New York facility under good manufacturing process (GMP)",
+    "Additional sizes are available upon request"
+  ],
+  "images": [
+    "had_1.png",
+    "had_2.png",
+    "had_3.png",
+    "had_4.png",
+    "had_6.png"
+  ]
+}

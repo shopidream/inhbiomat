@@ -1,0 +1,160 @@
+{
+  "productId": "ttcp",
+  "productName": {
+    "en": "Tetracalcium phosphate (TTCP)",
+    "ko": "사칼슘 인산염 (TTCP)"
+  },
+  "shortName": "TTCP",
+  "category": "Tetracalcium Phosphate",
+  "subCategory": "TTCP",
+  "processingMethod": "Sintered",
+  "formFactor": "Powder",
+  "applications": [
+    {
+      "en": "Bone Repair",
+      "ko": "뼈 복구"
+    },
+    {
+      "en": "Bone Cements",
+      "ko": "골 시멘트"
+    },
+    {
+      "en": "Tooth Remineralization",
+      "ko": "치아 재광화"
+    },
+    {
+      "en": "Chewing Gum Additive",
+      "ko": "껌 첨가제"
+    }
+  ],
+  "mktCode": "MKT-HM-0020",
+  "revision": "00",
+  "effectiveDate": "2022-04-25",
+  "pdfPages": [
+    38,
+    39,
+    40
+  ],
+  "overview": {
+    "summary": {
+      "en": "This calcium phosphate biomaterial is very soluble and reactive, more so than hydroxyapatite (HA) and beta-tricalcium phosphate (b-TCP), but less than amorphous calcium phosphate (ACP) and alpha-tricalcium phosphate (a-TCP). Tetracalcium phosphate (TTCP) has found use for bone repair as a component of bone cements. It has also been used in chewing gum to remineralize teeth.",
+      "ko": "이 칼슘 인산염 바이오 소재는 하이드록시아파타이트(HA) 및 베타-삼칼슘 인산염(b-TCP)보다 훨씬 더 용해성이 높고 반응성이 높지만, 비정질 칼슘 인산염(ACP) 및 알파-삼칼슘 인산염(a-TCP)보다는 낮습니다. 사칼슘 인산염(TTCP)은 골 시멘트의 구성 요소로서 뼈 복구에 사용되었습니다. 또한 치아를 재광화하기 위해 껌에 사용되었습니다."
+    },
+    "manufacturing": {
+      "en": "Sintered powder with a tint of blue or grey color",
+      "ko": "청색 또는 회색 기미의 소결 분말"
+    },
+    "keyFeatures": [
+      {
+        "en": "Very high solubility and reactivity",
+        "ko": "매우 높은 용해도 및 반응성"
+      },
+      {
+        "en": "Sintered powder",
+        "ko": "소결 분말"
+      },
+      {
+        "en": "Blue or grey tint",
+        "ko": "청색 또는 회색 기미"
+      },
+      {
+        "en": "Bone cement component",
+        "ko": "골 시멘트 구성 요소"
+      },
+      {
+        "en": "Tooth remineralization applications",
+        "ko": "치아 재광화 응용"
+      },
+      {
+        "en": "ISO 13485:2016 certified",
+        "ko": "ISO 13485:2016 인증"
+      },
+      {
+        "en": "Manufactured in United States",
+        "ko": "미국 제조"
+      }
+    ],
+    "image": "ttcp.png"
+  },
+  "properties": {
+    "physical": {
+      "appearance": "Sintered powder with a tint of blue or grey color",
+      "specificDensity": {
+        "value": "3.05 ± 0.10 g/cc",
+        "method": "gas pycnometry"
+      }
+    },
+    "chemical": {
+      "chemicalFormula": "Ca₄(PO₄)₂O",
+      "synonyms": [
+        "tetracalcium diphosphorus nonaoxide"
+      ],
+      "description": "A sintered powder with a tint of blue or grey color",
+      "composition": {
+        "methods": [
+          "ICP",
+          "XRD"
+        ],
+        "components": [
+          {
+            "name": "Tetracalcium phosphate",
+            "percentage": "≥ 95%"
+          },
+          {
+            "name": "Other Ca-P phases",
+            "percentage": "≤ 5%"
+          }
+        ]
+      },
+      "traceElements": {
+        "standard": "ASTM F1185",
+        "elements": {
+          "arsenic": "< 3 ppm",
+          "cadmium": "< 5 ppm",
+          "mercury": "< 5 ppm",
+          "lead": "< 30 ppm",
+          "totalHeavyMetalsAsLead": "< 50 ppm"
+        }
+      }
+    }
+  },
+  "skus": [
+    {
+      "catalogNumber": "TTCP20",
+      "sizeRange": "< 53 μm"
+    },
+    {
+      "catalogNumber": "TTCP13",
+      "sizeRange": "< 10 μm",
+      "processing": "jet milled"
+    }
+  ],
+  "relatedProducts": [
+    {
+      "id": "atcp",
+      "name": "Alpha-tricalcium phosphate",
+      "relationship": "alternative"
+    },
+    {
+      "id": "swbtcp",
+      "name": "Beta-tricalcium phosphate, precipitated + sintered",
+      "relationship": "alternative"
+    },
+    {
+      "id": "ssbtcp",
+      "name": "Beta-tricalcium phosphate, solid-state sintered",
+      "relationship": "alternative"
+    }
+  ],
+  "relatedProcesses": [],
+  "notes": [
+    "Himed manufactures this product in its state-of-the-art New York facility under good manufacturing process (GMP)",
+    "Additional sizes are available upon request"
+  ],
+  "images": [
+    "ttcp_1.png",
+    "ttcp_2.png",
+    "ttcp_3.png",
+    "ttcp_5.png"
+  ]
+}

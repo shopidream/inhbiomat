@@ -1,0 +1,267 @@
+{
+  "categories": {
+    "byMaterialType": [
+      {
+        "id": "matrix-system",
+        "name": "MATRIX® System",
+        "description": "Surface treatment and coating system for titanium implants",
+        "icon": "coating",
+        "productIds": ["mcd", "mcha"],
+        "featured": true
+      },
+      {
+        "id": "hydroxyapatite",
+        "name": "Hydroxyapatite (HA)",
+        "description": "Bone mineral-like calcium phosphate for grafts, cements, and coatings",
+        "icon": "molecule",
+        "productIds": ["mcha", "swha", "uwha", "hawhisk-s", "cad", "had", "hadel"],
+        "featured": true
+      },
+      {
+        "id": "tricalcium-phosphate",
+        "name": "Tricalcium Phosphate (TCP)",
+        "description": "Resorbable calcium phosphate for bone regeneration",
+        "icon": "molecule",
+        "productIds": ["atcp", "ssbtcp", "swbtcp", "utcp"],
+        "featured": true
+      },
+      {
+        "id": "tetracalcium-phosphate",
+        "name": "Tetracalcium Phosphate (TTCP)",
+        "description": "High-solubility calcium phosphate for cements and remineralization",
+        "icon": "molecule",
+        "productIds": ["ttcp"],
+        "featured": false
+      },
+      {
+        "id": "biphasic-calcium-phosphate",
+        "name": "Biphasic Calcium Phosphate (BCP)",
+        "description": "Tunable HA/b-TCP mixtures for controlled resorption",
+        "icon": "molecule",
+        "productIds": ["s1bcp", "u1bcp"],
+        "featured": true
+      }
+    ],
+    "byApplication": [
+      {
+        "id": "implant-surface-treatment",
+        "name": "Implant Surface Treatment",
+        "description": "Grit blasting and coating for titanium and titanium alloy implants",
+        "productIds": ["mcd", "mcha"]
+      },
+      {
+        "id": "bone-grafts-cements",
+        "name": "Bone Grafts & Cements",
+        "description": "Materials for bone repair and void filling",
+        "productIds": ["swha", "uwha", "atcp", "ssbtcp", "swbtcp", "utcp", "ttcp", "s1bcp", "u1bcp"]
+      },
+      {
+        "id": "tissue-engineering",
+        "name": "Tissue Engineering Scaffolds",
+        "description": "Resorbable scaffolds for bone regeneration",
+        "productIds": ["ssbtcp", "swbtcp", "utcp", "s1bcp", "u1bcp"]
+      },
+      {
+        "id": "plasma-spray-coating",
+        "name": "Plasma Spray Coatings",
+        "description": "Bioactive coatings for orthopedic and dental implants",
+        "productIds": ["mcha"]
+      },
+      {
+        "id": "laboratory-substrates",
+        "name": "Laboratory Substrates",
+        "description": "Discs for cell culture, bacteria culture, and in vitro testing",
+        "productIds": ["cad", "had", "hadel"]
+      },
+      {
+        "id": "composite-materials",
+        "name": "Composite Materials",
+        "description": "Reinforcing materials for CaP/polymer composites",
+        "productIds": ["hawhisk-s", "s1bcp", "u1bcp"]
+      }
+    ],
+    "byFormFactor": [
+      {
+        "id": "powders",
+        "name": "Powders",
+        "description": "Free-flowing powders in various particle sizes",
+        "productIds": ["mcd", "mcha", "swha", "uwha", "atcp", "ssbtcp", "swbtcp", "utcp", "ttcp", "s1bcp", "u1bcp"]
+      },
+      {
+        "id": "granules",
+        "name": "Granules",
+        "description": "Granular materials for bone grafts",
+        "productIds": ["swha", "ssbtcp", "swbtcp", "s1bcp"]
+      },
+      {
+        "id": "discs",
+        "name": "Discs",
+        "description": "Solid discs for laboratory use",
+        "productIds": ["cad", "had", "hadel"]
+      },
+      {
+        "id": "whiskers",
+        "name": "Whiskers",
+        "description": "Rod-shaped single crystals with high aspect ratio",
+        "productIds": ["hawhisk-s"]
+      }
+    ],
+    "byProcessingMethod": [
+      {
+        "id": "sintered",
+        "name": "Sintered",
+        "description": "High crystallinity materials processed at high temperature",
+        "productIds": ["mcha", "swha", "atcp", "ssbtcp", "swbtcp", "ttcp", "had", "hadel", "s1bcp"]
+      },
+      {
+        "id": "unsintered",
+        "name": "Unsintered",
+        "description": "Low crystallinity materials that can be sintered or shaped",
+        "productIds": ["uwha", "utcp", "cad", "u1bcp"]
+      },
+      {
+        "id": "solid-state",
+        "name": "Solid-State Process",
+        "description": "Materials produced through solid-state reactions",
+        "productIds": ["mcha", "ssbtcp"]
+      },
+      {
+        "id": "precipitated",
+        "name": "Precipitated Process",
+        "description": "Materials produced through wet chemical precipitation",
+        "productIds": ["swha", "uwha", "atcp", "swbtcp", "utcp", "s1bcp", "u1bcp"]
+      }
+    ]
+  },
+  "filters": {
+    "particleSizes": [
+      "< 5 μm",
+      "< 10 μm",
+      "< 20 μm",
+      "< 53 μm",
+      "< 180 μm",
+      "< 250 μm",
+      "< 300 μm",
+      "5-30 μm",
+      "20-63 μm",
+      "53-106 μm",
+      "53-124 μm",
+      "100-300 μm",
+      "125-425 μm",
+      "180-300 μm",
+      "250-500 μm",
+      "250-425 μm",
+      "425-180 μm",
+      "425-250 μm",
+      "500-1000 μm"
+    ],
+    "bcpRatios": [
+      {
+        "ratio": "85/15",
+        "ha": 85,
+        "bTcp": 15,
+        "label": "85% HA / 15% b-TCP"
+      },
+      {
+        "ratio": "65/35",
+        "ha": 65,
+        "bTcp": 35,
+        "label": "65% HA / 35% b-TCP"
+      },
+      {
+        "ratio": "60/40",
+        "ha": 60,
+        "bTcp": 40,
+        "label": "60% HA / 40% b-TCP"
+      },
+      {
+        "ratio": "55/45",
+        "ha": 55,
+        "bTcp": 45,
+        "label": "55% HA / 45% b-TCP"
+      },
+      {
+        "ratio": "50/50",
+        "ha": 50,
+        "bTcp": 50,
+        "label": "50% HA / 50% b-TCP"
+      },
+      {
+        "ratio": "40/60",
+        "ha": 40,
+        "bTcp": 60,
+        "label": "40% HA / 60% b-TCP"
+      },
+      {
+        "ratio": "30/70",
+        "ha": 30,
+        "bTcp": 70,
+        "label": "30% HA / 70% b-TCP"
+      },
+      {
+        "ratio": "25/75",
+        "ha": 25,
+        "bTcp": 75,
+        "label": "25% HA / 75% b-TCP"
+      },
+      {
+        "ratio": "20/80",
+        "ha": 20,
+        "bTcp": 80,
+        "label": "20% HA / 80% b-TCP"
+      },
+      {
+        "ratio": "15/85",
+        "ha": 15,
+        "bTcp": 85,
+        "label": "15% HA / 85% b-TCP"
+      }
+    ],
+    "discSizes": [
+      {
+        "diameter": "5.0 mm",
+        "thickness": "1.8-2.0 mm"
+      },
+      {
+        "diameter": "7.0 mm",
+        "thickness": "1.8 mm"
+      },
+      {
+        "diameter": "9.5 mm",
+        "thickness": "1.8 mm"
+      },
+      {
+        "diameter": "12.1 mm",
+        "thickness": "2.3 mm"
+      },
+      {
+        "diameter": "12.7 mm",
+        "thickness": "1.8 mm"
+      },
+      {
+        "diameter": "16.6 mm",
+        "thickness": "2.1 mm"
+      },
+      {
+        "diameter": "20.7 mm",
+        "thickness": "2.1 mm"
+      },
+      {
+        "diameter": "22.9 mm",
+        "thickness": "2.1 mm"
+      },
+      {
+        "diameter": "30.6 mm",
+        "thickness": "2.8 mm"
+      },
+      {
+        "diameter": "0.5 inch",
+        "thickness": "0.05 inch"
+      },
+      {
+        "diameter": "1.0 inch",
+        "thickness": "0.1 inch"
+      }
+    ]
+  }
+}

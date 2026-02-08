@@ -1,0 +1,161 @@
+{
+  "productId": "mcha",
+  "productName": {
+    "en": "Hydroxyapatite (MC-Type)",
+    "ko": "하이드록시아파타이트 (MC형)"
+  },
+  "shortName": "MCHA",
+  "category": "Hydroxyapatite",
+  "subCategory": "Powder",
+  "processingMethod": "Solid-State Sintered",
+  "formFactor": "Powder",
+  "applications": [
+    {
+      "en": "Plasma Spray Coating",
+      "ko": "플라즈마 스프레이 코팅"
+    },
+    {
+      "en": "Implant Coating",
+      "ko": "임플란트 코팅"
+    },
+    {
+      "en": "MATRIX® Coating System",
+      "ko": "MATRIX® 코팅 시스템"
+    }
+  ],
+  "mktCode": "MKT-HM-0018",
+  "revision": "00",
+  "effectiveDate": "2022-04-25",
+  "pdfPages": [
+    5,
+    6,
+    7
+  ],
+  "overview": {
+    "summary": {
+      "en": "Hydroxyapatite (HA) is similar to the mineral found in bone, and it is one of the biomaterials used for bone repair in synthetic bone grafts and bone cements. It has found use as a chromatography medium for separating certain kinds of proteins and other compounds. It can be made into a coating for enhancing the performance of ortho, dental, spinal and other implants.",
+      "ko": "하이드록시아파타이트(HA)는 뼈에서 발견되는 미네랄과 유사하며, 합성 골 이식재 및 골 시멘트에서 뼈 복구를 위해 사용되는 바이오 소재 중 하나입니다. 특정 종류의 단백질 및 기타 화합물을 분리하기 위한 크로마토그래피 매질로 사용되었습니다. 정형외과, 치과, 척추 및 기타 임플란트의 성능을 향상시키는 코팅으로 만들 수 있습니다."
+    },
+    "manufacturing": {
+      "en": "MC-type HA is produced by a solid state manufacturing process which creates a powder with irregular shaped granules. MC-type HA is specifically designed for plasma spray coating applications as part of Himed's MATRIX® coating system.",
+      "ko": "MC형 HA는 불규칙한 형태의 과립을 가진 분말을 생성하는 고체 상태 제조 공정으로 생산됩니다. MC형 HA는 Himed의 MATRIX® 코팅 시스템의 일부로 플라즈마 스프레이 코팅 응용 분야를 위해 특별히 설계되었습니다."
+    },
+    "keyFeatures": [
+      {
+        "en": "Solid-state sintered process",
+        "ko": "고체 상태 소결 공정"
+      },
+      {
+        "en": "Irregular shaped granules",
+        "ko": "불규칙한 형태의 과립"
+      },
+      {
+        "en": "Optimized for plasma spray coating",
+        "ko": "플라즈마 스프레이 코팅에 최적화"
+      },
+      {
+        "en": "Part of MATRIX® coating system",
+        "ko": "MATRIX® 코팅 시스템의 일부"
+      },
+      {
+        "en": "ISO 13485:2016 certified",
+        "ko": "ISO 13485:2016 인증"
+      },
+      {
+        "en": "Manufactured in United States",
+        "ko": "미국 제조"
+      }
+    ],
+    "image": "mcha.png"
+  },
+  "properties": {
+    "physical": {
+      "appearance": "White powder, granular",
+      "density": {
+        "value": "3.12 ± 0.08 g/cc",
+        "method": "gas pycnometry"
+      }
+    },
+    "chemical": {
+      "chemicalFormula": "Ca₁₀(PO₄)₆(OH)₂",
+      "synonyms": [
+        "hydroxylapatite",
+        "calcium phosphate",
+        "bone mineral"
+      ],
+      "composition": {
+        "method": "XRD",
+        "components": [
+          {
+            "name": "Hydroxyapatite",
+            "percentage": "≥ 96%"
+          },
+          {
+            "name": "Other Ca-P phases",
+            "percentage": "≤ 4%"
+          }
+        ]
+      },
+      "traceElements": {
+        "standard": "ASTM F1185",
+        "elements": {
+          "arsenic": "< 3 ppm",
+          "cadmium": "< 5 ppm",
+          "mercury": "< 5 ppm",
+          "lead": "< 30 ppm",
+          "totalHeavyMetalsAsLead": "< 50 ppm"
+        }
+      }
+    }
+  },
+  "skus": [
+    {
+      "catalogNumber": "MCHA15",
+      "sizeRange": "20-63 μm",
+      "method": "sieve analysis",
+      "acceptableRange": {
+        "lessThan20um": "15 to 25%",
+        "between20and63um": "≥ 70%",
+        "greaterThan63um": "≤ 5%"
+      }
+    },
+    {
+      "catalogNumber": "MCHA10",
+      "sizeRange": "< 20 μm",
+      "method": "laser diffraction",
+      "acceptableRange": {
+        "lessThan20um": "≥ 84%",
+        "greaterThan20um": "≤ 16%"
+      }
+    }
+  ],
+  "relatedProducts": [
+    {
+      "id": "uwha",
+      "name": "Hydroxyapatite, precipitated + unsintered",
+      "relationship": "alternative"
+    },
+    {
+      "id": "swha",
+      "name": "Hydroxyapatite, precipitated + sintered",
+      "relationship": "alternative"
+    }
+  ],
+  "relatedProcesses": [
+    {
+      "en": "Atmospheric plasma spray system that applies a dense coating of hydroxyapatite on virtually residue-free MCD grit-blasted medical implants",
+      "ko": "사실상 잔류물이 없는 MCD 그릿 블라스팅 의료 임플란트에 고밀도 하이드록시아파타이트 코팅을 적용하는 상압 플라즈마 스프레이 시스템"
+    }
+  ],
+  "notes": [
+    "Himed manufactures this product in its state-of-the-art New York facility under good manufacturing process (GMP)",
+    "Additional sizes are available upon request"
+  ],
+  "images": [
+    "mcha_1.png",
+    "mcha_2.png",
+    "mcha_3.png",
+    "mcha_4.png",
+    "mcha_6.png"
+  ]
+}

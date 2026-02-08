@@ -1,0 +1,268 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-02-07",
+    "totalProducts": 15,
+    "totalSkus": 96,
+    "source": "Himed VIEW-Rev00-EXTERNAL-Specs-Tradeshow-Interactive-COMPRESSED.pdf"
+  },
+  "products": [
+    {
+      "id": "mcd",
+      "name": "MCD Apatitic Abrasive",
+      "shortName": "MCD",
+      "category": "MATRIX® System",
+      "subCategory": "Abrasive",
+      "formFactor": "Granular Powder",
+      "processingMethod": "Multi-phase",
+      "skuCount": 6,
+      "featured": true,
+      "applications": [
+        "Implant Surface Treatment",
+        "Titanium Grit Blasting"
+      ],
+      "jsonFile": "mcd.json",
+      "image": "mcd_1.png"
+    },
+    {
+      "id": "mcha",
+      "name": "Hydroxyapatite (MC-Type)",
+      "shortName": "MCHA",
+      "category": "Hydroxyapatite",
+      "subCategory": "Powder",
+      "formFactor": "Powder",
+      "processingMethod": "Solid-State Sintered",
+      "skuCount": 2,
+      "featured": true,
+      "applications": [
+        "Plasma Spray Coating",
+        "Implant Coating"
+      ],
+      "jsonFile": "mcha.json",
+      "image": "mcha_1.png"
+    },
+    {
+      "id": "swha",
+      "name": "Hydroxyapatite (HA)",
+      "shortName": "SWHA",
+      "category": "Hydroxyapatite",
+      "subCategory": "Powder",
+      "formFactor": "Powder",
+      "processingMethod": "Precipitated + Sintered",
+      "skuCount": 6,
+      "featured": false,
+      "applications": [
+        "Bone Repair",
+        "Synthetic Bone Grafts",
+        "Bone Cements"
+      ],
+      "jsonFile": "swha.json",
+      "image": "swha_1.png"
+    },
+    {
+      "id": "uwha",
+      "name": "Hydroxyapatite (HA)",
+      "shortName": "UWHA",
+      "category": "Hydroxyapatite",
+      "subCategory": "Powder",
+      "formFactor": "Powder",
+      "processingMethod": "Precipitated + Unsintered",
+      "skuCount": 4,
+      "featured": false,
+      "applications": [
+        "Bone Repair",
+        "Porous Solids Manufacturing"
+      ],
+      "jsonFile": "uwha.json",
+      "image": "uwha_1.png"
+    },
+    {
+      "id": "hawhisk-s",
+      "name": "Hydroxyapatite (HA) Whiskers",
+      "shortName": "HAWHISK-S",
+      "category": "Hydroxyapatite",
+      "subCategory": "Whiskers",
+      "formFactor": "Whiskers",
+      "processingMethod": "Crystalline",
+      "skuCount": 1,
+      "featured": true,
+      "applications": [
+        "Composite Materials",
+        "Bone Repair"
+      ],
+      "jsonFile": "hawhisk-s.json",
+      "image": "hawhisk-s_1.png"
+    },
+    {
+      "id": "cad",
+      "name": "Calcium Deficient Hydroxyapatite (HA) Discs",
+      "shortName": "CAD",
+      "category": "Hydroxyapatite",
+      "subCategory": "Discs",
+      "formFactor": "Disc",
+      "processingMethod": "Unsintered",
+      "skuCount": 4,
+      "featured": false,
+      "applications": [
+        "Laboratory Substrates",
+        "Cell Culture"
+      ],
+      "jsonFile": "cad.json",
+      "image": "cad_1.png"
+    },
+    {
+      "id": "had",
+      "name": "Dense Hydroxyapatite (HA) Discs",
+      "shortName": "HAD",
+      "category": "Hydroxyapatite",
+      "subCategory": "Discs",
+      "formFactor": "Disc",
+      "processingMethod": "Sintered",
+      "skuCount": 5,
+      "featured": false,
+      "applications": [
+        "Laboratory Substrates",
+        "Cell Culture"
+      ],
+      "jsonFile": "had.json",
+      "image": "had_1.png"
+    },
+    {
+      "id": "hadel",
+      "name": "Enamel-like Hydroxyapatite (HA) Discs",
+      "shortName": "HADEL",
+      "category": "Hydroxyapatite",
+      "subCategory": "Discs",
+      "formFactor": "Disc",
+      "processingMethod": "Sintered",
+      "skuCount": 5,
+      "featured": false,
+      "applications": [
+        "Laboratory Substrates",
+        "Dental Research"
+      ],
+      "jsonFile": "hadel.json",
+      "image": "hadel_1.png"
+    },
+    {
+      "id": "atcp",
+      "name": "Alpha-tricalcium phosphate (α-TCP)",
+      "shortName": "ATCP",
+      "category": "Tricalcium Phosphate",
+      "subCategory": "Alpha-TCP",
+      "formFactor": "Powder",
+      "processingMethod": "Precipitated + Sintered",
+      "skuCount": 2,
+      "featured": false,
+      "applications": [
+        "Bone Repair",
+        "Bone Cements"
+      ],
+      "jsonFile": "atcp.json",
+      "image": "atcp_1.png"
+    },
+    {
+      "id": "ssbtcp",
+      "name": "Beta-tricalcium phosphate (β-TCP)",
+      "shortName": "SSBTCP",
+      "category": "Tricalcium Phosphate",
+      "subCategory": "Beta-TCP",
+      "formFactor": "Powder",
+      "processingMethod": "Solid-State Sintered",
+      "skuCount": 7,
+      "featured": false,
+      "applications": [
+        "Synthetic Bone Grafts",
+        "Tissue Engineering Scaffolds"
+      ],
+      "jsonFile": "ssbtcp.json",
+      "image": "ssbtcp_1.png"
+    },
+    {
+      "id": "swbtcp",
+      "name": "Beta-tricalcium phosphate (β-TCP)",
+      "shortName": "SWBTCP",
+      "category": "Tricalcium Phosphate",
+      "subCategory": "Beta-TCP",
+      "formFactor": "Powder",
+      "processingMethod": "Precipitated + Sintered",
+      "skuCount": 7,
+      "featured": false,
+      "applications": [
+        "Synthetic Bone Grafts",
+        "Tissue Engineering Scaffolds"
+      ],
+      "jsonFile": "swbtcp.json",
+      "image": "swbtcp_1.png"
+    },
+    {
+      "id": "utcp",
+      "name": "Tricalcium phosphate (TCP)",
+      "shortName": "UTCP",
+      "category": "Tricalcium Phosphate",
+      "subCategory": "TCP",
+      "formFactor": "Powder",
+      "processingMethod": "Precipitated + Unsintered",
+      "skuCount": 5,
+      "featured": false,
+      "applications": [
+        "Synthetic Bone Grafts",
+        "Custom Shapes and Structures"
+      ],
+      "jsonFile": "utcp.json",
+      "image": "utcp_1.png"
+    },
+    {
+      "id": "ttcp",
+      "name": "Tetracalcium phosphate (TTCP)",
+      "shortName": "TTCP",
+      "category": "Tetracalcium Phosphate",
+      "subCategory": "TTCP",
+      "formFactor": "Powder",
+      "processingMethod": "Sintered",
+      "skuCount": 2,
+      "featured": false,
+      "applications": [
+        "Bone Repair",
+        "Bone Cements",
+        "Tooth Remineralization"
+      ],
+      "jsonFile": "ttcp.json",
+      "image": "ttcp_1.png"
+    },
+    {
+      "id": "s1bcp",
+      "name": "Biphasic calcium phosphate (BCP)",
+      "shortName": "S1BCP",
+      "category": "Biphasic Calcium Phosphate",
+      "subCategory": "BCP",
+      "formFactor": "Powder",
+      "processingMethod": "Sintered",
+      "skuCount": 20,
+      "featured": true,
+      "applications": [
+        "Synthetic Bone Grafts",
+        "Tissue Engineering Scaffolds"
+      ],
+      "jsonFile": "s1bcp.json",
+      "image": "s1bcp_1.png"
+    },
+    {
+      "id": "u1bcp",
+      "name": "Biphasic calcium phosphate (BCP)",
+      "shortName": "U1BCP",
+      "category": "Biphasic Calcium Phosphate",
+      "subCategory": "BCP",
+      "formFactor": "Powder",
+      "processingMethod": "Unsintered",
+      "skuCount": 20,
+      "featured": true,
+      "applications": [
+        "Synthetic Bone Grafts",
+        "Tissue Engineering Scaffolds"
+      ],
+      "jsonFile": "u1bcp.json",
+      "image": "u1bcp_1.png"
+    }
+  ]
+}

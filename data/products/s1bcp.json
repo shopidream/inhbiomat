@@ -1,0 +1,297 @@
+{
+  "productId": "s1bcp",
+  "productName": {
+    "en": "Biphasic calcium phosphate (BCP)",
+    "ko": "이상 칼슘 인산염 (BCP)"
+  },
+  "shortName": "S1BCP",
+  "category": "Biphasic Calcium Phosphate",
+  "subCategory": "BCP",
+  "processingMethod": "Sintered",
+  "formFactor": "Powder",
+  "applications": [
+    {
+      "en": "Synthetic Bone Grafts",
+      "ko": "합성 골 이식재"
+    },
+    {
+      "en": "Tissue Engineering Scaffolds",
+      "ko": "조직 공학 스캐폴드"
+    },
+    {
+      "en": "Bone Resorption",
+      "ko": "뼈 흡수"
+    },
+    {
+      "en": "CaP-Polymer Composite Implants",
+      "ko": "CaP-폴리머 복합 임플란트"
+    },
+    {
+      "en": "Bone Screws",
+      "ko": "골 나사"
+    }
+  ],
+  "mktCode": "MKT-HM-0023",
+  "revision": "00",
+  "effectiveDate": "2022-04-25",
+  "pdfPages": [
+    41,
+    42,
+    43
+  ],
+  "overview": {
+    "summary": {
+      "en": "Biphasic calcium phosphate (BCP) is a mixture of hydroxyapatite (HA) and beta-tricalcium phosphate (b-TCP). It can be made in a variety of ratios, from 10% HA/90% b-TCP to 85% HA/15% b-TCP. Increasing the HA content increases the material's stability in the body. Similarly, increasing the b-TCP content, increases the bioactivity and resorption rate. BCP can be used in synthetic bone grafts and scaffolds for tissue engineering for bone resorption. It is also used in CaP-polymer composite implant materials and bone screws.",
+      "ko": "이상 칼슘 인산염(BCP)은 하이드록시아파타이트(HA)와 베타-삼칼슘 인산염(b-TCP)의 혼합물입니다. 10% HA/90% b-TCP에서 85% HA/15% b-TCP까지 다양한 비율로 제조할 수 있습니다. HA 함량을 높이면 체내에서 물질의 안정성이 증가합니다. 마찬가지로 b-TCP 함량을 높이면 생체 활성과 흡수율이 증가합니다. BCP는 뼈 흡수를 위한 조직 공학의 합성 골 이식재 및 스캐폴드에 사용할 수 있습니다. 또한 CaP-폴리머 복합 임플란트 재료 및 골 나사에도 사용됩니다."
+    },
+    "manufacturing": {
+      "en": "S1BCP is formed through a precipitation process. It is then sintered to create a highly crystalline powder.",
+      "ko": "S1BCP는 침전 공정을 통해 형성됩니다. 그런 다음 고도로 결정화된 분말을 생성하기 위해 소결됩니다."
+    },
+    "keyFeatures": [
+      {
+        "en": "Precipitated and sintered",
+        "ko": "침전 및 소결"
+      },
+      {
+        "en": "Highly crystalline",
+        "ko": "고도로 결정화"
+      },
+      {
+        "en": "Tunable HA/b-TCP ratios",
+        "ko": "조정 가능한 HA/b-TCP 비율"
+      },
+      {
+        "en": "HA ↑ = stability ↑",
+        "ko": "HA ↑ = 안정성 ↑"
+      },
+      {
+        "en": "b-TCP ↑ = bioactivity and resorption rate ↑",
+        "ko": "b-TCP ↑ = 생체 활성 및 흡수율 ↑"
+      },
+      {
+        "en": "Available ratios: 10-85% HA",
+        "ko": "사용 가능한 비율: 10-85% HA"
+      },
+      {
+        "en": "ISO 13485:2016 certified",
+        "ko": "ISO 13485:2016 인증"
+      },
+      {
+        "en": "Manufactured in United States",
+        "ko": "미국 제조"
+      }
+    ],
+    "image": "s1bcp.png"
+  },
+  "properties": {
+    "physical": {
+      "appearance": "fine white powder free from contamination at 10X microscopy",
+      "specificDensity": {
+        "value": "3.08 to 3.15 ± 0.10 g/cc",
+        "method": "gas pycnometry",
+        "note": "varies with composition"
+      }
+    },
+    "chemical": {
+      "chemicalFormula": "Ca₁₀(PO₄)₆(OH)₂ + Ca₃(PO₄)₂",
+      "synonyms": [
+        "HA/b-TCP",
+        "calcium phosphate"
+      ],
+      "description": "A sintered bioceramics mixture of hydroxyapatite and beta-tricalcium phosphate",
+      "composition": {
+        "methods": [
+          "ICP",
+          "XRD"
+        ],
+        "components": [
+          {
+            "name": "Hydroxyapatite",
+            "percentage": "± 3% stated composition"
+          },
+          {
+            "name": "Beta-tricalcium phosphate",
+            "percentage": "± 3% stated composition"
+          }
+        ]
+      },
+      "traceElements": {
+        "standard": "ASTM F1185",
+        "elements": {
+          "arsenic": "< 3 ppm",
+          "cadmium": "< 5 ppm",
+          "mercury": "< 5 ppm",
+          "lead": "< 30 ppm",
+          "totalHeavyMetalsAsLead": "< 50 ppm"
+        }
+      }
+    }
+  },
+  "compositions": [
+    {
+      "ratio": "60/40",
+      "ha": 60,
+      "bTcp": 40,
+      "skus": [
+        {
+          "catalogNumber": "S1BCP60/4035",
+          "sizeRange": "125-425 μm"
+        },
+        {
+          "catalogNumber": "S1BCP60/4003",
+          "sizeRange": "< 250 μm"
+        },
+        {
+          "catalogNumber": "S1BCP60/4020",
+          "sizeRange": "< 53 μm"
+        },
+        {
+          "catalogNumber": "S1BCP60/4013",
+          "sizeRange": "< 10 μm"
+        }
+      ]
+    },
+    {
+      "ratio": "50/50",
+      "ha": 50,
+      "bTcp": 50,
+      "skus": [
+        {
+          "catalogNumber": "S1BCP50/5035",
+          "sizeRange": "125-425 μm"
+        },
+        {
+          "catalogNumber": "S1BCP50/5003",
+          "sizeRange": "< 250 μm"
+        },
+        {
+          "catalogNumber": "S1BCP50/5020",
+          "sizeRange": "< 53 μm"
+        },
+        {
+          "catalogNumber": "S1BCP50/5013",
+          "sizeRange": "< 10 μm"
+        }
+      ]
+    },
+    {
+      "ratio": "40/60",
+      "ha": 40,
+      "bTcp": 60,
+      "skus": [
+        {
+          "catalogNumber": "S1BCP40/6035",
+          "sizeRange": "125-425 μm"
+        },
+        {
+          "catalogNumber": "S1BCP40/6003",
+          "sizeRange": "< 250 μm"
+        },
+        {
+          "catalogNumber": "S1BCP40/6020",
+          "sizeRange": "< 53 μm"
+        },
+        {
+          "catalogNumber": "S1BCP40/6013",
+          "sizeRange": "< 10 μm"
+        }
+      ]
+    },
+    {
+      "ratio": "30/70",
+      "ha": 30,
+      "bTcp": 70,
+      "skus": [
+        {
+          "catalogNumber": "S1BCP30/7035",
+          "sizeRange": "125-425 μm"
+        },
+        {
+          "catalogNumber": "S1BCP30/7003",
+          "sizeRange": "< 250 μm"
+        },
+        {
+          "catalogNumber": "S1BCP30/7020",
+          "sizeRange": "< 53 μm"
+        },
+        {
+          "catalogNumber": "S1BCP30/7013",
+          "sizeRange": "< 10 μm"
+        }
+      ]
+    },
+    {
+      "ratio": "20/80",
+      "ha": 20,
+      "bTcp": 80,
+      "skus": [
+        {
+          "catalogNumber": "S1BCP20/8035",
+          "sizeRange": "125-425 μm"
+        },
+        {
+          "catalogNumber": "S1BCP20/8003",
+          "sizeRange": "< 250 μm"
+        },
+        {
+          "catalogNumber": "S1BCP20/8020",
+          "sizeRange": "< 53 μm"
+        },
+        {
+          "catalogNumber": "S1BCP20/8013",
+          "sizeRange": "< 10 μm"
+        }
+      ]
+    }
+  ],
+  "relatedProducts": [
+    {
+      "id": "u1bcp",
+      "name": "Biphasic calcium phosphate, unsintered",
+      "relationship": "alternative"
+    },
+    {
+      "id": "ssbtcp",
+      "name": "Beta-tricalcium phosphate, solid-state sintered",
+      "relationship": "component"
+    },
+    {
+      "id": "swbtcp",
+      "name": "Beta-tricalcium phosphate, precipitated + sintered",
+      "relationship": "component"
+    },
+    {
+      "id": "utcp",
+      "name": "Tricalcium phosphate, precipitated + unsintered",
+      "relationship": "component"
+    },
+    {
+      "id": "mcha",
+      "name": "Hydroxyapatite, solid-state sintered",
+      "relationship": "component"
+    },
+    {
+      "id": "swha",
+      "name": "Hydroxyapatite, precipitated + sintered",
+      "relationship": "component"
+    },
+    {
+      "id": "uwha",
+      "name": "Hydroxyapatite, precipitated + unsintered",
+      "relationship": "component"
+    }
+  ],
+  "relatedProcesses": [],
+  "notes": [
+    "Himed manufactures this product in its state-of-the-art New York facility under good manufacturing process (GMP)",
+    "Additional sizes are available upon request",
+    "Selected HA/b-TCP ratios are also available with HA from 10-85% upon request"
+  ],
+  "images": [
+    "s1bcp_1.png",
+    "s1bcp_2.png",
+    "s1bcp_3.png",
+    "s1bcp_5.png"
+  ]
+}

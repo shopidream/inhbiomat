@@ -1,0 +1,167 @@
+{
+  "productId": "uwha",
+  "productName": {
+    "en": "Hydroxyapatite (HA)",
+    "ko": "하이드록시아파타이트 (HA)"
+  },
+  "shortName": "UWHA",
+  "category": "Hydroxyapatite",
+  "subCategory": "Powder",
+  "processingMethod": "Precipitated + Unsintered",
+  "formFactor": "Powder",
+  "applications": [
+    {
+      "en": "Bone Repair",
+      "ko": "뼈 복구"
+    },
+    {
+      "en": "Synthetic Bone Grafts",
+      "ko": "합성 골 이식재"
+    },
+    {
+      "en": "Bone Cements",
+      "ko": "골 시멘트"
+    },
+    {
+      "en": "Porous Solids Manufacturing",
+      "ko": "다공성 고체 제조"
+    },
+    {
+      "en": "Porous Granules Manufacturing",
+      "ko": "다공성 과립 제조"
+    }
+  ],
+  "mktCode": "MKT-HM-0015",
+  "revision": "00",
+  "effectiveDate": "2022-04-25",
+  "pdfPages": [
+    11,
+    12,
+    13
+  ],
+  "overview": {
+    "summary": {
+      "en": "Hydroxyapatite (HA) is similar to the mineral found in bone, and it is one of the biomaterials used for bone repair in synthetic bone grafts and bone cements.",
+      "ko": "하이드록시아파타이트(HA)는 뼈에서 발견되는 미네랄과 유사하며, 합성 골 이식재 및 골 시멘트에서 뼈 복구를 위해 사용되는 바이오 소재 중 하나입니다."
+    },
+    "manufacturing": {
+      "en": "Unsintered hydroxyapatite is a poorly crystalized calcium phosphate that becomes highly crystallized HA when sintered. It can be used to make strong porous solids and granules by adding a porogenic substance prior to sintering.",
+      "ko": "미소결 하이드록시아파타이트는 결정화가 낮은 칼슘 인산염으로, 소결 시 고도로 결정화된 HA가 됩니다. 소결 전에 기공 형성 물질을 추가하여 강력한 다공성 고체 및 과립을 만드는 데 사용할 수 있습니다."
+    },
+    "keyFeatures": [
+      {
+        "en": "Precipitated and unsintered",
+        "ko": "침전 및 미소결"
+      },
+      {
+        "en": "Low crystallinity at unsintered condition",
+        "ko": "미소결 상태에서 낮은 결정성"
+      },
+      {
+        "en": "High crystallinity after sintering at 1000-1150°C",
+        "ko": "1000-1150°C에서 소결 후 높은 결정성"
+      },
+      {
+        "en": "Suitable for porous structures",
+        "ko": "다공성 구조에 적합"
+      },
+      {
+        "en": "ISO 13485:2016 certified",
+        "ko": "ISO 13485:2016 인증"
+      },
+      {
+        "en": "Manufactured in United States",
+        "ko": "미국 제조"
+      }
+    ],
+    "image": "uwha.png"
+  },
+  "properties": {
+    "physical": {
+      "appearance": "White powder",
+      "density": {
+        "value": "3.1 ± 0.1 g/cc",
+        "method": "pycnometry",
+        "note": "after sintering"
+      }
+    },
+    "chemical": {
+      "chemicalFormula": "Ca₁₀(PO₄)₆(OH)₂",
+      "synonyms": [
+        "hydroxylapatite",
+        "calcium phosphate",
+        "bone mineral"
+      ],
+      "composition": {
+        "method": "XRD",
+        "condition": "after sintering",
+        "components": [
+          {
+            "name": "Hydroxyapatite",
+            "percentage": "≥ 98%"
+          },
+          {
+            "name": "Other Ca-P phases",
+            "percentage": "≤ 2%"
+          }
+        ],
+        "notes": [
+          "Low crystallinity calcium phosphate apatite at unsintered condition",
+          "High crystallinity after sintering at 1000-1150°C"
+        ]
+      },
+      "traceElements": {
+        "standard": "ASTM F1185",
+        "elements": {
+          "arsenic": "< 3 ppm",
+          "cadmium": "< 5 ppm",
+          "mercury": "< 5 ppm",
+          "lead": "< 30 ppm",
+          "totalHeavyMetalsAsLead": "< 50 ppm"
+        }
+      }
+    }
+  },
+  "skus": [
+    {
+      "catalogNumber": "UWHA50",
+      "sizeRange": "250-500 μm"
+    },
+    {
+      "catalogNumber": "UWHA30",
+      "sizeRange": "100-300 μm"
+    },
+    {
+      "catalogNumber": "UWHA20",
+      "sizeRange": "< 53 μm"
+    },
+    {
+      "catalogNumber": "UWHA13",
+      "sizeRange": "< 10 μm",
+      "processing": "jet milled"
+    }
+  ],
+  "relatedProducts": [
+    {
+      "id": "swha",
+      "name": "Hydroxyapatite, precipitated + sintered",
+      "relationship": "alternative"
+    },
+    {
+      "id": "mcha",
+      "name": "Hydroxyapatite, solid-state sintered",
+      "relationship": "alternative"
+    }
+  ],
+  "relatedProcesses": [],
+  "notes": [
+    "Himed manufactures this product in its state-of-the-art New York facility under good manufacturing process (GMP)",
+    "Additional sizes are available upon request"
+  ],
+  "images": [
+    "uwha_1.png",
+    "uwha_2.png",
+    "uwha_3.png",
+    "uwha_5.png"
+  ]
+}

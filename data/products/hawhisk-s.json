@@ -1,0 +1,170 @@
+{
+  "productId": "hawhisk-s",
+  "productName": {
+    "en": "Hydroxyapatite (HA) Whiskers",
+    "ko": "하이드록시아파타이트 (HA) 위스커"
+  },
+  "shortName": "HAWHISK-S",
+  "category": "Hydroxyapatite",
+  "subCategory": "Whiskers",
+  "processingMethod": "Crystalline",
+  "formFactor": "Whiskers",
+  "applications": [
+    {
+      "en": "Composite Materials",
+      "ko": "복합 재료"
+    },
+    {
+      "en": "Bone Repair",
+      "ko": "뼈 복구"
+    },
+    {
+      "en": "Synthetic Bone Grafts",
+      "ko": "합성 골 이식재"
+    },
+    {
+      "en": "Bone Void Fillers",
+      "ko": "골 공극 충전재"
+    },
+    {
+      "en": "Bone Cements",
+      "ko": "골 시멘트"
+    },
+    {
+      "en": "Orthopedic Applications",
+      "ko": "정형외과 응용"
+    }
+  ],
+  "mktCode": "MKT-HM-3005",
+  "revision": "00",
+  "effectiveDate": "2022-04-25",
+  "pdfPages": [
+    14,
+    15,
+    16
+  ],
+  "overview": {
+    "summary": {
+      "en": "Hydroxyapatite (HA) is a highly crystalline form of calcium phosphate that is similar to the mineral found in bone. It is commonly used for bone repair in synthetic bone grafts, bone void fillers and bone cements.",
+      "ko": "하이드록시아파타이트(HA)는 뼈에서 발견되는 미네랄과 유사한 고도로 결정화된 형태의 칼슘 인산염입니다. 합성 골 이식재, 골 공극 충전재 및 골 시멘트에서 뼈 복구에 일반적으로 사용됩니다."
+    },
+    "manufacturing": {
+      "en": "Himed has developed a process to manufacture pure hydroxyapatite rod-like particles with a high aspect ratio (length/diameter). These Hydroxyapatite Whiskers have the appearance of white powder, but under magnification they are actually transparent, as each whisker is a single crystal of hydroxyapatite.",
+      "ko": "Himed는 높은 종횡비(길이/직경)를 가진 순수 하이드록시아파타이트 막대 형태 입자를 제조하는 공정을 개발했습니다. 이러한 하이드록시아파타이트 위스커는 백색 분말처럼 보이지만, 각 위스커가 하이드록시아파타이트의 단결정이므로 확대하면 실제로 투명합니다."
+    },
+    "keyFeatures": [
+      {
+        "en": "Rod-shaped single crystals",
+        "ko": "막대 모양의 단결정"
+      },
+      {
+        "en": "High aspect ratio (3:1 to 10:1)",
+        "ko": "높은 종횡비 (3:1 ~ 10:1)"
+      },
+      {
+        "en": "Transparent under optical magnification",
+        "ko": "광학 확대 시 투명"
+      },
+      {
+        "en": "Unique morphology for composite materials",
+        "ko": "복합 재료를 위한 고유한 형태"
+      },
+      {
+        "en": "Adds strength and bioactivity",
+        "ko": "강도 및 생체 활성 추가"
+      },
+      {
+        "en": "ISO 13485:2016 certified",
+        "ko": "ISO 13485:2016 인증"
+      },
+      {
+        "en": "Manufactured in United States",
+        "ko": "미국 제조"
+      }
+    ],
+    "image": "hawhisk-s.png"
+  },
+  "properties": {
+    "physical": {
+      "appearance": "Rod-like particles",
+      "color": "Transparent under optical magnification",
+      "rodShapedPopulation": {
+        "value": "> 80% by area",
+        "method": "WI-0095"
+      },
+      "diameter": "≤ 10 μm",
+      "aspectRatio": "3/1 to 10/1",
+      "density": {
+        "value": "3.16 ± 0.10 g/cc",
+        "method": "gas pycnometry"
+      }
+    },
+    "chemical": {
+      "chemicalFormula": "Ca₁₀(PO₄)₆(OH)₂",
+      "synonyms": [
+        "hydroxylapatite",
+        "bone mineral",
+        "calcium phosphate"
+      ],
+      "composition": {
+        "method": "XRD",
+        "components": [
+          {
+            "name": "Hydroxyapatite",
+            "percentage": "≥ 95%"
+          },
+          {
+            "name": "Other Ca-P phases",
+            "percentage": "≤ 5%"
+          }
+        ]
+      },
+      "traceElements": {
+        "standard": "ASTM F1185",
+        "elements": {
+          "arsenic": "< 3 ppm",
+          "cadmium": "< 5 ppm",
+          "mercury": "< 5 ppm",
+          "lead": "< 30 ppm",
+          "totalHeavyMetalsAsLead": "< 50 ppm"
+        }
+      }
+    }
+  },
+  "skus": [
+    {
+      "catalogNumber": "HAWHISK-S",
+      "description": "Rod-shaped hydroxyapatite crystals",
+      "form": "Single crystal whiskers"
+    }
+  ],
+  "relatedProducts": [
+    {
+      "id": "mcha",
+      "name": "Hydroxyapatite, solid-state sintered",
+      "relationship": "alternative"
+    },
+    {
+      "id": "swha",
+      "name": "Hydroxyapatite, precipitated + sintered",
+      "relationship": "alternative"
+    },
+    {
+      "id": "uwha",
+      "name": "Hydroxyapatite, precipitated + unsintered",
+      "relationship": "alternative"
+    }
+  ],
+  "relatedProcesses": [],
+  "notes": [
+    "Determined using Himed internal protocol WI-0095",
+    "Himed manufactures this product in its state-of-the-art New York facility under good manufacturing process (GMP)"
+  ],
+  "images": [
+    "hawhisk-s_1.png",
+    "hawhisk-s_2.png",
+    "hawhisk-s_3.png",
+    "hawhisk-s_4.png",
+    "hawhisk-s_6.png"
+  ]
+}

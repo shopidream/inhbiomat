@@ -1,0 +1,153 @@
+{
+  "productId": "atcp",
+  "productName": {
+    "en": "Alpha-tricalcium phosphate (α-TCP)",
+    "ko": "알파-삼칼슘 인산염 (α-TCP)"
+  },
+  "shortName": "ATCP",
+  "category": "Tricalcium Phosphate",
+  "subCategory": "Alpha-TCP",
+  "processingMethod": "Precipitated + Sintered",
+  "formFactor": "Powder",
+  "applications": [
+    {
+      "en": "Bone Repair",
+      "ko": "뼈 복구"
+    },
+    {
+      "en": "Bone Cements",
+      "ko": "골 시멘트"
+    },
+    {
+      "en": "High Solubility Applications",
+      "ko": "고용해도 응용"
+    }
+  ],
+  "mktCode": "MKT-HM-0001",
+  "revision": "00",
+  "effectiveDate": "2022-04-25",
+  "pdfPages": [
+    26,
+    27,
+    28
+  ],
+  "overview": {
+    "summary": {
+      "en": "This calcium phosphate compound is more soluble and reactive than hydroxyapatite (HA) and beta-tricalcium phosphate (b-TCP), but less than amorphous calcium phosphate (ACP) and tetracalcium phosphate (TTCP). Alpha-tricalcium phosphate (a-TCP) has found use for bone repair as a component of bone cements.",
+      "ko": "이 칼슘 인산염 화합물은 하이드록시아파타이트(HA) 및 베타-삼칼슘 인산염(b-TCP)보다 더 용해성이 높고 반응성이 높지만, 비정질 칼슘 인산염(ACP) 및 사칼슘 인산염(TTCP)보다는 낮습니다. 알파-삼칼슘 인산염(a-TCP)은 골 시멘트의 구성 요소로서 뼈 복구에 사용되었습니다."
+    },
+    "manufacturing": {
+      "en": "Alpha-tricalcium phosphate is formed through a precipitation process and is sintered to create a highly crystalline powder.",
+      "ko": "알파-삼칼슘 인산염은 침전 공정을 통해 형성되며 고도로 결정화된 분말을 생성하기 위해 소결됩니다."
+    },
+    "keyFeatures": [
+      {
+        "en": "Higher solubility than HA and b-TCP",
+        "ko": "HA 및 b-TCP보다 높은 용해도"
+      },
+      {
+        "en": "Highly crystalline",
+        "ko": "고도로 결정화"
+      },
+      {
+        "en": "Precipitated and sintered",
+        "ko": "침전 및 소결"
+      },
+      {
+        "en": "White powder with tint grey",
+        "ko": "회색 기미의 백색 분말"
+      },
+      {
+        "en": "ISO 13485:2016 certified",
+        "ko": "ISO 13485:2016 인증"
+      },
+      {
+        "en": "Manufactured in United States",
+        "ko": "미국 제조"
+      }
+    ],
+    "image": "atcp.png"
+  },
+  "properties": {
+    "physical": {
+      "appearance": "White powder with tint grey",
+      "specificDensity": {
+        "value": "2.86 ± 0.10 g/cc",
+        "method": "gas pycnometry"
+      }
+    },
+    "chemical": {
+      "chemicalFormula": "Ca₃(PO₄)₂",
+      "synonyms": [
+        "a-TCP",
+        "α-TCP",
+        "tribasic calcium phosphate"
+      ],
+      "composition": {
+        "methods": [
+          "ICP",
+          "XRD"
+        ],
+        "components": [
+          {
+            "name": "Alpha-tricalcium phosphate",
+            "percentage": "≥ 95%"
+          },
+          {
+            "name": "Other Ca-P phases",
+            "percentage": "≤ 5%"
+          }
+        ]
+      },
+      "traceElements": {
+        "standard": "ASTM F1185",
+        "elements": {
+          "arsenic": "< 3 ppm",
+          "cadmium": "< 5 ppm",
+          "mercury": "< 5 ppm",
+          "lead": "< 30 ppm",
+          "totalHeavyMetalsAsLead": "< 50 ppm"
+        }
+      }
+    }
+  },
+  "skus": [
+    {
+      "catalogNumber": "ATCP20",
+      "sizeRange": "< 53 μm"
+    },
+    {
+      "catalogNumber": "ATCP13",
+      "sizeRange": "< 10 μm",
+      "processing": "jet milled"
+    }
+  ],
+  "relatedProducts": [
+    {
+      "id": "ssbtcp",
+      "name": "Beta-tricalcium phosphate, solid-state sintered",
+      "relationship": "alternative"
+    },
+    {
+      "id": "swbtcp",
+      "name": "Beta-tricalcium phosphate, precipitated + sintered",
+      "relationship": "alternative"
+    },
+    {
+      "id": "utcp",
+      "name": "Tricalcium phosphate, precipitated + unsintered",
+      "relationship": "alternative"
+    }
+  ],
+  "relatedProcesses": [],
+  "notes": [
+    "Himed manufactures this product in its state-of-the-art New York facility under good manufacturing process (GMP)",
+    "Additional sizes are available upon request"
+  ],
+  "images": [
+    "atcp_1.png",
+    "atcp_2.png",
+    "atcp_3.png",
+    "atcp_5.png"
+  ]
+}

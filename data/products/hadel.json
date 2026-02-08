@@ -1,0 +1,201 @@
+{
+  "productId": "hadel",
+  "productName": {
+    "en": "Enamel-like Hydroxyapatite (HA) Discs",
+    "ko": "에나멜 유사 하이드록시아파타이트 (HA) 디스크"
+  },
+  "shortName": "HADEL",
+  "category": "Hydroxyapatite",
+  "subCategory": "Discs",
+  "processingMethod": "Sintered",
+  "formFactor": "Disc",
+  "applications": [
+    {
+      "en": "Laboratory Substrates",
+      "ko": "실험실 기질"
+    },
+    {
+      "en": "Cell Culture",
+      "ko": "세포 배양"
+    },
+    {
+      "en": "Bacteria Culture",
+      "ko": "세균 배양"
+    },
+    {
+      "en": "Plaque Culture",
+      "ko": "플라그 배양"
+    },
+    {
+      "en": "In Vitro Assays",
+      "ko": "시험관 내 분석"
+    },
+    {
+      "en": "Anti-bacterial Agent Testing",
+      "ko": "항균제 테스트"
+    },
+    {
+      "en": "Antiplaque Agent Testing",
+      "ko": "항플라그제 테스트"
+    },
+    {
+      "en": "Whitening Agent Testing",
+      "ko": "미백제 테스트"
+    },
+    {
+      "en": "Toothpaste Testing",
+      "ko": "치약 테스트"
+    }
+  ],
+  "mktCode": "MKT-HM-0022",
+  "revision": "00",
+  "effectiveDate": "2022-04-25",
+  "pdfPages": [
+    23,
+    24,
+    25
+  ],
+  "overview": {
+    "summary": {
+      "en": "Himed makes hydroxyapatite (HA) discs in a variety of sizes for use as laboratory substrates. They are available in dense HA, calcium deficient HA and enamel-like HA.",
+      "ko": "Himed는 실험실 기질로 사용하기 위해 다양한 크기의 하이드록시아파타이트(HA) 디스크를 제조합니다. 고밀도 HA, 칼슘 결핍 HA 및 에나멜 유사 HA로 제공됩니다."
+    },
+    "manufacturing": {
+      "en": "Enamel-like HA discs are translucent and have a smooth surface that is similar to dental enamel and a bulk density close to the theoretical density of HA. They have been used to grow cells, bacteria, and plaque for in vitro assays, and to test anti-bacterial and antiplaque agents. They have also been stained to test whitening agents and toothpastes.",
+      "ko": "에나멜 유사 HA 디스크는 반투명하며 치아 에나멜과 유사한 매끄러운 표면과 HA의 이론적 밀도에 가까운 벌크 밀도를 가지고 있습니다. 시험관 내 분석을 위해 세포, 세균 및 플라그를 배양하고 항균제 및 항플라그제를 테스트하는 데 사용되었습니다. 미백제 및 치약을 테스트하기 위해 염색되기도 했습니다."
+    },
+    "keyFeatures": [
+      {
+        "en": "Translucent with smooth surface",
+        "ko": "매끄러운 표면의 반투명"
+      },
+      {
+        "en": "Similar to dental enamel",
+        "ko": "치아 에나멜과 유사"
+      },
+      {
+        "en": "Bulk density close to theoretical HA density",
+        "ko": "이론적 HA 밀도에 가까운 벌크 밀도"
+      },
+      {
+        "en": "Suitable for dental research",
+        "ko": "치과 연구에 적합"
+      },
+      {
+        "en": "Can be stained for testing",
+        "ko": "테스트를 위한 염색 가능"
+      },
+      {
+        "en": "ISO 13485:2016 certified",
+        "ko": "ISO 13485:2016 인증"
+      },
+      {
+        "en": "Manufactured in United States",
+        "ko": "미국 제조"
+      }
+    ],
+    "image": "hadel.png",
+    "comparison": {
+      "bulkDensity": "3.11 g/cc",
+      "thermalTreatment": "sintered",
+      "appearance": "translucent, smooth surface"
+    }
+  },
+  "properties": {
+    "physical": {
+      "appearance": "White translucent discs",
+      "bulkDensity": "3.11 ± 0.05 g/cc"
+    },
+    "chemical": {
+      "chemicalFormula": "Ca₁₀(PO₄)₆(OH)₂",
+      "synonyms": [
+        "hydroxylapatite",
+        "calcium phosphate",
+        "dental enamel"
+      ],
+      "composition": {
+        "method": "XRD",
+        "components": [
+          {
+            "name": "Hydroxyapatite",
+            "percentage": "≥ 95%"
+          },
+          {
+            "name": "Other Ca-P phases",
+            "percentage": "< 5%"
+          }
+        ]
+      }
+    }
+  },
+  "skus": [
+    {
+      "catalogNumber": "HADEL02",
+      "diameter": "12.1 mm",
+      "thickness": "2.3 mm",
+      "tolerance": {
+        "diameter": "± 0.5 mm",
+        "thickness": "± 0.3 mm"
+      }
+    },
+    {
+      "catalogNumber": "HADEL03",
+      "diameter": "20.7 mm",
+      "thickness": "2.1 mm",
+      "tolerance": {
+        "diameter": "± 0.7 mm",
+        "thickness": "± 0.4 mm"
+      }
+    },
+    {
+      "catalogNumber": "HADEL04",
+      "diameter": "16.6 mm",
+      "thickness": "2.1 mm",
+      "tolerance": {
+        "diameter": "± 0.5 mm",
+        "thickness": "± 0.3 mm"
+      }
+    },
+    {
+      "catalogNumber": "HADEL22",
+      "diameter": "22.9 mm",
+      "thickness": "2.1 mm",
+      "tolerance": {
+        "diameter": "± 0.7 mm",
+        "thickness": "± 0.5 mm"
+      }
+    },
+    {
+      "catalogNumber": "HADEL30",
+      "diameter": "30.6 mm",
+      "thickness": "2.8 mm",
+      "tolerance": {
+        "diameter": "± 1.0 mm",
+        "thickness": "± 0.5 mm"
+      }
+    }
+  ],
+  "relatedProducts": [
+    {
+      "id": "had",
+      "name": "Dense hydroxyapatite discs",
+      "relationship": "alternative"
+    },
+    {
+      "id": "cad",
+      "name": "Calcium deficient hydroxyapatite discs",
+      "relationship": "alternative"
+    }
+  ],
+  "relatedProcesses": [],
+  "notes": [
+    "Himed manufactures this product in its state-of-the-art New York facility under good manufacturing process (GMP)",
+    "Additional sizes are available upon request"
+  ],
+  "images": [
+    "hadel_1.png",
+    "hadel_2.png",
+    "hadel_3.png",
+    "hadel_5.png"
+  ]
+}

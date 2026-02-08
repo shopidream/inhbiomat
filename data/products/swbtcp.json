@@ -1,0 +1,193 @@
+{
+  "productId": "swbtcp",
+  "productName": {
+    "en": "Beta-tricalcium phosphate (β-TCP)",
+    "ko": "베타-삼칼슘 인산염 (β-TCP)"
+  },
+  "shortName": "SWBTCP",
+  "category": "Tricalcium Phosphate",
+  "subCategory": "Beta-TCP",
+  "processingMethod": "Precipitated + Sintered",
+  "formFactor": "Powder",
+  "applications": [
+    {
+      "en": "Synthetic Bone Grafts",
+      "ko": "합성 골 이식재"
+    },
+    {
+      "en": "Tissue Engineering Scaffolds",
+      "ko": "조직 공학 스캐폴드"
+    },
+    {
+      "en": "Bone Regeneration",
+      "ko": "뼈 재생"
+    },
+    {
+      "en": "CaP/Polymer Composite Implants",
+      "ko": "CaP/폴리머 복합 임플란트"
+    },
+    {
+      "en": "Bone Screws",
+      "ko": "골 나사"
+    }
+  ],
+  "mktCode": "MKT-HM-0011",
+  "revision": "00",
+  "effectiveDate": "2022-04-25",
+  "pdfPages": [
+    32,
+    33,
+    34
+  ],
+  "overview": {
+    "summary": {
+      "en": "This calcium phosphate compound is more soluble and reactive than hydroxyapatite (HA) but less than amorphous calcium phosphate (ACP) and tetracalcium phosphate (TTCP). Beta-TCP has found use in synthetic bone grafts and scaffolds for tissue engineering for bone regeneration. It is also used as components of CaP/polymer composite implants and bone screws.",
+      "ko": "이 칼슘 인산염 화합물은 하이드록시아파타이트(HA)보다 더 용해성이 높고 반응성이 높지만, 비정질 칼슘 인산염(ACP) 및 사칼슘 인산염(TTCP)보다는 낮습니다. 베타-TCP는 뼈 재생을 위한 조직 공학의 합성 골 이식재 및 스캐폴드에 사용되었습니다. 또한 CaP/폴리머 복합 임플란트 및 골 나사의 구성 요소로 사용됩니다."
+    },
+    "manufacturing": {
+      "en": "SWBTCP is formed through a precipitation process and is sintered to create a highly crystalline powder. Powders formed through precipitation are generally more active and can be used for a wider range of applications than those formed through solid-state processes.",
+      "ko": "SWBTCP는 침전 공정을 통해 형성되며 고도로 결정화된 분말을 생성하기 위해 소결됩니다. 침전을 통해 형성된 분말은 일반적으로 더 활성이며 고체 상태 공정을 통해 형성된 분말보다 더 넓은 범위의 응용 분야에 사용될 수 있습니다."
+    },
+    "keyFeatures": [
+      {
+        "en": "Precipitated and sintered process",
+        "ko": "침전 및 소결 공정"
+      },
+      {
+        "en": "Highly crystalline",
+        "ko": "고도로 결정화"
+      },
+      {
+        "en": "More active than solid-state process",
+        "ko": "고체 상태 공정보다 더 활성"
+      },
+      {
+        "en": "White granular powder",
+        "ko": "백색 과립 분말"
+      },
+      {
+        "en": "Wide range of applications",
+        "ko": "광범위한 응용 분야"
+      },
+      {
+        "en": "Wide range of particle sizes",
+        "ko": "다양한 입자 크기"
+      },
+      {
+        "en": "ISO 13485:2016 certified",
+        "ko": "ISO 13485:2016 인증"
+      },
+      {
+        "en": "Manufactured in United States",
+        "ko": "미국 제조"
+      }
+    ],
+    "image": "swbtcp.png"
+  },
+  "properties": {
+    "physical": {
+      "appearance": "White granular powder",
+      "specificDensity": {
+        "value": "3.08 ± 0.10 g/cc",
+        "method": "gas pycnometry"
+      }
+    },
+    "chemical": {
+      "chemicalFormula": "Ca₃(PO₄)₂",
+      "synonyms": [
+        "b-TCP",
+        "β-TCP",
+        "tribasic calcium phosphate"
+      ],
+      "description": "A white sintered powder/granular powder with irregular shape (from a precipitation process)",
+      "composition": {
+        "methods": [
+          "ICP",
+          "XRD"
+        ],
+        "components": [
+          {
+            "name": "Beta-tricalcium phosphate",
+            "percentage": "≥ 96%"
+          },
+          {
+            "name": "Other Ca-P phases",
+            "percentage": "≤ 4%"
+          }
+        ]
+      },
+      "traceElements": {
+        "standard": "ASTM F1185",
+        "elements": {
+          "arsenic": "< 3 ppm",
+          "cadmium": "< 5 ppm",
+          "mercury": "< 5 ppm",
+          "lead": "< 30 ppm",
+          "totalHeavyMetalsAsLead": "< 50 ppm"
+        }
+      }
+    }
+  },
+  "skus": [
+    {
+      "catalogNumber": "SWBTCP60",
+      "sizeRange": "500-1000 μm",
+      "acceptableRange": "≥ 80% within range by sieve analysis"
+    },
+    {
+      "catalogNumber": "SWBTCP50",
+      "sizeRange": "250-500 μm",
+      "acceptableRange": "≥ 80% within range by sieve analysis"
+    },
+    {
+      "catalogNumber": "SWBTCP30",
+      "sizeRange": "100-300 μm",
+      "acceptableRange": "≥ 80% within range by sieve analysis"
+    },
+    {
+      "catalogNumber": "SWBTCP25",
+      "sizeRange": "53-124 μm",
+      "acceptableRange": "≥ 80% within range by sieve analysis"
+    },
+    {
+      "catalogNumber": "SWBTCP20",
+      "sizeRange": "< 53 μm",
+      "acceptableRange": "D90 by laser particle size analysis"
+    },
+    {
+      "catalogNumber": "SWBTCP13",
+      "sizeRange": "< 10 μm",
+      "processing": "jet milled",
+      "acceptableRange": "D90 by laser particle size analysis"
+    },
+    {
+      "catalogNumber": "SWBTCP14",
+      "sizeRange": "< 5 μm",
+      "processing": "jet milled",
+      "acceptableRange": "D90 by laser particle size analysis"
+    }
+  ],
+  "relatedProducts": [
+    {
+      "id": "ssbtcp",
+      "name": "Beta-tricalcium phosphate, solid-state sintered",
+      "relationship": "alternative"
+    },
+    {
+      "id": "utcp",
+      "name": "Tricalcium phosphate, precipitated + unsintered",
+      "relationship": "alternative"
+    }
+  ],
+  "relatedProcesses": [],
+  "notes": [
+    "Himed manufactures this product in its state-of-the-art New York facility under good manufacturing process (GMP)",
+    "Additional sizes are available upon request"
+  ],
+  "images": [
+    "swbtcp_1.png",
+    "swbtcp_2.png",
+    "swbtcp_3.png",
+    "swbtcp_5.png"
+  ]
+}
