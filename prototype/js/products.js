@@ -1,4 +1,4 @@
-// Products List Page Logic
+﻿// Products List Page Logic
 (async function() {
   let productsData = null;
   let categoriesData = null;
@@ -135,7 +135,7 @@
     filteredProducts = productsData.products.filter(product => {
       // Category filter
       if (categoryFilters.length > 0) {
-        const productCategoryId = product.category.toLowerCase().replace(/[®\s]+/g, '-').replace(/\(|\)/g, '');
+        const productCategoryId = product.category.toLowerCase().replace(/[짰\s]+/g, '-').replace(/\(|\)/g, '');
         if (!categoryFilters.includes(productCategoryId)) {
           return false;
         }
@@ -182,5 +182,6 @@ function toggleFilters() {
   const sidebar = document.getElementById('filters-sidebar');
   const icon = document.querySelector('.filter-icon');
   sidebar.classList.toggle('mobile-visible');
-  icon.textContent = sidebar.classList.contains('mobile-visible') ? '?? : '??;
+  icon.textContent = sidebar.classList.contains('mobile-visible') ? '▲' : '▼';
 }
+
