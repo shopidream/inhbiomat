@@ -145,9 +145,8 @@
     "Additional sizes are available upon request"
   ],
   "images": [
-    "atcp_1.png",
-    "atcp_2.png",
-    "atcp_3.png",
-    "atcp_5.png"
+    "atcp_main.png",
+    "atcp_square.png",
+    "atcp_wide.png"
   ]
 }

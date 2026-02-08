@@ -152,9 +152,8 @@
     "Additional sizes are available upon request"
   ],
   "images": [
-    "ttcp_1.png",
-    "ttcp_2.png",
-    "ttcp_3.png",
-    "ttcp_5.png"
+    "ttcp_main.png",
+    "ttcp_square.png",
+    "ttcp_wide.png"
   ]
 }

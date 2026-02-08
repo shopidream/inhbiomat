@@ -168,9 +168,8 @@
     "Additional sizes are available upon request"
   ],
   "images": [
-    "utcp_1.png",
-    "utcp_2.png",
-    "utcp_3.png",
-    "utcp_5.png"
+    "utcp_main.png",
+    "utcp_square.png",
+    "utcp_wide.png"
   ]
 }

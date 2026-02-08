@@ -181,10 +181,8 @@
     "Additional sizes are available upon request"
   ],
   "images": [
-    "had_1.png",
-    "had_2.png",
-    "had_3.png",
-    "had_4.png",
-    "had_6.png"
+    "had_main.png",
+    "had_square.png",
+    "had_wide.png"
   ]
 }

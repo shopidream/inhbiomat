@@ -168,9 +168,8 @@
     "Additional sizes are available upon request"
   ],
   "images": [
-    "cad_1.png",
-    "cad_2.png",
-    "cad_3.png",
-    "cad_5.png"
+    "cad_main.png",
+    "cad_square.png",
+    "cad_wide.png"
   ]
 }

@@ -188,8 +188,8 @@
     "Measured using Himed internal protocol WI-0009"
   ],
   "images": [
-    "mcd_1.png",
-    "mcd_2.png",
-    "mcd_4.png"
+    "mcd_main.png",
+    "mcd_square.png",
+    "mcd_wide.png"
   ]
 }

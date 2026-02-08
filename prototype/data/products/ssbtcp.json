@@ -174,10 +174,8 @@
     "Additional sizes are available upon request"
   ],
   "images": [
-    "ssbtcp_1.png",
-    "ssbtcp_2.png",
-    "ssbtcp_3.png",
-    "ssbtcp_4.png",
-    "ssbtcp_6.png"
+    "ssbtcp_main.png",
+    "ssbtcp_square.png",
+    "ssbtcp_wide.png"
   ]
 }

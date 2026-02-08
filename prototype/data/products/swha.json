@@ -161,9 +161,8 @@
     "Additional sizes are available upon request"
   ],
   "images": [
-    "swha_1.png",
-    "swha_2.png",
-    "swha_3.png",
-    "swha_5.png"
+    "swha_main.png",
+    "swha_square.png",
+    "swha_wide.png"
   ]
 }

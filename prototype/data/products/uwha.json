@@ -159,9 +159,8 @@
     "Additional sizes are available upon request"
   ],
   "images": [
-    "uwha_1.png",
-    "uwha_2.png",
-    "uwha_3.png",
-    "uwha_5.png"
+    "uwha_main.png",
+    "uwha_square.png",
+    "uwha_wide.png"
   ]
 }

@@ -22,7 +22,11 @@
         "Titanium Grit Blasting"
       ],
       "jsonFile": "mcd.json",
-      "image": "mcd_1.png"
+      "images": {
+        "main": "mcd_main.png",
+        "square": "mcd_square.png",
+        "wide": "mcd_wide.png"
+      }
     },
     {
       "id": "mcha",
@@ -39,7 +43,11 @@
         "Implant Coating"
       ],
       "jsonFile": "mcha.json",
-      "image": "mcha_1.png"
+      "images": {
+        "main": "mcha_main.png",
+        "square": "mcha_square.png",
+        "wide": "mcha_wide.png"
+      }
     },
     {
       "id": "swha",
@@ -57,7 +65,11 @@
         "Bone Cements"
       ],
       "jsonFile": "swha.json",
-      "image": "swha_1.png"
+      "images": {
+        "main": "swha_main.png",
+        "square": "swha_square.png",
+        "wide": "swha_wide.png"
+      }
     },
     {
       "id": "uwha",
@@ -74,7 +86,11 @@
         "Porous Solids Manufacturing"
       ],
       "jsonFile": "uwha.json",
-      "image": "uwha_1.png"
+      "images": {
+        "main": "uwha_main.png",
+        "square": "uwha_square.png",
+        "wide": "uwha_wide.png"
+      }
     },
     {
       "id": "hawhisk-s",
@@ -91,7 +107,11 @@
         "Bone Repair"
       ],
       "jsonFile": "hawhisk-s.json",
-      "image": "hawhisk-s_1.png"
+      "images": {
+        "main": "hawhisk-s_main.png",
+        "square": "hawhisk-s_square.png",
+        "wide": "hawhisk-s_wide.png"
+      }
     },
     {
       "id": "cad",
@@ -108,7 +128,11 @@
         "Cell Culture"
       ],
       "jsonFile": "cad.json",
-      "image": "cad_1.png"
+      "images": {
+        "main": "cad_main.png",
+        "square": "cad_square.png",
+        "wide": "cad_wide.png"
+      }
     },
     {
       "id": "had",
@@ -125,7 +149,11 @@
         "Cell Culture"
       ],
       "jsonFile": "had.json",
-      "image": "had_1.png"
+      "images": {
+        "main": "had_main.png",
+        "square": "had_square.png",
+        "wide": "had_wide.png"
+      }
     },
     {
       "id": "hadel",
@@ -142,7 +170,11 @@
         "Dental Research"
       ],
       "jsonFile": "hadel.json",
-      "image": "hadel_1.png"
+      "images": {
+        "main": "hadel_main.png",
+        "square": "hadel_square.png",
+        "wide": "hadel_wide.png"
+      }
     },
     {
       "id": "atcp",
@@ -159,7 +191,11 @@
         "Bone Cements"
       ],
       "jsonFile": "atcp.json",
-      "image": "atcp_1.png"
+      "images": {
+        "main": "atcp_main.png",
+        "square": "atcp_square.png",
+        "wide": "atcp_wide.png"
+      }
     },
     {
       "id": "ssbtcp",
@@ -176,7 +212,11 @@
         "Tissue Engineering Scaffolds"
       ],
       "jsonFile": "ssbtcp.json",
-      "image": "ssbtcp_1.png"
+      "images": {
+        "main": "ssbtcp_main.png",
+        "square": "ssbtcp_square.png",
+        "wide": "ssbtcp_wide.png"
+      }
     },
     {
       "id": "swbtcp",
@@ -193,7 +233,11 @@
         "Tissue Engineering Scaffolds"
       ],
       "jsonFile": "swbtcp.json",
-      "image": "swbtcp_1.png"
+      "images": {
+        "main": "swbtcp_main.png",
+        "square": "swbtcp_square.png",
+        "wide": "swbtcp_wide.png"
+      }
     },
     {
       "id": "utcp",
@@ -210,7 +254,11 @@
         "Custom Shapes and Structures"
       ],
       "jsonFile": "utcp.json",
-      "image": "utcp_1.png"
+      "images": {
+        "main": "utcp_main.png",
+        "square": "utcp_square.png",
+        "wide": "utcp_wide.png"
+      }
     },
     {
       "id": "ttcp",
@@ -228,7 +276,11 @@
         "Tooth Remineralization"
       ],
       "jsonFile": "ttcp.json",
-      "image": "ttcp_1.png"
+      "images": {
+        "main": "ttcp_main.png",
+        "square": "ttcp_square.png",
+        "wide": "ttcp_wide.png"
+      }
     },
     {
       "id": "s1bcp",
@@ -245,7 +297,11 @@
         "Tissue Engineering Scaffolds"
       ],
       "jsonFile": "s1bcp.json",
-      "image": "s1bcp_1.png"
+      "images": {
+        "main": "s1bcp_main.png",
+        "square": "s1bcp_square.png",
+        "wide": "s1bcp_wide.png"
+      }
     },
     {
       "id": "u1bcp",
@@ -262,7 +318,11 @@
         "Tissue Engineering Scaffolds"
       ],
       "jsonFile": "u1bcp.json",
-      "image": "u1bcp_1.png"
+      "images": {
+        "main": "u1bcp_main.png",
+        "square": "u1bcp_square.png",
+        "wide": "u1bcp_wide.png"
+      }
     }
   ]
 }
