@@ -82,7 +82,7 @@
         "ko": "미국 제조"
       }
     ],
-    "image": "utcp.png"
+    "image": "utcp.jpg"
   },
   "properties": {
     "physical": {
@@ -168,13 +168,13 @@
     "Additional sizes are available upon request"
   ],
   "images": [
-    "page_35.png",
-    "page_36.png",
-    "page_37.png"
+    "page_35.jpg",
+    "page_36.jpg",
+    "page_37.jpg"
   ],
   "pages": {
-    "main": "page_35.png",
-    "detail1": "page_36.png",
-    "detail2": "page_37.png"
+    "main": "page_35.jpg",
+    "detail1": "page_36.jpg",
+    "detail2": "page_37.jpg"
   }
 }

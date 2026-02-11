@@ -82,7 +82,7 @@
         "ko": "미국 제조"
       }
     ],
-    "image": "hawhisk-s.png"
+    "image": "hawhisk-s.jpg"
   },
   "properties": {
     "physical": {
@@ -161,13 +161,13 @@
     "Himed manufactures this product in its state-of-the-art New York facility under good manufacturing process (GMP)"
   ],
   "images": [
-    "page_14.png",
-    "page_15.png",
-    "page_16.png"
+    "page_14.jpg",
+    "page_15.jpg",
+    "page_16.jpg"
   ],
   "pages": {
-    "main": "page_14.png",
-    "detail1": "page_15.png",
-    "detail2": "page_16.png"
+    "main": "page_14.jpg",
+    "detail1": "page_15.jpg",
+    "detail2": "page_16.jpg"
   }
 }

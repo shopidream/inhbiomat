@@ -78,7 +78,7 @@
         "ko": "미국 제조"
       }
     ],
-    "image": "had.png",
+    "image": "had.jpg",
     "comparison": {
       "bulkDensity": "2.8 g/cc",
       "thermalTreatment": "sintered",
@@ -181,13 +181,13 @@
     "Additional sizes are available upon request"
   ],
   "images": [
-    "page_20.png",
-    "page_21.png",
-    "page_22.png"
+    "page_20.jpg",
+    "page_21.jpg",
+    "page_22.jpg"
   ],
   "pages": {
-    "main": "page_20.png",
-    "detail1": "page_21.png",
-    "detail2": "page_22.png"
+    "main": "page_20.jpg",
+    "detail1": "page_21.jpg",
+    "detail2": "page_22.jpg"
   }
 }

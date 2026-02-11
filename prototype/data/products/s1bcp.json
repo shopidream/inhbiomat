@@ -82,7 +82,7 @@
         "ko": "미국 제조"
       }
     ],
-    "image": "s1bcp.png"
+    "image": "s1bcp.jpg"
   },
   "properties": {
     "physical": {
@@ -289,13 +289,13 @@
     "Selected HA/b-TCP ratios are also available with HA from 10-85% upon request"
   ],
   "images": [
-    "page_41.png",
-    "page_42.png",
-    "page_43.png"
+    "page_41.jpg",
+    "page_42.jpg",
+    "page_43.jpg"
   ],
   "pages": {
-    "main": "page_41.png",
-    "detail1": "page_42.png",
-    "detail2": "page_43.png"
+    "main": "page_41.jpg",
+    "detail1": "page_42.jpg",
+    "detail2": "page_43.jpg"
   }
 }

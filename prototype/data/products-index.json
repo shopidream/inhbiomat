@@ -23,9 +23,9 @@
       ],
       "jsonFile": "mcd.json",
       "pages": {
-        "main": "page_02.png",
-        "detail1": "page_03.png",
-        "detail2": "page_04.png"
+        "main": "page_02.jpg",
+        "detail1": "page_03.jpg",
+        "detail2": "page_04.jpg"
       }
     },
     {
@@ -44,9 +44,9 @@
       ],
       "jsonFile": "mcha.json",
       "pages": {
-        "main": "page_05.png",
-        "detail1": "page_06.png",
-        "detail2": "page_07.png"
+        "main": "page_05.jpg",
+        "detail1": "page_06.jpg",
+        "detail2": "page_07.jpg"
       }
     },
     {
@@ -66,9 +66,9 @@
       ],
       "jsonFile": "swha.json",
       "pages": {
-        "main": "page_08.png",
-        "detail1": "page_09.png",
-        "detail2": "page_10.png"
+        "main": "page_08.jpg",
+        "detail1": "page_09.jpg",
+        "detail2": "page_10.jpg"
       }
     },
     {
@@ -87,9 +87,9 @@
       ],
       "jsonFile": "uwha.json",
       "pages": {
-        "main": "page_11.png",
-        "detail1": "page_12.png",
-        "detail2": "page_13.png"
+        "main": "page_11.jpg",
+        "detail1": "page_12.jpg",
+        "detail2": "page_13.jpg"
       }
     },
     {
@@ -108,9 +108,9 @@
       ],
       "jsonFile": "hawhisk-s.json",
       "pages": {
-        "main": "page_14.png",
-        "detail1": "page_15.png",
-        "detail2": "page_16.png"
+        "main": "page_14.jpg",
+        "detail1": "page_15.jpg",
+        "detail2": "page_16.jpg"
       }
     },
     {
@@ -129,9 +129,9 @@
       ],
       "jsonFile": "cad.json",
       "pages": {
-        "main": "page_17.png",
-        "detail1": "page_18.png",
-        "detail2": "page_19.png"
+        "main": "page_17.jpg",
+        "detail1": "page_18.jpg",
+        "detail2": "page_19.jpg"
       }
     },
     {
@@ -150,9 +150,9 @@
       ],
       "jsonFile": "had.json",
       "pages": {
-        "main": "page_20.png",
-        "detail1": "page_21.png",
-        "detail2": "page_22.png"
+        "main": "page_20.jpg",
+        "detail1": "page_21.jpg",
+        "detail2": "page_22.jpg"
       }
     },
     {
@@ -171,9 +171,9 @@
       ],
       "jsonFile": "hadel.json",
       "pages": {
-        "main": "page_23.png",
-        "detail1": "page_24.png",
-        "detail2": "page_25.png"
+        "main": "page_23.jpg",
+        "detail1": "page_24.jpg",
+        "detail2": "page_25.jpg"
       }
     },
     {
@@ -192,9 +192,9 @@
       ],
       "jsonFile": "atcp.json",
       "pages": {
-        "main": "page_26.png",
-        "detail1": "page_27.png",
-        "detail2": "page_28.png"
+        "main": "page_26.jpg",
+        "detail1": "page_27.jpg",
+        "detail2": "page_28.jpg"
       }
     },
     {
@@ -213,9 +213,9 @@
       ],
       "jsonFile": "ssbtcp.json",
       "pages": {
-        "main": "page_29.png",
-        "detail1": "page_30.png",
-        "detail2": "page_31.png"
+        "main": "page_29.jpg",
+        "detail1": "page_30.jpg",
+        "detail2": "page_31.jpg"
       }
     },
     {
@@ -234,9 +234,9 @@
       ],
       "jsonFile": "swbtcp.json",
       "pages": {
-        "main": "page_32.png",
-        "detail1": "page_33.png",
-        "detail2": "page_34.png"
+        "main": "page_32.jpg",
+        "detail1": "page_33.jpg",
+        "detail2": "page_34.jpg"
       }
     },
     {
@@ -255,9 +255,9 @@
       ],
       "jsonFile": "utcp.json",
       "pages": {
-        "main": "page_35.png",
-        "detail1": "page_36.png",
-        "detail2": "page_37.png"
+        "main": "page_35.jpg",
+        "detail1": "page_36.jpg",
+        "detail2": "page_37.jpg"
       }
     },
     {
@@ -277,9 +277,9 @@
       ],
       "jsonFile": "ttcp.json",
       "pages": {
-        "main": "page_38.png",
-        "detail1": "page_39.png",
-        "detail2": "page_40.png"
+        "main": "page_38.jpg",
+        "detail1": "page_39.jpg",
+        "detail2": "page_40.jpg"
       }
     },
     {
@@ -298,9 +298,9 @@
       ],
       "jsonFile": "s1bcp.json",
       "pages": {
-        "main": "page_41.png",
-        "detail1": "page_42.png",
-        "detail2": "page_43.png"
+        "main": "page_41.jpg",
+        "detail1": "page_42.jpg",
+        "detail2": "page_43.jpg"
       }
     },
     {
@@ -319,9 +319,9 @@
       ],
       "jsonFile": "u1bcp.json",
       "pages": {
-        "main": "page_44.png",
-        "detail1": "page_45.png",
-        "detail2": "page_46.png"
+        "main": "page_44.jpg",
+        "detail1": "page_45.jpg",
+        "detail2": "page_46.jpg"
       }
     }
   ]

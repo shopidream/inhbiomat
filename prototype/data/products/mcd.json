@@ -78,7 +78,7 @@
         "ko": "미국 제조"
       }
     ],
-    "image": "mcd.png"
+    "image": "mcd.jpg"
   },
   "properties": {
     "physical": {
@@ -188,13 +188,13 @@
     "Measured using Himed internal protocol WI-0009"
   ],
   "images": [
-    "page_02.png",
-    "page_03.png",
-    "page_04.png"
+    "page_02.jpg",
+    "page_03.jpg",
+    "page_04.jpg"
   ],
   "pages": {
-    "main": "page_02.png",
-    "detail1": "page_03.png",
-    "detail2": "page_04.png"
+    "main": "page_02.jpg",
+    "detail1": "page_03.jpg",
+    "detail2": "page_04.jpg"
   }
 }

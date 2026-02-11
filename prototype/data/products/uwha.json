@@ -74,7 +74,7 @@
         "ko": "미국 제조"
       }
     ],
-    "image": "uwha.png"
+    "image": "uwha.jpg"
   },
   "properties": {
     "physical": {
@@ -159,13 +159,13 @@
     "Additional sizes are available upon request"
   ],
   "images": [
-    "page_11.png",
-    "page_12.png",
-    "page_13.png"
+    "page_11.jpg",
+    "page_12.jpg",
+    "page_13.jpg"
   ],
   "pages": {
-    "main": "page_11.png",
-    "detail1": "page_12.png",
-    "detail2": "page_13.png"
+    "main": "page_11.jpg",
+    "detail1": "page_12.jpg",
+    "detail2": "page_13.jpg"
   }
 }

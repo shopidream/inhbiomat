@@ -94,7 +94,7 @@
         "ko": "미국 제조"
       }
     ],
-    "image": "hadel.png",
+    "image": "hadel.jpg",
     "comparison": {
       "bulkDensity": "3.11 g/cc",
       "thermalTreatment": "sintered",
@@ -193,13 +193,13 @@
     "Additional sizes are available upon request"
   ],
   "images": [
-    "page_23.png",
-    "page_24.png",
-    "page_25.png"
+    "page_23.jpg",
+    "page_24.jpg",
+    "page_25.jpg"
   ],
   "pages": {
-    "main": "page_23.png",
-    "detail1": "page_24.png",
-    "detail2": "page_25.png"
+    "main": "page_23.jpg",
+    "detail1": "page_24.jpg",
+    "detail2": "page_25.jpg"
   }
 }

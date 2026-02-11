@@ -74,7 +74,7 @@
         "ko": "다양한 입자 크기 제공"
       }
     ],
-    "image": "swha.png"
+    "image": "swha.jpg"
   },
   "properties": {
     "physical": {
@@ -161,13 +161,13 @@
     "Additional sizes are available upon request"
   ],
   "images": [
-    "page_08.png",
-    "page_09.png",
-    "page_10.png"
+    "page_08.jpg",
+    "page_09.jpg",
+    "page_10.jpg"
   ],
   "pages": {
-    "main": "page_08.png",
-    "detail1": "page_09.png",
-    "detail2": "page_10.png"
+    "main": "page_08.jpg",
+    "detail1": "page_09.jpg",
+    "detail2": "page_10.jpg"
   }
 }
