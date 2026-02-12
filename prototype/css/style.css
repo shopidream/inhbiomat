@@ -1436,12 +1436,14 @@ tbody tr:hover {
   font-weight: 600;
   margin-bottom: 1rem;
   color: #ffffff;
+  text-align: center;
 }
 
 .footer-details {
   font-size: 0.875rem;
   line-height: 1.8;
   color: #ffffff;
+  text-align: center;
 }
 
 .footer-details p {
