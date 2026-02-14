@@ -13,4 +13,4 @@ User-agent: *
 Allow: /
 
 # Sitemap 위치
-Sitemap: https://www.inhbiomat.com/sitemap.xml
+Sitemap: https://inhbiomat.com/sitemap.xml
