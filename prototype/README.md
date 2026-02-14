@@ -1,6 +1,6 @@
-# ING Global Website Prototype
+# INH GLOBAL Website Prototype
 
-Static HTML prototype for ING Global, the official Korean distributor of Himed, LLC biomaterials.
+Static HTML prototype for INH GLOBAL, the official Korean distributor of Himed, LLC biomaterials.
 
 ## Overview
 
@@ -266,7 +266,7 @@ Technical specifications are best displayed in tables:
 
 ## License
 
-This prototype is created for ING Global. All product data is property of Himed, LLC.
+This prototype is created for INH GLOBAL. All product data is property of Himed, LLC.
 
 ## Support
 

@@ -1,4 +1,4 @@
-You are building a technical B2B website for ING Global,
+You are building a technical B2B website for INH GLOBAL,
 the official Korean distributor of Himed, LLC biomaterials.
 
 Important:

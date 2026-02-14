@@ -196,7 +196,7 @@ python -m http.server 8000
 ```
 [Language: English ▼]
 
-ING Global | Official Korean Distributor of Himed, LLC Biomaterials
+INH GLOBAL | Official Korean Distributor of Himed, LLC Biomaterials
 Home | Products | Request Quote | Support
 
 Advanced Calcium Phosphate Biomaterials
@@ -207,7 +207,7 @@ Browse Products | Request Quote
 ```
 [언어: 한국어 ▼]
 
-ING Global | Himed, LLC 바이오머티리얼 공식 한국 총판
+INH GLOBAL | Himed, LLC 바이오머티리얼 공식 한국 총판
 홈 | 제품 | 견적 요청 | 지원
 
 첨단 칼슘 인산염 바이오머티리얼

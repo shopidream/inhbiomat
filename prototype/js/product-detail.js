@@ -66,7 +66,7 @@
   function renderProduct() {
     // Update breadcrumb
     document.getElementById('breadcrumb-product').textContent = productData.shortName;
-    document.title = `${productData.productName} - ING Global`;
+    document.title = `${productData.productName} - INH GLOBAL`;
 
     // Render header
     renderHeader();
