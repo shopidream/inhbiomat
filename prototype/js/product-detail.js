@@ -479,6 +479,7 @@
       document.addEventListener('keydown', function(e) {
         if (!lightbox.classList.contains('active')) return;
         if (e.key === 'Escape') closeLightbox();
+        if (lightboxImages.length < 2) return;
         if (e.key === 'ArrowLeft') navigateLightbox(-1);
         if (e.key === 'ArrowRight') navigateLightbox(1);
       });
@@ -510,6 +511,10 @@
     if (img && lightboxImages[currentLightboxIndex]) {
       img.src = `./product_images/pages/${lightboxImages[currentLightboxIndex]}`;
     }
+    const multi = lightboxImages.length > 1;
+    document.querySelectorAll('#lightbox-overlay .lightbox-nav').forEach(btn => {
+      btn.style.display = multi ? '' : 'none';
+    });
   }
 
   // Request Specifications modal (lead capture -> mailto)
