@@ -73,7 +73,6 @@
 
     // Render tab contents
     renderOverview();
-    renderSpecifications();
     renderSkus();
     renderRelated();
 
@@ -98,7 +97,7 @@
         </div>
         <div class="product-header-actions">
           <a href="./quote.html?product=${productData.productId}" class="btn btn-primary" data-i18n="request_quote">Request Quote</a>
-          <button class="btn btn-outline" onclick="window.print()" data-i18n="download_pdf">Download PDF</button>
+          <button class="btn btn-outline" onclick="openSpecRequest()" data-i18n="request_specifications">Request Specifications</button>
         </div>
       </div>
 
@@ -137,11 +136,11 @@
             Click on any page to view in full screen
           </p>
           <div style="display: grid; gap: 1.5rem;">
-            ${productData.images.map((img, idx) => `
+            ${productData.images.slice(0, 1).map((img, idx) => `
               <div style="background-color: #f7fafc; border-radius: 8px; padding: 1rem; cursor: pointer;" onclick="openLightbox(${idx})" class="product-page-clickable">
                 <div style="margin-bottom: 0.5rem;">
                   <span style="font-weight: 600; color: var(--color-text-primary);">
-                    ${idx === 0 ? 'Main Page' : 'Detail Page ' + idx}
+                    Main Page
                   </span>
                 </div>
                 <img src="./product_images/pages/${img}"
@@ -195,202 +194,6 @@
     if (window.i18n) window.i18n.applyTranslations();
   }
 
-  // Render Specifications tab
-  function renderSpecifications() {
-    const specs = document.getElementById('specifications');
-    specs.innerHTML = `
-      ${renderPhysicalProperties()}
-      ${renderChemicalProperties()}
-      ${renderTraceElements()}
-    `;
-  }
-
-  // Render Physical Properties
-  function renderPhysicalProperties() {
-    const props = productData.properties.physical;
-    if (!props) return '';
-
-    return `
-      <div class="card">
-        <h2>Physical Properties</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Property</th>
-              <th>Value</th>
-              <th>Method</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${props.appearance ? `
-              <tr>
-                <td><strong>Appearance</strong></td>
-                <td colspan="2">${props.appearance}</td>
-              </tr>
-            ` : ''}
-            ${props.color ? `
-              <tr>
-                <td><strong>Color</strong></td>
-                <td colspan="2">${props.color}</td>
-              </tr>
-            ` : ''}
-            ${props.density ? `
-              <tr>
-                <td><strong>Density</strong></td>
-                <td>${props.density.value}</td>
-                <td>${props.density.method || ''}</td>
-              </tr>
-            ` : ''}
-            ${props.specificDensity ? `
-              <tr>
-                <td><strong>Specific Density</strong></td>
-                <td>${props.specificDensity.value}</td>
-                <td>${props.specificDensity.method || ''}</td>
-              </tr>
-            ` : ''}
-            ${props.bulkDensity ? `
-              <tr>
-                <td><strong>Bulk Density</strong></td>
-                <td>${props.bulkDensity}</td>
-                <td></td>
-              </tr>
-            ` : ''}
-            ${props.diameter ? `
-              <tr>
-                <td><strong>Diameter</strong></td>
-                <td>${props.diameter}</td>
-                <td></td>
-              </tr>
-            ` : ''}
-            ${props.aspectRatio ? `
-              <tr>
-                <td><strong>Aspect Ratio</strong></td>
-                <td>${props.aspectRatio}</td>
-                <td></td>
-              </tr>
-            ` : ''}
-            ${props.roughness ? `
-              <tr>
-                <td><strong>Surface Roughness</strong></td>
-                <td>${props.roughness.value}</td>
-                <td>${props.roughness.substrate ? `on ${props.roughness.substrate}` : ''}</td>
-              </tr>
-            ` : ''}
-          </tbody>
-        </table>
-      </div>
-    `;
-  }
-
-  // Render Chemical Properties
-  function renderChemicalProperties() {
-    const chem = productData.properties.chemical;
-    if (!chem) return '';
-
-    return `
-      <div class="card">
-        <h2>Chemical Properties</h2>
-
-        <div class="property-list">
-          <div class="property-label">Chemical Formula</div>
-          <div class="property-value"><code>${chem.chemicalFormula}</code></div>
-
-          ${chem.synonyms && chem.synonyms.length > 0 ? `
-            <div class="property-label">Synonyms</div>
-            <div class="property-value">${chem.synonyms.join(', ')}</div>
-          ` : ''}
-
-          ${chem.description ? `
-            <div class="property-label">Description</div>
-            <div class="property-value">${chem.description}</div>
-          ` : ''}
-        </div>
-
-        ${chem.composition ? `
-          <h3 style="margin-top: 1.5rem;">Composition</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>Component</th>
-                <th>Percentage</th>
-                <th>Method</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${chem.composition.components.map(comp => `
-                <tr>
-                  <td><strong>${comp.name}</strong></td>
-                  <td>${comp.percentage}</td>
-                  <td>${chem.composition.method || ''}</td>
-                </tr>
-              `).join('')}
-            </tbody>
-          </table>
-          ${chem.composition.notes ? `
-            <div style="margin-top: 1rem; font-size: 0.875rem; color: #718096;">
-              ${chem.composition.notes.map(note => `<p>??${note}</p>`).join('')}
-            </div>
-          ` : ''}
-        ` : ''}
-      </div>
-    `;
-  }
-
-  // Render Trace Elements
-  function renderTraceElements() {
-    const trace = productData.properties.chemical?.traceElements;
-    if (!trace) return '';
-
-    return `
-      <div class="card">
-        <h2>Trace Elements</h2>
-        <p style="margin-bottom: 1rem;">
-          <strong>Standard:</strong> ${trace.standard}
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>Element</th>
-              <th>Limit</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${trace.elements.arsenic ? `
-              <tr>
-                <td>Arsenic (As)</td>
-                <td>${trace.elements.arsenic}</td>
-              </tr>
-            ` : ''}
-            ${trace.elements.cadmium ? `
-              <tr>
-                <td>Cadmium (Cd)</td>
-                <td>${trace.elements.cadmium}</td>
-              </tr>
-            ` : ''}
-            ${trace.elements.mercury ? `
-              <tr>
-                <td>Mercury (Hg)</td>
-                <td>${trace.elements.mercury}</td>
-              </tr>
-            ` : ''}
-            ${trace.elements.lead ? `
-              <tr>
-                <td>Lead (Pb)</td>
-                <td>${trace.elements.lead}</td>
-              </tr>
-            ` : ''}
-            ${trace.elements.totalHeavyMetalsAsLead ? `
-              <tr>
-                <td><strong>Total heavy metals as lead</strong></td>
-                <td><strong>${trace.elements.totalHeavyMetalsAsLead}</strong></td>
-              </tr>
-            ` : ''}
-          </tbody>
-        </table>
-      </div>
-    `;
-  }
-
   // Render SKUs tab
   function renderSkus() {
     const skus = document.getElementById('skus');
@@ -414,7 +217,7 @@
                     ${comp.ha}% Hydroxyapatite / ${comp.bTcp}% Beta-TCP
                   </span>
                 </div>
-                <span class="accordion-icon">??/span>
+                <span class="accordion-icon">▼</span>
               </div>
               <div class="accordion-content">
                 <table>
@@ -443,9 +246,7 @@
         ${productData.notes && productData.notes.length > 0 ? `
           <div class="card" style="background-color: #f7fafc;">
             <h3>Notes</h3>
-            ${productData.notes.map(note =>
-              `<p style="font-size: 0.875rem; margin-bottom: 0.5rem;">??${note}</p>`
-            ).join('')}
+            <ul style="font-size: 0.875rem; padding-left: 1.25rem; list-style: disc;">${productData.notes.map(note => `<li style="margin-bottom: 0.5rem;">${note}</li>`).join('')}</ul>
           </div>
         ` : ''}
       `;
@@ -490,9 +291,7 @@
         ${productData.notes && productData.notes.length > 0 ? `
           <div class="card" style="background-color: #f7fafc;">
             <h3>Notes</h3>
-            ${productData.notes.map(note =>
-              `<p style="font-size: 0.875rem; margin-bottom: 0.5rem;">??${note}</p>`
-            ).join('')}
+            <ul style="font-size: 0.875rem; padding-left: 1.25rem; list-style: disc;">${productData.notes.map(note => `<li style="margin-bottom: 0.5rem;">${note}</li>`).join('')}</ul>
           </div>
         ` : ''}
       `;
@@ -651,7 +450,7 @@
     if (!productData || !productData.images) return;
 
     currentLightboxIndex = index;
-    lightboxImages = productData.images;
+    lightboxImages = productData.images.slice(0, 1);
 
     // Create lightbox if it doesn't exist
     let lightbox = document.getElementById('lightbox-overlay');
@@ -712,6 +511,60 @@
       img.src = `./product_images/pages/${lightboxImages[currentLightboxIndex]}`;
     }
   }
+
+  // Request Specifications modal (lead capture -> mailto)
+  function t(key, fallback) {
+    return (window.i18n && window.i18n.t && window.i18n.t(key)) || fallback;
+  }
+
+  window.closeSpecRequest = function() {
+    const m = document.getElementById('spec-request-modal');
+    if (m) m.remove();
+    document.body.style.overflow = '';
+  };
+
+  window.openSpecRequest = function() {
+    if (document.getElementById('spec-request-modal')) return;
+    const L = (k, f) => t(k, f);
+    const m = document.createElement('div');
+    m.id = 'spec-request-modal';
+    m.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:10000;display:flex;align-items:center;justify-content:center;padding:1rem;';
+    const field = 'width:100%;padding:0.5rem;border:1px solid #cbd5e0;border-radius:4px;font:inherit;';
+    m.innerHTML = `
+      <form id="spec-request-form" style="background:#fff;border-radius:8px;padding:1.5rem;max-width:480px;width:100%;max-height:90vh;overflow:auto;">
+        <h2 style="margin-bottom:1rem;">${L('request_specifications', 'Request Specifications')}</h2>
+        <label>${L('spec_name', 'Name')} *<input name="name" required style="${field}"></label><br><br>
+        <label>${L('spec_company', 'Company')} *<input name="company" required style="${field}"></label><br><br>
+        <label>${L('spec_email', 'Email')} *<input name="email" type="email" required style="${field}"></label><br><br>
+        <label>${L('spec_phone', 'Phone (optional)')}<input name="phone" type="tel" style="${field}"></label><br><br>
+        <label>${L('spec_message', 'Message (optional)')}<textarea name="message" rows="4" style="${field}"></textarea></label>
+        <div style="display:flex;gap:0.5rem;justify-content:flex-end;margin-top:1rem;">
+          <button type="button" class="btn btn-outline" onclick="closeSpecRequest()">${L('spec_cancel', 'Cancel')}</button>
+          <button type="submit" class="btn btn-primary">${L('spec_submit', 'Send Request')}</button>
+        </div>
+      </form>`;
+    document.body.appendChild(m);
+    document.body.style.overflow = 'hidden';
+    m.addEventListener('click', e => { if (e.target === m) closeSpecRequest(); });
+    m.querySelector('form').addEventListener('submit', e => {
+      e.preventDefault();
+      const f = new FormData(e.target);
+      const name = getLocalizedText(productData.productName);
+      const subject = `Specification Request: ${name}`;
+      const body = [
+        `Product: ${name} (${productData.shortName})`,
+        `Name: ${f.get('name')}`,
+        `Company: ${f.get('company')}`,
+        `Email: ${f.get('email')}`,
+        `Phone: ${f.get('phone') || '-'}`,
+        '',
+        `Message:`,
+        f.get('message') || '-'
+      ].join('\n');
+      window.location.href = `mailto:info@inhbiomat.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      closeSpecRequest();
+    });
+  };
 
   // Initialize
   loadProductData();
