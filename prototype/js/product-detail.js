@@ -538,6 +538,7 @@
     m.innerHTML = `
       <form id="spec-request-form" style="background:#fff;border-radius:8px;padding:1.5rem;max-width:480px;width:100%;max-height:90vh;overflow:auto;">
         <h2 style="margin-bottom:1rem;">${L('request_specifications', 'Request Specifications')}</h2>
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off">
         <label>${L('spec_name', 'Name')} *<input name="name" required style="${field}"></label><br><br>
         <label>${L('spec_company', 'Company')} *<input name="company" required style="${field}"></label><br><br>
         <label>${L('spec_email', 'Email')} *<input name="email" type="email" required style="${field}"></label><br><br>
@@ -551,25 +552,74 @@
     document.body.appendChild(m);
     document.body.style.overflow = 'hidden';
     m.addEventListener('click', e => { if (e.target === m) closeSpecRequest(); });
-    m.querySelector('form').addEventListener('submit', e => {
+    m.querySelector('form').addEventListener('submit', async e => {
       e.preventDefault();
-      const f = new FormData(e.target);
+      const form = e.target;
+      const btn = form.querySelector('button[type="submit"]');
+      if (btn.disabled) return;
+      const f = new FormData(form);
       const name = getLocalizedText(productData.productName);
-      const subject = `Specification Request: ${name}`;
-      const body = [
-        `Product: ${name} (${productData.shortName})`,
-        `Name: ${f.get('name')}`,
-        `Company: ${f.get('company')}`,
-        `Email: ${f.get('email')}`,
-        `Phone: ${f.get('phone') || '-'}`,
-        '',
-        `Message:`,
-        f.get('message') || '-'
-      ].join('\n');
-      window.location.href = `mailto:info@inhbiomat.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      closeSpecRequest();
+
+      const payload = {
+        access_key: '2ad2cc10-6fc0-47d2-8d44-e29c83a912b8',
+        subject: `Specification Request: ${name}`,
+        from_name: f.get('name'),
+        product: `${name} (${productData.shortName})`,
+        name: f.get('name'),
+        company: f.get('company'),
+        email: f.get('email'),
+        phone: f.get('phone') || '-',
+        message: f.get('message') || '-'
+      };
+      if (f.get('botcheck')) payload.botcheck = f.get('botcheck');
+
+      let err = form.querySelector('.spec-error');
+      if (!err) {
+        err = document.createElement('div');
+        err.className = 'spec-error';
+        err.setAttribute('role', 'alert');
+        err.style.cssText = 'margin-top:1rem;padding:0.75rem;border-radius:6px;background:#fff5f5;color:#742a2a;border:1px solid #feb2b2;display:none;';
+        form.appendChild(err);
+      }
+      err.style.display = 'none';
+
+      const label = btn.textContent;
+      btn.disabled = true;
+      btn.style.opacity = '0.6';
+      btn.textContent = 'Sending...';
+
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const result = await res.json().catch(() => ({}));
+        if (res.ok && result.success) {
+          closeSpecRequest();
+          showSpecToast('Your request has been submitted successfully.');
+          return;
+        }
+        throw new Error(result.message || 'submit failed');
+      } catch (ex) {
+        console.error('Spec request error:', ex);
+        err.textContent = 'Failed to submit your request. Please try again or email customer@inhbiomat.com.';
+        err.style.display = 'block';
+        btn.disabled = false;
+        btn.style.opacity = '';
+        btn.textContent = label;
+      }
     });
   };
+
+  function showSpecToast(msg) {
+    const el = document.createElement('div');
+    el.setAttribute('role', 'status');
+    el.textContent = msg;
+    el.style.cssText = 'position:fixed;left:50%;bottom:2rem;transform:translateX(-50%);background:#22543d;color:#fff;padding:0.9rem 1.5rem;border-radius:6px;z-index:10001;box-shadow:0 4px 12px rgba(0,0,0,.25);max-width:90vw;';
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 5000);
+  }
 
   // Initialize
   loadProductData();

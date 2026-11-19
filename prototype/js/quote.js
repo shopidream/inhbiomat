@@ -94,11 +94,15 @@
   };
 
   // Handle form submission
-  document.getElementById('quote-form').addEventListener('submit', function(e) {
+  document.getElementById('quote-form').addEventListener('submit', async function(e) {
     e.preventDefault();
 
+    const form = this;
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (submitBtn.disabled) return;
+
     // Collect form data
-    const formData = new FormData(this);
+    const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
 
     // Add selected products
@@ -116,14 +120,61 @@
 
     data.products = products;
 
-    // In a real application, this would be sent to a server
-    console.log('Quote request data:', data);
+    // Build Web3Forms payload (products flattened to readable text)
+    const payload = Object.assign({}, data, {
+      access_key: '2ad2cc10-6fc0-47d2-8d44-e29c83a912b8',
+      subject: 'New Quote Request from INHBiomat.com',
+      from_name: data.contactName || '',
+      products: products
+        .map((p, i) => `${i + 1}. ${p.productName || p.productId} / SKU: ${p.sku || '-'} / Qty: ${p.quantity || '-'}`)
+        .join('\n') || '-'
+    });
+    // Web3Forms spam filter: botcheck must be sent as-is only if checked
+    if (!data.botcheck) delete payload.botcheck;
 
-    // Show success message
-    alert(`Thank you for your quote request!\n\nWe have received your request for ${products.length} product(s).\n\nOur team will contact you at ${data.email} within 1-2 business days.\n\nQuote Request Summary:\n- Company: ${data.companyName}\n- Contact: ${data.contactName}\n- Products: ${products.map(p => p.productName).join(', ')}`);
+    let status = document.getElementById('quote-status');
+    if (!status) {
+      status = document.createElement('div');
+      status.id = 'quote-status';
+      status.setAttribute('role', 'alert');
+      status.style.cssText = 'margin-top:1rem;padding:1rem;border-radius:6px;display:none;';
+      submitBtn.parentNode.appendChild(status);
+    }
+    const showStatus = (ok, msg) => {
+      status.textContent = msg;
+      status.style.display = 'block';
+      status.style.background = ok ? '#f0fff4' : '#fff5f5';
+      status.style.color = ok ? '#22543d' : '#742a2a';
+      status.style.border = '1px solid ' + (ok ? '#9ae6b4' : '#feb2b2');
+    };
 
-    // In a real application, redirect to confirmation page
-    // window.location.href = 'quote-confirmation.html';
+    const originalLabel = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.style.opacity = '0.6';
+    submitBtn.textContent = 'Sending...';
+    status.style.display = 'none';
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      const result = await res.json().catch(() => ({}));
+      if (res.ok && result.success) {
+        showStatus(true, 'Your request has been submitted successfully.');
+        form.reset();
+      } else {
+        showStatus(false, 'Failed to submit your request. Please try again or email customer@inhbiomat.com.');
+      }
+    } catch (err) {
+      console.error('Quote submit error:', err);
+      showStatus(false, 'Failed to submit your request. Please try again or email customer@inhbiomat.com.');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.style.opacity = '';
+      submitBtn.innerHTML = originalLabel;
+    }
   });
 
   // Initialize
