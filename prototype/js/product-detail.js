@@ -133,14 +133,14 @@
         <div class="card">
           <h2>Product Pages</h2>
           <p style="margin-bottom: 1.5rem; color: var(--color-text-secondary); font-size: 0.9375rem;">
-            Click on any page to view in full screen
+            ${t('click_preview_fullscreen', 'Click on the preview image below to view in full screen')}
           </p>
           <div style="display: grid; gap: 1.5rem;">
             ${productData.images.slice(0, 1).map((img, idx) => `
               <div style="background-color: #f7fafc; border-radius: 8px; padding: 1rem; cursor: pointer;" onclick="openLightbox(${idx})" class="product-page-clickable">
                 <div style="margin-bottom: 0.5rem;">
                   <span style="font-weight: 600; color: var(--color-text-primary);">
-                    Main Page
+                    ${t('spec_preview_page1', 'Specification Preview - Page 1 of 3')}
                   </span>
                 </div>
                 <img src="./product_images/pages/${img}"
@@ -522,6 +522,24 @@
     return (window.i18n && window.i18n.t && window.i18n.t(key)) || fallback;
   }
 
+  const SPEC_PRODUCTS = [
+    ['mcd', 'MCD Apatitic Abrasive (MCD)'],
+    ['mcha', 'Hydroxyapatite (MC-Type) (MCHA)'],
+    ['swha', 'Hydroxyapatite (HA) (SWHA)'],
+    ['uwha', 'Hydroxyapatite (HA) (UWHA)'],
+    ['hawhisk-s', 'Hydroxyapatite (HA) Whiskers (HAWHISK-S)'],
+    ['cad', 'Calcium Deficient Hydroxyapatite (HA) Discs (CAD)'],
+    ['had', 'Dense Hydroxyapatite (HA) Discs (HAD)'],
+    ['hadel', 'Enamel-like Hydroxyapatite (HA) Discs (HADEL)'],
+    ['atcp', 'Alpha-tricalcium phosphate (α-TCP) (ATCP)'],
+    ['ssbtcp', 'Beta-tricalcium phosphate (β-TCP) (SSBTCP)'],
+    ['swbtcp', 'Beta-tricalcium phosphate (β-TCP) (SWBTCP)'],
+    ['utcp', 'Tricalcium phosphate (TCP) (UTCP)'],
+    ['ttcp', 'Tetracalcium phosphate (TTCP) (TTCP)'],
+    ['s1bcp', 'Biphasic calcium phosphate (BCP) (S1BCP)'],
+    ['u1bcp', 'Biphasic calcium phosphate (BCP) (U1BCP)']
+  ];
+
   window.closeSpecRequest = function() {
     const m = document.getElementById('spec-request-modal');
     if (m) m.remove();
@@ -539,6 +557,7 @@
       <form id="spec-request-form" style="background:#fff;border-radius:8px;padding:1.5rem;max-width:480px;width:100%;max-height:90vh;overflow:auto;">
         <h2 style="margin-bottom:1rem;">${L('request_specifications', 'Request Specifications')}</h2>
         <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off">
+        <label>${L('select_product', 'Select Product')} *<select name="product_id" required style="${field}">${SPEC_PRODUCTS.map(([id, label]) => `<option value="${id}"${id === productData.productId ? ' selected' : ''}>${label}</option>`).join('')}</select></label><br><br>
         <label>${L('spec_name', 'Name')} *<input name="name" required style="${field}"></label><br><br>
         <label>${L('spec_company', 'Company')} *<input name="company" required style="${field}"></label><br><br>
         <label>${L('spec_email', 'Email')} *<input name="email" type="email" required style="${field}"></label><br><br>
@@ -558,13 +577,14 @@
       const btn = form.querySelector('button[type="submit"]');
       if (btn.disabled) return;
       const f = new FormData(form);
-      const name = getLocalizedText(productData.productName);
+      const sel = form.querySelector('select[name="product_id"]');
+      const name = sel.options[sel.selectedIndex].text;
 
       const payload = {
         access_key: '2ad2cc10-6fc0-47d2-8d44-e29c83a912b8',
         subject: `Specification Request: ${name}`,
         from_name: f.get('name'),
-        product: `${name} (${productData.shortName})`,
+        product: name,
         name: f.get('name'),
         company: f.get('company'),
         email: f.get('email'),
